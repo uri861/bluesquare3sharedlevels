@@ -1,0 +1,116 @@
+---
+ background: (153, 153, 255)
+
+
+ checkpoints:
+   green flag image: "graphics\\green flag.png"
+   red flag image: "graphics\\red flag.png"
+   sound: "sound\\ping.mp3"
+   locations:
+     - [700, 664]
+
+
+ player:
+   size: [80, 80]
+   speed: 10
+   jump speed: 30
+   gravity: 1.5
+   die sound: "sound\\die sound.mp3"
+
+   images:
+     regular: "graphics\\character.png"
+     right: "graphics\\right character.png"
+     left: "graphics\\left character.png"
+     jump: "graphics\\jump character.png"
+     die: "graphics\\die character.png"
+
+
+ monster:
+   location: [0, 64]
+   size: [80, 80]
+   gravity: 0.1
+   speed: 3
+   jump speed: 30
+   die sound: "sound\\die sound.mp3"
+   images:
+     regular: "graphics\\monster.png"
+     right: "graphics\\monster right.png"
+     left: "graphics\\monster left.png"
+     jump: "graphics\\monster jump.png"
+     die: "graphics\\die monster.png"
+   horns:
+     image: "graphics\\monster horns.png"
+     size: [107, 50]
+     relative location: [-13, -35]
+
+
+ gun:
+   image: "graphics\\gun.png"
+   location: [1200, 644]
+   size: [95, 75]
+   price: 1
+   strength: 10
+   bullet speed: 15
+   bullet image: "graphics\\bullet.png"
+
+
+ boxes:
+   - type: 'single box'
+     location: [-600, 664]
+
+   - type: '4 boxes col'
+     location: [-600, -137]
+
+   - type: 'left signboard'
+     location: [100, 664]
+
+   - type: 'general explanation'
+     location: [0, 200]
+
+   - type: 'coin explanation'
+     location: [-500, 100]
+
+   - type: 'gun explanation'
+     location: [1100, 444]
+
+   - type: 'price explanation'
+     location: [980, 610]
+
+
+ obstacles:
+   - type: 'gear'
+     location: [800, 664]
+
+
+ coins:
+   image: "graphics\\coin.png"
+   size: [50, 50]
+   sound: "sound\\cha-ching.mp3"
+   locations:
+     - [-485, 284]
+
+
+ stairs:
+   - start location: [-600, 264]
+     direction: (1, 1)
+     stair type: ['box', 'single box']
+     stairs number: 5
+     space: 1
+
+   - start location: [-600, 364]
+     direction: (1, 1)
+     stair type: ['box', 'single box']
+     stairs number: 4
+     space: 1
+
+   - start location: [-600, 464]
+     direction: (1, 1)
+     stair type: ['box', 'single box']
+     stairs number: 3
+     space: 1
+
+   - start location: [-600, 564]
+     direction: (1, 1)
+     stair type: ['box', 'single box']
+     stairs number: 2
+     space: 1

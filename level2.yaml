@@ -1,0 +1,140 @@
+background: (153, 153, 255)
+boxes:
+- location:
+  - -600
+  - 664
+  type: single box
+- location:
+  - -600
+  - -137
+  type: 4 boxes col
+- location:
+  - 100
+  - 664
+  type: left signboard
+- location:
+  - 0
+  - 200
+  type: general explanation
+- location:
+  - -500
+  - 100
+  type: coin explanation
+- location:
+  - 1100
+  - 444
+  type: gun explanation
+- location:
+  - 980
+  - 610
+  type: price explanation
+checkpoints:
+  green flag image: graphics\green flag.png
+  locations:
+  - - 700
+    - 664
+  red flag image: graphics\red flag.png
+  sound: sound\ping.mp3
+coins:
+  image: graphics\coin.png
+  locations:
+  - - -485
+    - 284
+  size:
+  - 50
+  - 50
+  sound: sound\cha-ching.mp3
+gun:
+  bullet image: graphics\bullet.png
+  bullet speed: 15
+  image: graphics\gun.png
+  location:
+  - 1200
+  - 644
+  price: 1
+  size:
+  - 95
+  - 75
+  strength: 10
+monster:
+  die sound: sound\die sound.mp3
+  gravity: 0.1
+  horns:
+    image: graphics\monster horns.png
+    relative location:
+    - -13
+    - -35
+    size:
+    - 107
+    - 50
+  images:
+    die: graphics\die monster.png
+    jump: graphics\monster jump.png
+    left: graphics\monster left.png
+    regular: graphics\monster.png
+    right: graphics\monster right.png
+  jump speed: 30
+  location:
+  - 0
+  - 64
+  size:
+  - 80
+  - 80
+  speed: 3
+name: level2
+obstacles:
+- location:
+  - 800
+  - 664
+  type: gear
+player:
+  die sound: sound\die sound.mp3
+  gravity: 1.5
+  images:
+    die: graphics\die character.png
+    jump: graphics\jump character.png
+    left: graphics\left character.png
+    regular: graphics\character.png
+    right: graphics\right character.png
+  jump speed: 30
+  size:
+  - 80
+  - 80
+  speed: 10
+stairs:
+- direction: (1, 1)
+  space: 1
+  stair type:
+  - box
+  - single box
+  stairs number: 5
+  start location:
+  - -600
+  - 264
+- direction: (1, 1)
+  space: 1
+  stair type:
+  - box
+  - single box
+  stairs number: 4
+  start location:
+  - -600
+  - 364
+- direction: (1, 1)
+  space: 1
+  stair type:
+  - box
+  - single box
+  stairs number: 3
+  start location:
+  - -600
+  - 464
+- direction: (1, 1)
+  space: 1
+  stair type:
+  - box
+  - single box
+  stairs number: 2
+  start location:
+  - -600
+  - 564

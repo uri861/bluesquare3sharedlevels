@@ -1,0 +1,86 @@
+background: (np.uint8(255), np.uint8(29), np.uint8(3))
+boxes: []
+bullet rotators: []
+buttons: []
+checkpoints:
+  green flag image: graphics\green flag.png
+  locations: []
+  red flag image: graphics\red flag.png
+  sound: sound\ping.mp3
+coins:
+  image: graphics\coin.png
+  locations: []
+  size:
+  - 50
+  - 50
+  sound: sound\cha-ching.mp3
+coins that slows the monster:
+  image: graphics\red coin.png
+  locations: []
+  size:
+  - 81
+  - 81
+  sound: sound\cha-ching.mp3
+  speed down: 4
+disappearing: []
+flip gravity: []
+gun:
+  bullet image: graphics\bullet.png
+  bullet speed: 15
+  image: graphics\gun.png
+  location:
+  - 702.0
+  - 474.0
+  price: 0
+  size:
+  - 95
+  - 75
+  strength: 10
+jumpers: []
+monster:
+  die sound: sound\die sound.mp3
+  gravity: 0.1
+  horns:
+    image: graphics\monster horns.png
+    relative location:
+    - -13
+    - -35
+    size:
+    - 107
+    - 50
+  images:
+    die: graphics\die monster.png
+    jump: graphics\monster jump.png
+    left: graphics\monster left.png
+    regular: graphics\monster.png
+    right: graphics\monster right.png
+  jump speed: 30
+  location:
+  - 710.0
+  - 383.0
+  size:
+  - 80
+  - 80
+  speed: 5
+obstacles: []
+on off obstacles: []
+player:
+  die sound: sound\die sound.mp3
+  gravity: 1.5
+  images:
+    die: graphics\die character.png
+    jump: graphics\jump character.png
+    left: graphics\left character.png
+    regular: graphics\character.png
+    right: graphics\right character.png
+  jump speed: 30
+  location:
+  - 110.0
+  - 383.0
+  size:
+  - 80
+  - 80
+  speed: 10
+shared: false
+slow: []
+speed: []

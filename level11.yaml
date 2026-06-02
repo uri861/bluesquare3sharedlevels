@@ -1,0 +1,387 @@
+background: (98, 8, 120)
+player:
+  size:
+    - 80
+    - 80
+  speed: 10
+  jump speed: 30
+  gravity: 1.5
+  die sound: sound\die sound.mp3
+  location:
+    - 100
+    - 684
+  images:
+    regular: graphics\character.png
+    right: graphics\right character.png
+    left: graphics\left character.png
+    jump: graphics\jump character.png
+    die: graphics\die character.png
+monster:
+  location:
+    - -100
+    - 684
+  size:
+    - 80
+    - 80
+  gravity: 0.1
+  speed: 5
+  jump speed: 30
+  die sound: sound\die sound.mp3
+  images:
+    regular: graphics\monster.png
+    right: graphics\monster right.png
+    left: graphics\monster left.png
+    jump: graphics\monster jump.png
+    die: graphics\die monster.png
+  horns:
+    image: graphics\monster horns.png
+    size:
+      - 107
+      - 50
+    relative location:
+      - -13
+      - -35
+gun:
+  image: graphics\gun.png
+  location:
+    - 402.5
+    - 576.5
+  size:
+    - 95
+    - 75
+  price: 2
+  strength: 10
+  bullet speed: 15
+  bullet image: graphics\bullet.png
+checkpoints:
+  green flag image: graphics\green flag.png
+  red flag image: graphics\red flag.png
+  sound: sound\ping.mp3
+  locations:
+    - - 900
+      - 664
+    - - 400
+      - 664
+coins:
+  image: graphics\coin.png
+  size:
+    - 50
+    - 50
+  sound: sound\cha-ching.mp3
+  locations:
+    - - 225
+      - 589
+    - - 225
+      - 489
+coins that slows the monster:
+  image: graphics\red coin.png
+  size:
+    - 81
+    - 81
+  sound: sound\cha-ching.mp3
+  speed down: 4
+  locations: []
+boxes:
+  - type: single box
+    location:
+      - 500
+      - 664
+  - type: single box
+    location:
+      - 700
+      - 664
+  - type: fast single box
+    location:
+      - - 400
+        - 264
+      - - 600
+        - 164
+  - type: single box
+    location:
+      - - 700
+        - 164
+      - - 900
+        - 264
+  - type: laser right
+    location:
+      - 1000
+      - 364
+  - type: laser left
+    location:
+      - 600
+      - 364
+  - type: laser up
+    location:
+      - 1100
+      - 164
+  - type: laser down
+    location:
+      - 1100
+      - 264
+  - type: down signboard
+    location:
+      - 600
+      - 664
+  - type: right signboard
+    location:
+      - 700
+      - 564
+  - type: left signboard
+    location:
+      - 500
+      - 564
+  - type: lr signboard
+    location:
+      - 600
+      - 564
+  - type: ud signboard
+    location:
+      - 600
+      - 464
+  - type: up signboard
+    location:
+      - 600
+      - 264
+  - type: sad signboard
+    location:
+      - 800
+      - 664
+  - type: black line
+    location:
+      - 100
+      - 264
+  - type: black line col
+    location:
+      - 100
+      - 264
+  - type: short black line
+    location:
+      - 200
+      - 364
+  - type: short black line col
+    location:
+      - 200
+      - 364
+  - type: log
+    location:
+      - 0
+      - 164
+  - type: down green arrow
+    location:
+      - 300
+      - 164
+  - type: down green arrow
+    location:
+      - 300
+      - 264
+  - type: single box
+    location:
+      - 1200
+      - 364
+  - type: single box
+    location:
+      - 1300
+      - 364
+  - type: single box
+    location:
+      - 1500
+      - 364
+  - type: single box
+    location:
+      - 1600
+      - 364
+  - type: single box
+    location:
+      - 600
+      - 664
+  - type: single box
+    location:
+      - 0
+      - 664
+  - type: down signboard
+    location:
+      - 1000
+      - 664
+  - type: happy signboard
+    location:
+      - 200
+      - 664
+obstacles:
+  - type: gear
+    location:
+      - 800
+      - 264
+  - type: gear
+    location:
+      - - 800
+        - 364
+      - - 1000
+        - 264
+  - type: fast
+    location:
+      - - 800
+        - 464
+      - - 1100
+        - 464
+  - type: laser
+    location:
+      - 635.2061292854579
+      - 406.61104179687777
+  - type: laser
+    location:
+      - 784.6663949996833
+      - 406.61104179687777
+  - type: short vertical laser
+    location:
+      - 1141.8324711550013
+      - 198.9067876764122
+  - type: short vertical laser
+    location:
+      - 1140.733498612985
+      - 248.3601815146183
+  - type: red gear
+    location:
+      - 1000
+      - 64
+on off obstacles:
+  - type: spikes
+    location:
+      - 1599.0050486338082
+      - 339.57421903842067
+  - type: laser
+    location:
+      - 1904.519415314357
+      - 295.615646737793
+  - type: vertical laser
+    location:
+      - 2355.098157541066
+      - 259.34982458977515
+  - type: short laser
+    location:
+      - 1990.2392735916335
+      - 352.7617907286089
+  - type: short vertical laser
+    location:
+      - 2132.0067315117444
+      - 324.188718733201
+bullet rotators:
+  - type: right
+    location:
+      - 1500
+      - 264
+  - type: left
+    location:
+      - 1300
+      - 264
+  - type: down
+    location:
+      - 1400
+      - 364
+  - type: up
+    location:
+      - 1400
+      - 164
+flip gravity:
+  - type: purple-blue
+    location:
+      - 1400
+      - 664
+speed:
+  - type: right
+    location:
+      - 1600
+      - 664
+  - type: right
+    location:
+      - 1700
+      - 664
+  - type: right fast
+    location:
+      - 1800
+      - 664
+  - type: right fast
+    location:
+      - 1900
+      - 664
+  - type: left
+    location:
+      - 2400
+      - 664
+  - type: left
+    location:
+      - 2300
+      - 664
+  - type: left fast
+    location:
+      - 2200
+      - 664
+  - type: left fast
+    location:
+      - 2100
+      - 664
+  - type: right
+    location:
+      - -200
+      - 664
+  - type: right
+    location:
+      - -300
+      - 664
+  - type: right
+    location:
+      - -400
+      - 664
+slow:
+  - type: red
+    location:
+      - 1200
+      - 464
+    size:
+      - 400
+      - 300.00000000000006
+  - type: red
+    location:
+      - -700
+      - 464
+    size:
+      - 300
+      - 300.00000000000006
+disappearing:
+  - type: red back
+    location:
+      - 1800
+      - 464
+  - type: red
+    location:
+      - 2000
+      - 464
+  - type: white
+    location:
+      - 2200
+      - 464
+jumpers:
+  - type: yellow
+    location:
+      - 1700
+      - 64
+  - type: yellow
+    location:
+      - 1500
+      - -136
+buttons:
+  - type: green
+    location:
+      - 1402.2889636128791
+      - 125.27617907286088
+  - type: red
+    location:
+      - 1307.777324999472
+      - 224.18296674927308
+  - type: green
+    location:
+      - 1145.1553940750066
+      - 722.4925106826887
+  - type: red
+    location:
+      - 1040.7530025834521
+      - 723.5914749902043

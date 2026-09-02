@@ -1,0 +1,416 @@
+background: (1, 0, 1)
+player:
+  size:
+    - 80
+    - 80
+  speed: 10
+  jump speed: 30
+  gravity: 1.5
+  die sound: sound\die sound.mp3
+  location:
+    - 111
+    - 182
+  images:
+    regular: graphics\character.png
+    right: graphics\right character.png
+    left: graphics\left character.png
+    jump: graphics\jump character.png
+    die: graphics\die character.png
+monster:
+  location:
+    - 600
+    - 364
+  size:
+    - 80
+    - 80
+  gravity: 0.1
+  speed: 5
+  jump speed: 30
+  die sound: sound\die sound.mp3
+  images:
+    regular: graphics\monster.png
+    right: graphics\monster right.png
+    left: graphics\monster left.png
+    jump: graphics\monster jump.png
+    die: graphics\die monster.png
+  horns:
+    image: graphics\monster horns.png
+    size:
+      - 107
+      - 50
+    relative location:
+      - -13
+      - -35
+gun:
+  image: graphics\gun.png
+  location:
+    - 603
+    - 389
+  size:
+    - 95
+    - 75
+  price: 25
+  strength: 10
+  bullet speed: 15
+  bullet image: graphics\bullet.png
+checkpoints:
+  green flag image: graphics\green flag.png
+  red flag image: graphics\red flag.png
+  sound: sound\ping.mp3
+  locations:
+    - - 1138
+      - 168
+coins:
+  image: graphics\coin.png
+  size:
+    - 50
+    - 50
+  sound: sound\cha-ching.mp3
+  locations:
+    - - 986
+      - 385
+    - - 1140
+      - 86
+    - - 813
+      - -8
+    - - 900
+      - -59
+    - - 593
+      - -66
+    - - 214
+      - -12
+    - - 385
+      - -38
+    - - 168
+      - 124
+    - - 461
+      - 101
+    - - 481
+      - 367
+    - - 269
+      - 379
+    - - 790
+      - 273
+    - - 639
+      - 231
+    - - 754
+      - 397
+    - - 1133
+      - 278
+    - - 1125
+      - -311
+    - - 1025
+      - -211
+    - - 725
+      - -411
+    - - 925
+      - -511
+    - - 525
+      - -211
+    - - 425
+      - -211
+    - - 325
+      - -311
+    - - 225
+      - -411
+    - - 225
+      - -111
+    - - 375
+      - 243
+coins that slows the monster:
+  image: graphics\red coin.png
+  size:
+    - 81
+    - 81
+  sound: sound\cha-ching.mp3
+  speed down: 4
+  locations: []
+boxes:
+  - type: single box
+    location:
+      - 1100
+      - 464
+  - type: single box
+    location:
+      - 1000
+      - 464
+  - type: single box
+    location:
+      - 900
+      - 464
+  - type: single box
+    location:
+      - 800
+      - 464
+  - type: single box
+    location:
+      - 600
+      - 464
+  - type: single box
+    location:
+      - 700
+      - 464
+  - type: single box
+    location:
+      - 500
+      - 464
+  - type: single box
+    location:
+      - 400
+      - 464
+  - type: single box
+    location:
+      - 300
+      - 464
+  - type: single box
+    location:
+      - 200
+      - 464
+  - type: single box
+    location:
+      - 100
+      - 464
+  - type: single box
+    location:
+      - 0
+      - 464
+  - type: single box
+    location:
+      - 1200
+      - 464
+  - type: single box
+    location:
+      - 1100
+      - 364
+  - type: single box
+    location:
+      - 100
+      - 364
+  - type: laser down
+    location:
+      - 1200
+      - 364
+  - type: single box
+    location:
+      - 1100
+      - 564
+  - type: single box
+    location:
+      - 1000
+      - 564
+  - type: single box
+    location:
+      - 900
+      - 564
+  - type: single box
+    location:
+      - 800
+      - 564
+  - type: single box
+    location:
+      - 100
+      - 564
+  - type: single box
+    location:
+      - 200
+      - 564
+  - type: single box
+    location:
+      - 300
+      - 564
+  - type: single box
+    location:
+      - 200
+      - 664
+  - type: single box
+    location:
+      - 300
+      - 664
+  - type: single box
+    location:
+      - 400
+      - 664
+  - type: single box
+    location:
+      - 500
+      - 664
+  - type: single box
+    location:
+      - 600
+      - 664
+  - type: single box
+    location:
+      - 700
+      - 664
+  - type: single box
+    location:
+      - 800
+      - 664
+  - type: single box
+    location:
+      - 900
+      - 664
+  - type: laser right
+    location:
+      - 700
+      - 564
+  - type: laser left
+    location:
+      - 400
+      - 564
+  - type: laser down
+    location:
+      - 0
+      - 364
+  - type: fast single box
+    location:
+      - - 1197
+        - 440
+      - - 31
+        - 449
+obstacles:
+  - type: laser
+    location:
+      - 456
+      - 606
+  - type: vertical laser
+    location:
+      - 1245
+      - 127
+  - type: vertical laser
+    location:
+      - 1245
+      - -162
+  - type: vertical laser
+    location:
+      - 41
+      - 137
+  - type: vertical laser
+    location:
+      - 42
+      - -141
+  - type: vertical laser
+    location:
+      - 41
+      - -430
+  - type: vertical laser
+    location:
+      - 1244
+      - -450
+  - type: gear
+    location:
+      - - 900
+        - 264
+      - - 300
+        - -136
+  - type: fast
+    location:
+      - - 1000
+        - 164
+      - - 100
+        - -36
+  - type: gear
+    location:
+      - 1000
+      - -436
+  - type: gear
+    location:
+      - - 600
+        - -536
+      - - 500
+        - -536
+on off obstacles: []
+bullet rotators: []
+flip gravity: []
+speed: []
+slow:
+  - type: red
+    location:
+      - 401
+      - 564
+    size:
+      - 401
+      - 100
+disappearing:
+  - type: red
+    location:
+      - 100
+      - 264
+  - type: red
+    location:
+      - 1100
+      - 264
+jumpers:
+  - type: yellow
+    location:
+      - 1000
+      - 264
+  - type: yellow
+    location:
+      - 700
+      - 64
+  - type: yellow
+    location:
+      - 300
+      - 364
+  - type: yellow
+    location:
+      - 700
+      - 364
+  - type: yellow
+    location:
+      - 400
+      - 164
+  - type: yellow
+    location:
+      - 200
+      - -36
+  - type: yellow
+    location:
+      - 1100
+      - -136
+  - type: yellow
+    location:
+      - 900
+      - -236
+  - type: yellow
+    location:
+      - 600
+      - -136
+  - type: yellow
+    location:
+      - 400
+      - -436
+  - type: yellow
+    location:
+      - 700
+      - 264
+  - type: yellow
+    location:
+      - 500
+      - 164
+  - type: yellow
+    location:
+      - 400
+      - -36
+  - type: yellow
+    location:
+      - 900
+      - -36
+  - type: yellow
+    location:
+      - 900
+      - 364
+  - type: yellow
+    location:
+      - 500
+      - 364
+  - type: yellow
+    location:
+      - 200
+      - 164
+  - type: yellow
+    location:
+      - 1000
+      - 64
+buttons: []

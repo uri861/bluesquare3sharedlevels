@@ -1,0 +1,1683 @@
+background: (0, 191, 255)
+player:
+  size:
+    - 80
+    - 80
+  speed: 10
+  jump speed: 30
+  gravity: 1.5
+  die sound: sound\die sound.mp3
+  location:
+    - 600
+    - 684
+  images:
+    regular: graphics\character.png
+    right: graphics\right character.png
+    left: graphics\left character.png
+    jump: graphics\jump character.png
+    die: graphics\die character.png
+monster:
+  location:
+    - 1064
+    - 332
+  size:
+    - 80
+    - 80
+  gravity: 0.1
+  speed: 5
+  jump speed: 30
+  die sound: sound\die sound.mp3
+  images:
+    regular: graphics\monster.png
+    right: graphics\monster right.png
+    left: graphics\monster left.png
+    jump: graphics\monster jump.png
+    die: graphics\die monster.png
+  horns:
+    image: graphics\monster horns.png
+    size:
+      - 107
+      - 50
+    relative location:
+      - -13
+      - -35
+gun:
+  image: graphics\gun.png
+  location:
+    - 1180
+    - 593
+  size:
+    - 95
+    - 75
+  price: 0
+  strength: 10
+  bullet speed: 15
+  bullet image: graphics\bullet.png
+checkpoints:
+  green flag image: graphics\green flag.png
+  red flag image: graphics\red flag.png
+  sound: sound\ping.mp3
+  locations: []
+coins:
+  image: graphics\coin.png
+  size:
+    - 50
+    - 50
+  sound: sound\cha-ching.mp3
+  locations: []
+coins that slows the monster:
+  image: graphics\red coin.png
+  size:
+    - 81
+    - 81
+  sound: sound\cha-ching.mp3
+  speed down: 4
+  locations: []
+boxes:
+  - type: single box
+    location:
+      - 900
+      - 664
+  - type: single box
+    location:
+      - 1100
+      - 364
+  - type: single box
+    location:
+      - 1100
+      - 264
+  - type: single box
+    location:
+      - 1200
+      - 264
+  - type: single box
+    location:
+      - 1300
+      - 464
+  - type: single box
+    location:
+      - 1400
+      - 164
+  - type: single box
+    location:
+      - 1400
+      - 464
+  - type: single box
+    location:
+      - 1500
+      - 164
+  - type: single box
+    location:
+      - 1600
+      - 264
+  - type: single box
+    location:
+      - 1600
+      - 364
+  - type: single box
+    location:
+      - 1500
+      - 464
+  - type: single box
+    location:
+      - 1300
+      - 564
+  - type: single box
+    location:
+      - 1300
+      - 664
+  - type: single box
+    location:
+      - 1200
+      - 664
+  - type: single box
+    location:
+      - 1100
+      - 664
+  - type: single box
+    location:
+      - 900
+      - 364
+  - type: single box
+    location:
+      - 900
+      - 164
+  - type: single box
+    location:
+      - 900
+      - 264
+  - type: single box
+    location:
+      - 300
+      - 664
+  - type: single box
+    location:
+      - 200
+      - 664
+  - type: single box
+    location:
+      - 100
+      - 664
+  - type: single box
+    location:
+      - 100
+      - 564
+  - type: single box
+    location:
+      - -100
+      - 564
+  - type: single box
+    location:
+      - 0
+      - 564
+  - type: single box
+    location:
+      - -200
+      - 464
+  - type: single box
+    location:
+      - -300
+      - 464
+  - type: single box
+    location:
+      - -300
+      - 164
+  - type: single box
+    location:
+      - -200
+      - 164
+  - type: single box
+    location:
+      - -100
+      - 164
+  - type: single box
+    location:
+      - 0
+      - 164
+  - type: single box
+    location:
+      - 100
+      - 164
+  - type: single box
+    location:
+      - 200
+      - 264
+  - type: single box
+    location:
+      - 300
+      - 264
+  - type: single box
+    location:
+      - 200
+      - 164
+  - type: single box
+    location:
+      - 300
+      - 164
+  - type: single box
+    location:
+      - -200
+      - 564
+  - type: single box
+    location:
+      - -300
+      - 664
+  - type: single box
+    location:
+      - -300
+      - 564
+  - type: single box
+    location:
+      - -200
+      - 664
+  - type: single box
+    location:
+      - -100
+      - 664
+  - type: single box
+    location:
+      - 0
+      - 664
+  - type: single box
+    location:
+      - 1000
+      - 364
+  - type: single box
+    location:
+      - 1000
+      - 264
+  - type: single box
+    location:
+      - 1000
+      - 164
+  - type: single box
+    location:
+      - 1100
+      - 164
+  - type: single box
+    location:
+      - 1200
+      - 164
+  - type: single box
+    location:
+      - 1300
+      - 164
+  - type: single box
+    location:
+      - 1600
+      - 464
+  - type: single box
+    location:
+      - 1600
+      - 564
+  - type: single box
+    location:
+      - 1600
+      - 664
+  - type: single box
+    location:
+      - 1500
+      - 664
+  - type: single box
+    location:
+      - 1400
+      - 664
+  - type: single box
+    location:
+      - 1400
+      - 564
+  - type: single box
+    location:
+      - 1500
+      - 564
+  - type: single box
+    location:
+      - 1600
+      - 164
+  - type: single box
+    location:
+      - -400
+      - 464
+  - type: single box
+    location:
+      - -500
+      - 464
+  - type: single box
+    location:
+      - -600
+      - 464
+  - type: single box
+    location:
+      - -400
+      - 564
+  - type: single box
+    location:
+      - -500
+      - 564
+  - type: single box
+    location:
+      - -600
+      - 564
+  - type: single box
+    location:
+      - -600
+      - 664
+  - type: single box
+    location:
+      - -500
+      - 664
+  - type: single box
+    location:
+      - -400
+      - 664
+  - type: single box
+    location:
+      - -700
+      - 664
+  - type: single box
+    location:
+      - -800
+      - 664
+  - type: single box
+    location:
+      - -900
+      - 664
+  - type: single box
+    location:
+      - -1000
+      - 664
+  - type: single box
+    location:
+      - -1000
+      - 564
+  - type: single box
+    location:
+      - -1000
+      - 464
+  - type: single box
+    location:
+      - -1100
+      - 664
+  - type: single box
+    location:
+      - -1200
+      - 664
+  - type: single box
+    location:
+      - -1300
+      - 664
+  - type: single box
+    location:
+      - -1400
+      - 664
+  - type: single box
+    location:
+      - -1500
+      - 664
+  - type: single box
+    location:
+      - -1500
+      - 564
+  - type: single box
+    location:
+      - -1500
+      - 464
+  - type: single box
+    location:
+      - -1300
+      - 364
+  - type: single box
+    location:
+      - -1200
+      - 364
+  - type: single box
+    location:
+      - -1600
+      - 464
+  - type: single box
+    location:
+      - -1700
+      - 464
+  - type: single box
+    location:
+      - -1800
+      - 464
+  - type: single box
+    location:
+      - -1800
+      - 564
+  - type: single box
+    location:
+      - -1700
+      - 564
+  - type: single box
+    location:
+      - -1600
+      - 564
+  - type: single box
+    location:
+      - -1600
+      - 664
+  - type: single box
+    location:
+      - -1700
+      - 664
+  - type: single box
+    location:
+      - -1800
+      - 664
+  - type: single box
+    location:
+      - -1900
+      - 664
+  - type: single box
+    location:
+      - -2000
+      - 664
+  - type: single box
+    location:
+      - -2100
+      - 664
+  - type: single box
+    location:
+      - -2100
+      - 564
+  - type: single box
+    location:
+      - -2100
+      - 464
+  - type: single box
+    location:
+      - -2100
+      - 364
+  - type: single box
+    location:
+      - -2200
+      - 364
+  - type: single box
+    location:
+      - -2300
+      - 364
+  - type: single box
+    location:
+      - -2400
+      - 364
+  - type: single box
+    location:
+      - -2200
+      - 464
+  - type: single box
+    location:
+      - -2300
+      - 464
+  - type: single box
+    location:
+      - -2400
+      - 464
+  - type: single box
+    location:
+      - -2400
+      - 564
+  - type: single box
+    location:
+      - -2300
+      - 564
+  - type: single box
+    location:
+      - -2200
+      - 564
+  - type: single box
+    location:
+      - -2200
+      - 664
+  - type: single box
+    location:
+      - -2300
+      - 664
+  - type: single box
+    location:
+      - -2400
+      - 664
+  - type: single box
+    location:
+      - -2500
+      - 64
+  - type: single box
+    location:
+      - -2500
+      - 164
+  - type: single box
+    location:
+      - -2500
+      - 264
+  - type: single box
+    location:
+      - -2500
+      - 364
+  - type: single box
+    location:
+      - -2500
+      - 464
+  - type: single box
+    location:
+      - -2500
+      - 564
+  - type: single box
+    location:
+      - -2500
+      - 664
+  - type: single box
+    location:
+      - 1000
+      - 664
+  - type: happy signboard
+    location:
+      - 1425
+      - 382
+  - type: single box
+    location:
+      - -2600
+      - 64
+  - type: single box
+    location:
+      - -2700
+      - 64
+  - type: single box
+    location:
+      - -2700
+      - 164
+  - type: single box
+    location:
+      - -2700
+      - 264
+  - type: single box
+    location:
+      - -2600
+      - 164
+  - type: single box
+    location:
+      - -2600
+      - 264
+  - type: single box
+    location:
+      - -2600
+      - 364
+  - type: single box
+    location:
+      - -2600
+      - 464
+  - type: single box
+    location:
+      - -2600
+      - 564
+  - type: single box
+    location:
+      - -2600
+      - 664
+  - type: single box
+    location:
+      - -2700
+      - 564
+  - type: single box
+    location:
+      - -2700
+      - 364
+  - type: single box
+    location:
+      - -2700
+      - 464
+  - type: single box
+    location:
+      - -2700
+      - 664
+  - type: single box
+    location:
+      - -2800
+      - 564
+  - type: single box
+    location:
+      - -2900
+      - 564
+  - type: single box
+    location:
+      - -3000
+      - 564
+  - type: single box
+    location:
+      - -3000
+      - 664
+  - type: single box
+    location:
+      - -2800
+      - 664
+  - type: single box
+    location:
+      - -2900
+      - 664
+  - type: single box
+    location:
+      - -3100
+      - 564
+  - type: single box
+    location:
+      - -3100
+      - 664
+  - type: single box
+    location:
+      - -3400
+      - 564
+  - type: single box
+    location:
+      - -3500
+      - 564
+  - type: single box
+    location:
+      - -3800
+      - 564
+  - type: black line
+    location:
+      - -4200
+      - 564
+  - type: single box
+    location:
+      - -4600
+      - 664
+  - type: single box
+    location:
+      - -4700
+      - 664
+  - type: single box
+    location:
+      - -4700
+      - 564
+  - type: single box
+    location:
+      - -4700
+      - 464
+  - type: single box
+    location:
+      - -4700
+      - 264
+  - type: single box
+    location:
+      - -4700
+      - 164
+  - type: single box
+    location:
+      - -4700
+      - 364
+  - type: single box
+    location:
+      - -4400
+      - 464
+  - type: single box
+    location:
+      - -4300
+      - 464
+  - type: single box
+    location:
+      - -4500
+      - 464
+  - type: single box
+    location:
+      - -4400
+      - 364
+  - type: single box
+    location:
+      - -4400
+      - 264
+  - type: single box
+    location:
+      - -4500
+      - 664
+  - type: single box
+    location:
+      - -4400
+      - -36
+  - type: single box
+    location:
+      - -4700
+      - 64
+  - type: single box
+    location:
+      - -4700
+      - -36
+  - type: single box
+    location:
+      - -4300
+      - -36
+  - type: single box
+    location:
+      - -4200
+      - -36
+  - type: single box
+    location:
+      - -4200
+      - -136
+  - type: single box
+    location:
+      - -4200
+      - -236
+  - type: single box
+    location:
+      - -4200
+      - -336
+  - type: single box
+    location:
+      - -4300
+      - -336
+  - type: single box
+    location:
+      - -4400
+      - -336
+  - type: single box
+    location:
+      - -4500
+      - -336
+  - type: single box
+    location:
+      - -4600
+      - -336
+  - type: single box
+    location:
+      - -4700
+      - -336
+  - type: single box
+    location:
+      - -4700
+      - -236
+  - type: single box
+    location:
+      - -4700
+      - -136
+  - type: single box
+    location:
+      - -4600
+      - 164
+  - type: single box
+    location:
+      - -4300
+      - 364
+  - type: single box
+    location:
+      - -4300
+      - 264
+  - type: single box
+    location:
+      - -4200
+      - 264
+  - type: single box
+    location:
+      - -4100
+      - 264
+  - type: single box
+    location:
+      - -4200
+      - 364
+  - type: single box
+    location:
+      - -4200
+      - 464
+  - type: single box
+    location:
+      - -3800
+      - 164
+  - type: single box
+    location:
+      - -3700
+      - 164
+  - type: single box
+    location:
+      - -3400
+      - -36
+  - type: single box
+    location:
+      - -3300
+      - -36
+  - type: single box
+    location:
+      - -3200
+      - -36
+  - type: single box
+    location:
+      - -3200
+      - -336
+  - type: single box
+    location:
+      - -3300
+      - -336
+  - type: single box
+    location:
+      - -3400
+      - -336
+  - type: single box
+    location:
+      - -3100
+      - -436
+  - type: single box
+    location:
+      - -3200
+      - -436
+  - type: single box
+    location:
+      - -3300
+      - -436
+  - type: single box
+    location:
+      - -3400
+      - -436
+  - type: single box
+    location:
+      - -3500
+      - -436
+  - type: single box
+    location:
+      - -3800
+      - -336
+  - type: single box
+    location:
+      - -4200
+      - -436
+  - type: single box
+    location:
+      - -4200
+      - -536
+  - type: single box
+    location:
+      - -4200
+      - -736
+  - type: single box
+    location:
+      - -4200
+      - -636
+  - type: single box
+    location:
+      - -4200
+      - -836
+  - type: single box
+    location:
+      - -4200
+      - -936
+  - type: single box
+    location:
+      - -4100
+      - -936
+  - type: single box
+    location:
+      - -4000
+      - -936
+  - type: single box
+    location:
+      - -3900
+      - -936
+  - type: single box
+    location:
+      - -3800
+      - -936
+  - type: single box
+    location:
+      - -3700
+      - -936
+  - type: single box
+    location:
+      - -3600
+      - -936
+  - type: single box
+    location:
+      - -3500
+      - -936
+  - type: single box
+    location:
+      - -3400
+      - -936
+  - type: single box
+    location:
+      - -3300
+      - -936
+  - type: sad signboard
+    location:
+      - -3289
+      - -711
+  - type: single box
+    location:
+      - -4100
+      - -136
+  - type: single box
+    location:
+      - -4000
+      - 264
+  - type: short black line
+    location:
+      - -3900
+      - 564
+  - type: single box
+    location:
+      - -2500
+      - -236
+  - type: single box
+    location:
+      - -2600
+      - -236
+  - type: single box
+    location:
+      - -2700
+      - -236
+  - type: single box
+    location:
+      - -3100
+      - -36
+  - type: single box
+    location:
+      - -2800
+      - -236
+  - type: single box
+    location:
+      - -2400
+      - -336
+  - type: single box
+    location:
+      - -2300
+      - -336
+  - type: single box
+    location:
+      - -2200
+      - -336
+  - type: single box
+    location:
+      - -2100
+      - -336
+  - type: single box
+    location:
+      - -2000
+      - -436
+  - type: single box
+    location:
+      - -1900
+      - -436
+  - type: single box
+    location:
+      - -2300
+      - -536
+  - type: single box
+    location:
+      - -2400
+      - -536
+  - type: single box
+    location:
+      - -2200
+      - -636
+  - type: single box
+    location:
+      - -1800
+      - -436
+  - type: single box
+    location:
+      - -1700
+      - -436
+  - type: single box
+    location:
+      - -1600
+      - -436
+  - type: single box
+    location:
+      - -1500
+      - -436
+  - type: single box
+    location:
+      - -1400
+      - -436
+  - type: single box
+    location:
+      - -1300
+      - -436
+  - type: single box
+    location:
+      - -1200
+      - -436
+  - type: single box
+    location:
+      - -2200
+      - -736
+  - type: single box
+    location:
+      - -2100
+      - -836
+  - type: happy signboard
+    location:
+      - -1583
+      - -506
+  - type: happy signboard
+    location:
+      - -1656
+      - -499
+  - type: single box
+    location:
+      - -2000
+      - -936
+  - type: single box
+    location:
+      - -1800
+      - -1036
+  - type: single box
+    location:
+      - -1700
+      - -1036
+  - type: single box
+    location:
+      - -1400
+      - -1036
+  - type: single box
+    location:
+      - -1200
+      - -1036
+  - type: single box
+    location:
+      - -1100
+      - -1036
+  - type: single box
+    location:
+      - -3200
+      - -936
+  - type: single box
+    location:
+      - -3100
+      - -936
+  - type: single box
+    location:
+      - -3000
+      - -936
+  - type: single box
+    location:
+      - -2900
+      - -1036
+  - type: single box
+    location:
+      - -2800
+      - -1136
+  - type: single box
+    location:
+      - -2700
+      - -1136
+  - type: single box
+    location:
+      - -2600
+      - -1236
+  - type: single box
+    location:
+      - -2500
+      - -1236
+  - type: single box
+    location:
+      - -2400
+      - -1336
+  - type: single box
+    location:
+      - -2300
+      - -1336
+  - type: single box
+    location:
+      - -2200
+      - -1436
+  - type: single box
+    location:
+      - -2100
+      - -1536
+  - type: single box
+    location:
+      - -2000
+      - -1536
+  - type: single box
+    location:
+      - -1900
+      - -1536
+  - type: single box
+    location:
+      - -1800
+      - -1536
+  - type: single box
+    location:
+      - -1600
+      - -1536
+  - type: single box
+    location:
+      - -1700
+      - -1536
+  - type: single box
+    location:
+      - -1400
+      - -1536
+  - type: single box
+    location:
+      - -1500
+      - -1536
+  - type: single box
+    location:
+      - -1300
+      - -1536
+  - type: single box
+    location:
+      - -1100
+      - -1536
+  - type: single box
+    location:
+      - -1200
+      - -1536
+  - type: single box
+    location:
+      - -1100
+      - -1436
+  - type: single box
+    location:
+      - -1000
+      - -1336
+  - type: single box
+    location:
+      - -1000
+      - -1236
+  - type: single box
+    location:
+      - -1000
+      - -1136
+  - type: single box
+    location:
+      - -1000
+      - -1036
+  - type: single box
+    location:
+      - -900
+      - -936
+  - type: single box
+    location:
+      - -900
+      - -836
+  - type: single box
+    location:
+      - -1000
+      - -436
+  - type: single box
+    location:
+      - -1100
+      - -436
+  - type: single box
+    location:
+      - -900
+      - -436
+  - type: single box
+    location:
+      - -800
+      - -836
+  - type: single box
+    location:
+      - -800
+      - -436
+  - type: single box
+    location:
+      - -700
+      - -436
+  - type: single box
+    location:
+      - -700
+      - -836
+  - type: single box
+    location:
+      - -500
+      - -936
+  - type: single box
+    location:
+      - -600
+      - -936
+  - type: single box
+    location:
+      - -400
+      - -936
+  - type: single box
+    location:
+      - -600
+      - -436
+  - type: single box
+    location:
+      - -500
+      - -436
+  - type: single box
+    location:
+      - -400
+      - -436
+  - type: single box
+    location:
+      - -300
+      - -436
+  - type: single box
+    location:
+      - -200
+      - -436
+  - type: single box
+    location:
+      - -300
+      - -936
+  - type: single box
+    location:
+      - -200
+      - -936
+  - type: single box
+    location:
+      - -100
+      - -836
+  - type: single box
+    location:
+      - 0
+      - -836
+  - type: single box
+    location:
+      - -100
+      - -436
+  - type: single box
+    location:
+      - 0
+      - -436
+  - type: single box
+    location:
+      - 100
+      - -836
+  - type: single box
+    location:
+      - 100
+      - -436
+  - type: single box
+    location:
+      - 200
+      - -436
+  - type: single box
+    location:
+      - 300
+      - -436
+  - type: single box
+    location:
+      - 300
+      - -336
+  - type: single box
+    location:
+      - 300
+      - -236
+  - type: single box
+    location:
+      - 300
+      - -136
+  - type: single box
+    location:
+      - 300
+      - -36
+  - type: single box
+    location:
+      - 300
+      - 64
+  - type: single box
+    location:
+      - 400
+      - -136
+  - type: single box
+    location:
+      - 500
+      - -136
+  - type: single box
+    location:
+      - 700
+      - -336
+  - type: single box
+    location:
+      - 800
+      - -336
+  - type: single box
+    location:
+      - 900
+      - 64
+  - type: single box
+    location:
+      - 900
+      - -136
+  - type: single box
+    location:
+      - 900
+      - -236
+  - type: single box
+    location:
+      - 900
+      - -36
+  - type: single box
+    location:
+      - 900
+      - -336
+  - type: single box
+    location:
+      - 900
+      - -436
+  - type: single box
+    location:
+      - 200
+      - -836
+  - type: single box
+    location:
+      - 1000
+      - -436
+  - type: single box
+    location:
+      - 1100
+      - -436
+  - type: single box
+    location:
+      - 1200
+      - -436
+  - type: single box
+    location:
+      - 900
+      - -836
+  - type: single box
+    location:
+      - 1000
+      - -836
+  - type: single box
+    location:
+      - 1100
+      - -836
+  - type: single box
+    location:
+      - 1200
+      - -836
+  - type: single box
+    location:
+      - 1300
+      - -436
+  - type: single box
+    location:
+      - 1400
+      - -436
+  - type: single box
+    location:
+      - 1500
+      - -436
+  - type: single box
+    location:
+      - 1300
+      - -836
+  - type: single box
+    location:
+      - 1400
+      - -836
+  - type: single box
+    location:
+      - 1500
+      - -836
+  - type: single box
+    location:
+      - 1600
+      - -436
+  - type: single box
+    location:
+      - 1700
+      - -436
+  - type: single box
+    location:
+      - 1900
+      - -436
+  - type: single box
+    location:
+      - 1800
+      - -436
+  - type: single box
+    location:
+      - 2100
+      - -436
+  - type: single box
+    location:
+      - 2000
+      - -436
+  - type: single box
+    location:
+      - 1800
+      - -836
+  - type: single box
+    location:
+      - 1900
+      - -836
+  - type: single box
+    location:
+      - 2000
+      - -836
+  - type: single box
+    location:
+      - 2000
+      - -936
+  - type: single box
+    location:
+      - 2000
+      - -1036
+  - type: single box
+    location:
+      - 2000
+      - -1136
+  - type: single box
+    location:
+      - 1900
+      - -1136
+  - type: single box
+    location:
+      - 1800
+      - -1136
+  - type: single box
+    location:
+      - 1500
+      - -936
+  - type: single box
+    location:
+      - 1500
+      - -1036
+  - type: single box
+    location:
+      - 1500
+      - -1136
+  - type: single box
+    location:
+      - 1400
+      - -1136
+  - type: single box
+    location:
+      - 2200
+      - -536
+  - type: single box
+    location:
+      - 2300
+      - -536
+  - type: single box
+    location:
+      - 2400
+      - -736
+  - type: single box
+    location:
+      - 2400
+      - -536
+  - type: single box
+    location:
+      - 2500
+      - -536
+  - type: single box
+    location:
+      - 2600
+      - -536
+  - type: single box
+    location:
+      - 2700
+      - -536
+  - type: single box
+    location:
+      - 2800
+      - -536
+  - type: single box
+    location:
+      - 2900
+      - -436
+  - type: single box
+    location:
+      - 3000
+      - -436
+  - type: single box
+    location:
+      - 3100
+      - -536
+  - type: single box
+    location:
+      - 3200
+      - -536
+  - type: single box
+    location:
+      - 3300
+      - -436
+  - type: single box
+    location:
+      - 3400
+      - -536
+  - type: single box
+    location:
+      - 2700
+      - -836
+  - type: single box
+    location:
+      - 2800
+      - -936
+  - type: single box
+    location:
+      - 2900
+      - -936
+  - type: single box
+    location:
+      - 3000
+      - -936
+  - type: single box
+    location:
+      - 3000
+      - -1036
+  - type: single box
+    location:
+      - 3100
+      - -1036
+  - type: single box
+    location:
+      - 3200
+      - -1036
+  - type: single box
+    location:
+      - 3500
+      - -536
+  - type: single box
+    location:
+      - 3600
+      - -836
+  - type: single box
+    location:
+      - 3400
+      - -1036
+  - type: single box
+    location:
+      - 3300
+      - -1036
+obstacles:
+  - type: gear
+    location:
+      - 1502
+      - 362
+  - type: gear
+    location:
+      - 1493
+      - 362
+  - type: gear
+    location:
+      - 1488
+      - 354
+  - type: gear
+    location:
+      - 1481
+      - 348
+  - type: gear
+    location:
+      - 1456
+      - 354
+  - type: gear
+    location:
+      - 1452
+      - 368
+  - type: gear
+    location:
+      - 1460
+      - 371
+  - type: gear
+    location:
+      - 1467
+      - 371
+  - type: gear
+    location:
+      - 1452
+      - 338
+  - type: gear
+    location:
+      - 1446
+      - 338
+  - type: gear
+    location:
+      - 1438
+      - 338
+  - type: gear
+    location:
+      - 1468
+      - 375
+  - type: gear
+    location:
+      - 1474
+      - 371
+  - type: gear
+    location:
+      - 1479
+      - 370
+  - type: gear
+    location:
+      - 1481
+      - 370
+  - type: gear
+    location:
+      - 1484
+      - 368
+  - type: gear
+    location:
+      - 1488
+      - 357
+  - type: gear
+    location:
+      - 1490
+      - 350
+  - type: gear
+    location:
+      - 1477
+      - 345
+  - type: gear
+    location:
+      - 1457
+      - 345
+  - type: gear
+    location:
+      - 1441
+      - 345
+  - type: gear
+    location:
+      - 1436
+      - 345
+  - type: gear
+    location:
+      - 1427
+      - 337
+  - type: gear
+    location:
+      - 1416
+      - 357
+  - type: gear
+    location:
+      - - -1400
+        - 564
+      - - -1100
+        - 564
+  - type: gear
+    location:
+      - - -2400
+        - 264
+      - - -2100
+        - 264
+  - type: gear
+    location:
+      - -3300
+      - -736
+  - type: gear
+    location:
+      - - -3076
+        - 525
+      - - -2806
+        - 532
+  - type: gear
+    location:
+      - -1700
+      - -536
+  - type: gear
+    location:
+      - -1600
+      - -536
+  - type: gear
+    location:
+      - 2900
+      - -536
+  - type: gear
+    location:
+      - 3000
+      - -536
+on off obstacles: []
+bullet rotators: []
+flip gravity: []
+speed: []
+slow: []
+disappearing: []
+jumpers: []
+buttons: []

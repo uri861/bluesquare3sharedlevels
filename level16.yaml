@@ -1,0 +1,683 @@
+background: (10, 105, 204)
+player:
+  size:
+    - 80
+    - 80
+  speed: 10
+  jump speed: 30
+  gravity: 1.5
+  die sound: sound\die sound.mp3
+  location:
+    - 1000
+    - 564
+  images:
+    regular: graphics\character.png
+    right: graphics\right character.png
+    left: graphics\left character.png
+    jump: graphics\jump character.png
+    die: graphics\die character.png
+monster:
+  location:
+    - -1900
+    - 684
+  size:
+    - 80
+    - 80
+  gravity: 0.1
+  speed: 5
+  jump speed: 30
+  die sound: sound\die sound.mp3
+  images:
+    regular: graphics\monster.png
+    right: graphics\monster right.png
+    left: graphics\monster left.png
+    jump: graphics\monster jump.png
+    die: graphics\die monster.png
+  horns:
+    image: graphics\monster horns.png
+    size:
+      - 107
+      - 50
+    relative location:
+      - -13
+      - -35
+gun:
+  image: graphics\gun.png
+  location:
+    - -697
+    - -11
+  size:
+    - 95
+    - 75
+  price: 7
+  strength: 10
+  bullet speed: 15
+  bullet image: graphics\bullet.png
+checkpoints:
+  green flag image: graphics\green flag.png
+  red flag image: graphics\red flag.png
+  sound: sound\ping.mp3
+  locations:
+    - - -500
+      - 564
+    - - -2300
+      - 264
+coins:
+  image: graphics\coin.png
+  size:
+    - 50
+    - 50
+  sound: sound\cha-ching.mp3
+  locations:
+    - - 225
+      - 289
+    - - -975
+      - 189
+    - - -2475
+      - 189
+    - - -2275
+      - 489
+    - - -3575
+      - 389
+    - - -1475
+      - -211
+    - - -1475
+      - -311
+coins that slows the monster:
+  image: graphics\red coin.png
+  size:
+    - 81
+    - 81
+  sound: sound\cha-ching.mp3
+  speed down: 4
+  locations: []
+boxes:
+  - type: single box
+    location:
+      - 1400
+      - 664
+  - type: single box
+    location:
+      - 1300
+      - 664
+  - type: single box
+    location:
+      - 1200
+      - 664
+  - type: single box
+    location:
+      - 1100
+      - 664
+  - type: single box
+    location:
+      - 1000
+      - 664
+  - type: single box
+    location:
+      - 900
+      - 664
+  - type: single box
+    location:
+      - 800
+      - 664
+  - type: single box
+    location:
+      - 800
+      - 564
+  - type: single box
+    location:
+      - 600
+      - 664
+  - type: single box
+    location:
+      - 500
+      - 664
+  - type: single box
+    location:
+      - 500
+      - 464
+  - type: single box
+    location:
+      - 400
+      - 664
+  - type: single box
+    location:
+      - 300
+      - 664
+  - type: single box
+    location:
+      - 200
+      - 664
+  - type: single box
+    location:
+      - 200
+      - 564
+  - type: single box
+    location:
+      - 200
+      - 464
+  - type: single box
+    location:
+      - 200
+      - 364
+  - type: single box
+    location:
+      - 700
+      - 664
+  - type: up signboard
+    location:
+      - 900
+      - 564
+  - type: single box
+    location:
+      - 100
+      - 664
+  - type: single box
+    location:
+      - 0
+      - 664
+  - type: single box
+    location:
+      - -100
+      - 664
+  - type: single box
+    location:
+      - -100
+      - 564
+  - type: single box
+    location:
+      - -100
+      - 464
+  - type: single box
+    location:
+      - -200
+      - 664
+  - type: single box
+    location:
+      - -300
+      - 664
+  - type: single box
+    location:
+      - -500
+      - 664
+  - type: single box
+    location:
+      - -600
+      - 664
+  - type: single box
+    location:
+      - -700
+      - 64
+  - type: single box
+    location:
+      - -1000
+      - 64
+  - type: single box
+    location:
+      - -1300
+      - 64
+  - type: single box
+    location:
+      - 500
+      - 564
+  - type: single box
+    location:
+      - -400
+      - 664
+  - type: single box
+    location:
+      - -1600
+      - 64
+  - type: single box
+    location:
+      - -1900
+      - 64
+  - type: short black line
+    location:
+      - -2300
+      - 564
+  - type: short black line
+    location:
+      - -2600
+      - 564
+  - type: short black line
+    location:
+      - -2700
+      - 564
+  - type: short black line
+    location:
+      - -2800
+      - 564
+  - type: short black line
+    location:
+      - -2900
+      - 564
+  - type: short black line
+    location:
+      - -3000
+      - 564
+  - type: short black line col
+    location:
+      - -2300
+      - 464
+  - type: short black line col
+    location:
+      - -2200
+      - 464
+  - type: short black line col
+    location:
+      - -2200
+      - 364
+  - type: short black line
+    location:
+      - -2300
+      - 364
+  - type: short black line col
+    location:
+      - -3000
+      - 464
+  - type: short black line col
+    location:
+      - -3000
+      - 364
+  - type: short black line col
+    location:
+      - -3000
+      - 164
+  - type: short black line col
+    location:
+      - -3000
+      - 64
+  - type: short black line col
+    location:
+      - -3000
+      - -36
+  - type: short black line col
+    location:
+      - -3000
+      - -136
+  - type: short black line
+    location:
+      - -3000
+      - -136
+  - type: short black line
+    location:
+      - -2900
+      - -136
+  - type: short black line
+    location:
+      - -2800
+      - -136
+  - type: short black line
+    location:
+      - -2700
+      - -136
+  - type: short black line
+    location:
+      - -2600
+      - -136
+  - type: short black line col
+    location:
+      - -2500
+      - -136
+  - type: short black line col
+    location:
+      - -2400
+      - -136
+  - type: short black line
+    location:
+      - -2400
+      - -136
+  - type: short black line
+    location:
+      - -2300
+      - -136
+  - type: short black line
+    location:
+      - -2200
+      - -236
+  - type: short black line
+    location:
+      - -2200
+      - -136
+  - type: short black line col
+    location:
+      - -2100
+      - -136
+  - type: short black line col
+    location:
+      - -2100
+      - -36
+  - type: short black line col
+    location:
+      - -2100
+      - 64
+  - type: short black line col
+    location:
+      - -2100
+      - 164
+  - type: short black line col
+    location:
+      - -2100
+      - 264
+  - type: short black line col
+    location:
+      - -2100
+      - 364
+  - type: short black line col
+    location:
+      - -2100
+      - 464
+  - type: short black line
+    location:
+      - -2200
+      - 564
+  - type: short black line
+    location:
+      - -2000
+      - 464
+  - type: short black line col
+    location:
+      - -2700
+      - 464
+  - type: short black line col
+    location:
+      - -2900
+      - 464
+  - type: short black line col
+    location:
+      - -2700
+      - 364
+  - type: short black line
+    location:
+      - -2400
+      - 464
+  - type: short black line
+    location:
+      - -2700
+      - 464
+  - type: short black line
+    location:
+      - -2800
+      - 364
+  - type: short black line col
+    location:
+      - -2200
+      - 264
+  - type: short black line col
+    location:
+      - -2900
+      - 364
+  - type: short black line
+    location:
+      - -3000
+      - 264
+  - type: short black line
+    location:
+      - -2800
+      - 164
+  - type: short black line col
+    location:
+      - -2800
+      - 164
+  - type: short black line
+    location:
+      - -3000
+      - 64
+  - type: short black line
+    location:
+      - -2800
+      - 64
+  - type: short black line
+    location:
+      - -2700
+      - 64
+  - type: short black line
+    location:
+      - -2600
+      - 64
+  - type: short black line
+    location:
+      - -2500
+      - 64
+  - type: short black line
+    location:
+      - -2400
+      - 64
+  - type: short black line col
+    location:
+      - -2400
+      - 64
+  - type: short black line col
+    location:
+      - -2400
+      - 164
+  - type: short black line
+    location:
+      - -2500
+      - 264
+  - type: short black line
+    location:
+      - -2600
+      - 264
+  - type: short black line
+    location:
+      - -2700
+      - 264
+  - type: short black line col
+    location:
+      - -2400
+      - 264
+  - type: short black line col
+    location:
+      - -2800
+      - 64
+  - type: short black line
+    location:
+      - -2200
+      - 264
+  - type: short black line
+    location:
+      - -2300
+      - 164
+  - type: short black line
+    location:
+      - -2200
+      - 64
+  - type: short black line col
+    location:
+      - -2400
+      - -36
+  - type: short black line col
+    location:
+      - -2800
+      - 464
+  - type: short black line
+    location:
+      - -2500
+      - 464
+  - type: lr signboard
+    location:
+      - -2500
+      - 364
+  - type: short black line
+    location:
+      - -2100
+      - -236
+  - type: short black line
+    location:
+      - -2000
+      - -336
+  - type: short black line
+    location:
+      - -2000
+      - -236
+  - type: short black line
+    location:
+      - -1900
+      - -236
+  - type: short black line
+    location:
+      - -1800
+      - -236
+  - type: short black line
+    location:
+      - -1700
+      - -236
+  - type: short black line
+    location:
+      - -1600
+      - -236
+  - type: short black line
+    location:
+      - -1500
+      - -236
+  - type: short black line
+    location:
+      - -1400
+      - -236
+  - type: single box
+    location:
+      - -3200
+      - 664
+  - type: single box
+    location:
+      - -3300
+      - 664
+  - type: single box
+    location:
+      - -3300
+      - 564
+  - type: single box
+    location:
+      - -3400
+      - 664
+  - type: single box
+    location:
+      - -3400
+      - 564
+  - type: single box
+    location:
+      - -3400
+      - 464
+  - type: single box
+    location:
+      - -3800
+      - 664
+  - type: single box
+    location:
+      - -3800
+      - 564
+  - type: single box
+    location:
+      - -3800
+      - 464
+  - type: single box
+    location:
+      - -3900
+      - 664
+  - type: single box
+    location:
+      - -4000
+      - 664
+  - type: single box
+    location:
+      - -3900
+      - 564
+  - type: laser up
+    location:
+      - -1900
+      - -436
+  - type: laser up
+    location:
+      - -1700
+      - -436
+obstacles:
+  - type: gear
+    location:
+      - 300
+      - 564
+  - type: gear
+    location:
+      - 400
+      - 564
+  - type: gear
+    location:
+      - 700
+      - 564
+  - type: gear
+    location:
+      - 100
+      - 564
+  - type: gear
+    location:
+      - 0
+      - 564
+  - type: gear
+    location:
+      - -200
+      - 564
+  - type: gear
+    location:
+      - -300
+      - 564
+  - type: gear
+    location:
+      - -800
+      - 64
+  - type: gear
+    location:
+      - -900
+      - 64
+  - type: gear
+    location:
+      - -1100
+      - 64
+  - type: gear
+    location:
+      - -1200
+      - 64
+  - type: gear
+    location:
+      - -1400
+      - 64
+  - type: gear
+    location:
+      - -1500
+      - 64
+  - type: gear
+    location:
+      - -1700
+      - 64
+  - type: gear
+    location:
+      - -1800
+      - 64
+  - type: gear
+    location:
+      - 600
+      - 564
+  - type: gear
+    location:
+      - -3500
+      - 664
+  - type: gear
+    location:
+      - -3600
+      - 664
+on off obstacles: []
+bullet rotators: []
+flip gravity:
+  - type: purple-blue
+    location:
+      - -700
+      - 664
+  - type: purple-blue
+    location:
+      - -2000
+      - 64
+speed: []
+slow: []
+disappearing: []
+jumpers: []
+buttons: []

@@ -1,0 +1,801 @@
+background: (255, 222, 0)
+player:
+  size:
+    - 80
+    - 80
+  speed: 10
+  jump speed: 30
+  gravity: 1.5
+  die sound: sound\die sound.mp3
+  location:
+    - 800
+    - 684
+  images:
+    regular: graphics\character.png
+    right: graphics\right character.png
+    left: graphics\left character.png
+    jump: graphics\jump character.png
+    die: graphics\die character.png
+monster:
+  location:
+    - -400
+    - 684
+  size:
+    - 80
+    - 80
+  gravity: 0.1
+  speed: 5
+  jump speed: 30
+  die sound: sound\die sound.mp3
+  images:
+    regular: graphics\monster.png
+    right: graphics\monster right.png
+    left: graphics\monster left.png
+    jump: graphics\monster jump.png
+    die: graphics\die monster.png
+  horns:
+    image: graphics\monster horns.png
+    size:
+      - 107
+      - 50
+    relative location:
+      - -13
+      - -35
+gun:
+  image: graphics\gun.png
+  location:
+    - 513
+    - -625
+  size:
+    - 95
+    - 75
+  price: 67
+  strength: 10
+  bullet speed: 15
+  bullet image: graphics\bullet.png
+checkpoints:
+  green flag image: graphics\green flag.png
+  red flag image: graphics\red flag.png
+  sound: sound\ping.mp3
+  locations:
+    - - -1000
+      - -436
+    - - -100
+      - 64
+coins:
+  image: graphics\coin.png
+  size:
+    - 50
+    - 50
+  sound: sound\cha-ching.mp3
+  locations:
+    - - -943
+      - 584
+    - - -940
+      - 625
+    - - -943
+      - 669
+    - - -972
+      - 701
+    - - -1004
+      - 688
+    - - -725
+      - 591
+    - - -721
+      - 634
+    - - -714
+      - 682
+    - - -712
+      - 720
+    - - -644
+      - 594
+    - - -639
+      - 640
+    - - -633
+      - 679
+    - - -629
+      - 715
+    - - -609
+      - 623
+    - - -581
+      - 662
+    - - -547
+      - 691
+    - - -541
+      - 650
+    - - -545
+      - 569
+    - - -543
+      - 611
+    - - -381
+      - 576
+    - - -342
+      - 578
+    - - -298
+      - 576
+    - - -258
+      - 579
+    - - -316
+      - 614
+    - - -319
+      - 649
+    - - -317
+      - 682
+    - - -315
+      - 712
+    - - -161
+      - 648
+    - - -124
+      - 649
+    - - 40
+      - 584
+    - - 12
+      - 582
+    - - -9
+      - 589
+    - - -16
+      - 628
+    - - -15
+      - 671
+    - - -9
+      - 707
+    - - 21
+      - 710
+    - - 63
+      - 710
+    - - 18
+      - 652
+    - - 47
+      - 645
+    - - 135
+      - 710
+    - - 141
+      - 675
+    - - 141
+      - 635
+    - - 145
+      - 590
+    - - 182
+      - 600
+    - - 207
+      - 637
+    - - 234
+      - 612
+    - - 252
+      - 584
+    - - 266
+      - 629
+    - - 278
+      - 672
+    - - 291
+      - 711
+    - - 625
+      - -611
+    - - 425
+      - -611
+    - - -189
+      - 716
+    - - -195
+      - 671
+    - - -196
+      - 622
+    - - -187
+      - 576
+    - - -92
+      - 718
+    - - -94
+      - 622
+    - - -99
+      - 578
+    - - -95
+      - 671
+    - - -803
+      - 703
+    - - -846
+      - 705
+    - - -870
+      - 668
+    - - -867
+      - 621
+    - - -829
+      - 587
+    - - -790
+      - 608
+    - - -779
+      - 655
+coins that slows the monster:
+  image: graphics\red coin.png
+  size:
+    - 81
+    - 81
+  sound: sound\cha-ching.mp3
+  speed down: 4
+  locations: []
+boxes:
+  - type: single box
+    location:
+      - 1000
+      - 664
+  - type: single box
+    location:
+      - 1200
+      - 464
+  - type: single box
+    location:
+      - 1500
+      - 564
+  - type: single box
+    location:
+      - 1900
+      - 464
+  - type: single box
+    location:
+      - 2300
+      - 364
+  - type: single box
+    location:
+      - 2500
+      - 164
+  - type: single box
+    location:
+      - 1100
+      - -36
+  - type: single box
+    location:
+      - 1100
+      - -136
+  - type: single box
+    location:
+      - 1100
+      - -236
+  - type: single box
+    location:
+      - 300
+      - 564
+  - type: single box
+    location:
+      - 200
+      - 464
+  - type: single box
+    location:
+      - 100
+      - 364
+  - type: single box
+    location:
+      - 0
+      - 264
+  - type: single box
+    location:
+      - -100
+      - 164
+  - type: single box
+    location:
+      - -200
+      - 164
+  - type: single box
+    location:
+      - -300
+      - 164
+  - type: single box
+    location:
+      - -400
+      - 164
+  - type: single box
+    location:
+      - -500
+      - 164
+  - type: single box
+    location:
+      - -600
+      - 164
+  - type: single box
+    location:
+      - -800
+      - 164
+  - type: single box
+    location:
+      - -700
+      - 164
+  - type: single box
+    location:
+      - -900
+      - 164
+  - type: single box
+    location:
+      - -1000
+      - 164
+  - type: single box
+    location:
+      - -1100
+      - 164
+  - type: single box
+    location:
+      - -1200
+      - 164
+  - type: single box
+    location:
+      - -1400
+      - 264
+  - type: single box
+    location:
+      - -1300
+      - 364
+  - type: single box
+    location:
+      - -1400
+      - 164
+  - type: single box
+    location:
+      - -1400
+      - 64
+  - type: single box
+    location:
+      - -1400
+      - -36
+  - type: single box
+    location:
+      - -1400
+      - -136
+  - type: single box
+    location:
+      - -1400
+      - -236
+  - type: single box
+    location:
+      - -1400
+      - -336
+  - type: single box
+    location:
+      - -2400
+      - -536
+  - type: single box
+    location:
+      - -2300
+      - -536
+  - type: single box
+    location:
+      - -2200
+      - -536
+  - type: single box
+    location:
+      - -2100
+      - -536
+  - type: single box
+    location:
+      - -2000
+      - -536
+  - type: single box
+    location:
+      - -1900
+      - -536
+  - type: single box
+    location:
+      - -1800
+      - -536
+  - type: single box
+    location:
+      - -1700
+      - -536
+  - type: single box
+    location:
+      - -1500
+      - -536
+  - type: single box
+    location:
+      - -1600
+      - -536
+  - type: single box
+    location:
+      - -1400
+      - -536
+  - type: single box
+    location:
+      - -2400
+      - -436
+  - type: single box
+    location:
+      - -2400
+      - -336
+  - type: single box
+    location:
+      - -2400
+      - -236
+  - type: single box
+    location:
+      - -2400
+      - -136
+  - type: single box
+    location:
+      - -2400
+      - -36
+  - type: single box
+    location:
+      - -2400
+      - 64
+  - type: single box
+    location:
+      - -2400
+      - 164
+  - type: single box
+    location:
+      - -2400
+      - 264
+  - type: single box
+    location:
+      - -2400
+      - 364
+  - type: single box
+    location:
+      - -2400
+      - 464
+  - type: single box
+    location:
+      - -2400
+      - 564
+  - type: single box
+    location:
+      - -2400
+      - 664
+  - type: single box
+    location:
+      - -1300
+      - -336
+  - type: single box
+    location:
+      - -1200
+      - -336
+  - type: single box
+    location:
+      - -1100
+      - -336
+  - type: single box
+    location:
+      - -2700
+      - -836
+  - type: single box
+    location:
+      - -3000
+      - -1136
+  - type: sad signboard
+    location:
+      - -3384
+      - -1182
+  - type: single box
+    location:
+      - -1000
+      - -336
+  - type: single box
+    location:
+      - 500
+      - -536
+  - type: left signboard
+    location:
+      - 1100
+      - -336
+  - type: single box
+    location:
+      - 900
+      - -436
+  - type: log
+    location:
+      - 757
+      - -827
+  - type: black line
+    location:
+      - 700
+      - -336
+  - type: black line
+    location:
+      - 500
+      - -336
+  - type: black line
+    location:
+      - 300
+      - -336
+  - type: black line
+    location:
+      - 200
+      - -336
+  - type: log
+    location:
+      - 756
+      - -1066
+obstacles:
+  - type: gear
+    location:
+      - 1100
+      - 564
+  - type: gear
+    location:
+      - 1300
+      - 564
+  - type: gear
+    location:
+      - 1400
+      - 564
+  - type: gear
+    location:
+      - 1600
+      - 564
+  - type: gear
+    location:
+      - 1700
+      - 564
+  - type: gear
+    location:
+      - 1800
+      - 564
+  - type: gear
+    location:
+      - 2000
+      - 464
+  - type: gear
+    location:
+      - 2100
+      - 464
+  - type: gear
+    location:
+      - 2200
+      - 464
+  - type: gear
+    location:
+      - 2400
+      - 264
+  - type: gear
+    location:
+      - 2600
+      - 164
+  - type: gear
+    location:
+      - 2700
+      - 64
+  - type: gear
+    location:
+      - 2800
+      - -36
+  - type: gear
+    location:
+      - 2900
+      - -136
+  - type: gear
+    location:
+      - 3000
+      - -236
+  - type: gear
+    location:
+      - 3100
+      - -336
+  - type: gear
+    location:
+      - -400
+      - 64
+  - type: gear
+    location:
+      - -400
+      - -36
+  - type: gear
+    location:
+      - -700
+      - 64
+  - type: gear
+    location:
+      - -1000
+      - 64
+  - type: gear
+    location:
+      - -1000
+      - -36
+  - type: fast
+    location:
+      - - -1200
+        - 164
+      - - -1200
+        - 564
+  - type: short laser
+    location:
+      - -1400
+      - 364
+  - type: short laser
+    location:
+      - -1308
+      - 463
+  - type: gear
+    location:
+      - -3500
+      - -1136
+  - type: gear
+    location:
+      - -3400
+      - -1136
+  - type: gear
+    location:
+      - -3300
+      - -1136
+  - type: gear
+    location:
+      - -2500
+      - -536
+  - type: gear
+    location:
+      - -2600
+      - -636
+  - type: gear
+    location:
+      - -2700
+      - -736
+  - type: gear
+    location:
+      - -2800
+      - -836
+  - type: gear
+    location:
+      - -2900
+      - -936
+  - type: gear
+    location:
+      - -3000
+      - -1036
+  - type: gear
+    location:
+      - -3100
+      - -1036
+  - type: gear
+    location:
+      - -3200
+      - -1036
+  - type: gear
+    location:
+      - -3600
+      - -1236
+  - type: gear
+    location:
+      - -1300
+      - -1036
+  - type: gear
+    location:
+      - -1400
+      - -1036
+  - type: gear
+    location:
+      - -1500
+      - -1036
+  - type: gear
+    location:
+      - -1600
+      - -1036
+  - type: gear
+    location:
+      - -1700
+      - -1036
+  - type: gear
+    location:
+      - -1800
+      - -1036
+  - type: gear
+    location:
+      - -1900
+      - -1036
+  - type: gear
+    location:
+      - -1200
+      - -1036
+  - type: gear
+    location:
+      - -1100
+      - -1036
+  - type: gear
+    location:
+      - -1000
+      - -1036
+  - type: gear
+    location:
+      - -900
+      - -1036
+  - type: gear
+    location:
+      - -800
+      - -1036
+  - type: gear
+    location:
+      - -600
+      - -1036
+  - type: gear
+    location:
+      - -700
+      - -1036
+  - type: gear
+    location:
+      - -500
+      - -1036
+  - type: gear
+    location:
+      - -400
+      - -1036
+  - type: gear
+    location:
+      - -300
+      - -1036
+on off obstacles: []
+bullet rotators:
+  - type: right
+    location:
+      - 400
+      - 664
+flip gravity:
+  - type: purple-blue
+    location:
+      - -2300
+      - -436
+  - type: purple-blue
+    location:
+      - -2100
+      - -436
+  - type: purple-blue
+    location:
+      - -1900
+      - -436
+  - type: purple-blue
+    location:
+      - -1700
+      - -436
+  - type: purple-blue
+    location:
+      - -1900
+      - 664
+  - type: purple-blue
+    location:
+      - -1400
+      - -436
+speed:
+  - type: left fast
+    location:
+      - 2200
+      - -36
+  - type: left fast
+    location:
+      - 2100
+      - -36
+  - type: left fast
+    location:
+      - 2000
+      - -36
+  - type: left fast
+    location:
+      - 1900
+      - -36
+  - type: left fast
+    location:
+      - 1800
+      - -36
+  - type: left fast
+    location:
+      - 1700
+      - -36
+  - type: left fast
+    location:
+      - 1600
+      - -36
+  - type: left fast
+    location:
+      - 1500
+      - -36
+  - type: left fast
+    location:
+      - 1400
+      - -36
+  - type: left fast
+    location:
+      - 1300
+      - -36
+  - type: left fast
+    location:
+      - 100
+      - -336
+slow: []
+disappearing:
+  - type: white
+    location:
+      - 800
+      - -536
+jumpers: []
+buttons: []

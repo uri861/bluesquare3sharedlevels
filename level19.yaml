@@ -1,0 +1,573 @@
+background: (138, 120, 68)
+player:
+  size:
+    - 80
+    - 80
+  speed: 10
+  jump speed: 30
+  gravity: 1.5
+  die sound: sound\die sound.mp3
+  location:
+    - 100
+    - 484
+  images:
+    regular: graphics\character.png
+    right: graphics\right character.png
+    left: graphics\left character.png
+    jump: graphics\jump character.png
+    die: graphics\die character.png
+monster:
+  location:
+    - -600
+    - 584
+  size:
+    - 80
+    - 80
+  gravity: 0.1
+  speed: 5
+  jump speed: 30
+  die sound: sound\die sound.mp3
+  images:
+    regular: graphics\monster.png
+    right: graphics\monster right.png
+    left: graphics\monster left.png
+    jump: graphics\monster jump.png
+    die: graphics\die monster.png
+  horns:
+    image: graphics\monster horns.png
+    size:
+      - 107
+      - 50
+    relative location:
+      - -13
+      - -35
+gun:
+  image: graphics\gun.png
+  location:
+    - -597
+    - 589
+  size:
+    - 95
+    - 75
+  price: 18
+  strength: 10
+  bullet speed: 15
+  bullet image: graphics\bullet.png
+checkpoints:
+  green flag image: graphics\green flag.png
+  red flag image: graphics\red flag.png
+  sound: sound\ping.mp3
+  locations:
+    - - 1381
+      - 666
+    - - -600
+      - 564
+coins:
+  image: graphics\coin.png
+  size:
+    - 50
+    - 50
+  sound: sound\cha-ching.mp3
+  locations:
+    - - 325
+      - 489
+    - - 425
+      - 489
+    - - 525
+      - 489
+    - - 625
+      - 489
+    - - 725
+      - 489
+    - - 825
+      - 489
+    - - 925
+      - 489
+    - - 225
+      - 489
+    - - 125
+      - 489
+    - - 1025
+      - 489
+    - - 1125
+      - 689
+    - - 1225
+      - 689
+    - - 1025
+      - 589
+    - - 1025
+      - 689
+    - - 2229
+      - -332
+    - - 1750
+      - -325
+    - - 1326
+      - -333
+    - - 3079
+      - -339
+coins that slows the monster:
+  image: graphics\red coin.png
+  size:
+    - 81
+    - 81
+  sound: sound\cha-ching.mp3
+  speed down: 4
+  locations: []
+boxes:
+  - type: single box
+    location:
+      - - 100
+        - 564
+      - - 1000
+        - 564
+  - type: single box
+    location:
+      - - 0
+        - 464
+      - - 900
+        - 464
+  - type: single box
+    location:
+      - - 100
+        - 364
+      - - 1000
+        - 364
+  - type: single box
+    location:
+      - - 200
+        - 364
+      - - 1100
+        - 364
+  - type: single box
+    location:
+      - - 200
+        - 564
+      - - 1200
+        - 564
+  - type: single box
+    location:
+      - - 300
+        - 464
+      - - 1200
+        - 464
+  - type: single box
+    location:
+      - 1500
+      - 564
+  - type: single box
+    location:
+      - 1600
+      - 564
+  - type: single box
+    location:
+      - 1700
+      - 464
+  - type: single box
+    location:
+      - 1700
+      - 364
+  - type: single box
+    location:
+      - 1800
+      - 264
+  - type: single box
+    location:
+      - 1900
+      - 264
+  - type: ud signboard
+    location:
+      - 1716
+      - 436
+  - type: laser down
+    location:
+      - 1700
+      - 264
+  - type: laser up
+    location:
+      - 1699
+      - 542
+  - type: log
+    location:
+      - 1062
+      - -494
+  - type: single box
+    location:
+      - 2562
+      - -513
+  - type: single box
+    location:
+      - 2662
+      - -513
+  - type: single box
+    location:
+      - 2761
+      - -513
+  - type: single box
+    location:
+      - 2861
+      - -511
+  - type: single box
+    location:
+      - 2959
+      - -495
+  - type: single box
+    location:
+      - 3056
+      - -454
+  - type: single box
+    location:
+      - 3154
+      - -392
+  - type: log
+    location:
+      - 3169
+      - -294
+  - type: single box
+    location:
+      - 2721
+      - -222
+  - type: happy signboard
+    location:
+      - 3527
+      - 662
+  - type: happy signboard
+    location:
+      - - 3568
+        - 662
+      - - 3675
+        - 517
+  - type: happy signboard
+    location:
+      - - 3540
+        - 455
+      - - 3871
+        - 658
+  - type: happy signboard
+    location:
+      - - 3751
+        - 654
+      - - 3796
+        - 385
+  - type: happy signboard
+    location:
+      - 3834
+      - 511
+  - type: happy signboard
+    location:
+      - 3698
+      - 451
+  - type: happy signboard
+    location:
+      - - 3594
+        - 524
+      - - 3604
+        - 457
+  - type: happy signboard
+    location:
+      - - 3619
+        - 366
+      - - 3740
+        - 411
+  - type: happy signboard
+    location:
+      - - 3676
+        - 363
+      - - 3618
+        - 558
+  - type: happy signboard
+    location:
+      - - 3537
+        - 409
+      - - 3890
+        - 539
+  - type: happy signboard
+    location:
+      - - 3874
+        - 444
+      - - 3710
+        - 480
+  - type: happy signboard
+    location:
+      - - 3682
+        - 641
+      - - 3695
+        - 628
+  - type: happy signboard
+    location:
+      - - 3606
+        - 624
+      - - 3566
+        - 555
+  - type: happy signboard
+    location:
+      - - 3761
+        - 544
+      - - 3797
+        - 578
+  - type: happy signboard
+    location:
+      - - 3879
+        - 364
+      - - 3638
+        - 441
+  - type: laser down
+    location:
+      - 4000
+      - 664
+  - type: laser down
+    location:
+      - -800
+      - 664
+  - type: fast single box
+    location:
+      - - 2900
+        - 664
+      - - 1873
+        - 762
+  - type: fast single box
+    location:
+      - - 1429
+        - 760
+      - - 1796
+        - 741
+  - type: single box
+    location:
+      - 300
+      - 564
+  - type: single box
+    location:
+      - 400
+      - 564
+  - type: single box
+    location:
+      - 500
+      - 564
+  - type: single box
+    location:
+      - 600
+      - 564
+  - type: single box
+    location:
+      - 700
+      - 564
+  - type: single box
+    location:
+      - 800
+      - 564
+  - type: single box
+    location:
+      - 900
+      - 564
+  - type: single box
+    location:
+      - 2100
+      - -536
+  - type: single box
+    location:
+      - 2000
+      - -536
+  - type: single box
+    location:
+      - 1500
+      - -536
+  - type: single box
+    location:
+      - 1400
+      - -536
+  - type: single box
+    location:
+      - 2400
+      - -536
+  - type: single box
+    location:
+      - 1716
+      - -509
+  - type: fast single box
+    location:
+      - - 2781
+        - 759
+      - - 2255
+        - 352
+  - type: single box
+    location:
+      - 1400
+      - 164
+  - type: happy signboard
+    location:
+      - 1412
+      - 68
+  - type: short black line
+    location:
+      - 1475
+      - 164
+  - type: single box
+    location:
+      - -600
+      - 664
+  - type: single box
+    location:
+      - 1377
+      - 190
+  - type: single box
+    location:
+      - 1341
+      - 222
+  - type: single box
+    location:
+      - 1310
+      - 257
+  - type: short black line
+    location:
+      - 1248
+      - 253
+  - type: ud signboard
+    location:
+      - 2734
+      - -319
+  - type: happy signboard
+    location:
+      - 3166
+      - -490
+obstacles:
+  - type: gear
+    location:
+      - 1300
+      - 364
+  - type: gear
+    location:
+      - 1400
+      - 264
+  - type: gear
+    location:
+      - - 1500
+        - 164
+      - - 1300
+        - 364
+  - type: fast
+    location:
+      - - 1300
+        - 364
+      - - 1500
+        - 164
+  - type: gear
+    location:
+      - 1043
+      - -273
+  - type: gear
+    location:
+      - 1042
+      - -184
+  - type: gear
+    location:
+      - 3152
+      - -72
+  - type: gear
+    location:
+      - 3150
+      - 18
+  - type: gear
+    location:
+      - 3400
+      - 564
+  - type: gear
+    location:
+      - 3400
+      - 464
+  - type: gear
+    location:
+      - 3400
+      - 364
+  - type: vertical laser
+    location:
+      - 4041
+      - 434
+  - type: vertical laser
+    location:
+      - -759
+      - 438
+  - type: red gear
+    location:
+      - 900
+      - 664
+  - type: gear
+    location:
+      - - 2400
+        - -436
+      - - 1200
+        - -436
+  - type: gear
+    location:
+      - 1043
+      - -512
+  - type: laser
+    location:
+      - 1700
+      - -636
+  - type: laser
+    location:
+      - 1400
+      - -636
+  - type: laser
+    location:
+      - 1100
+      - -636
+  - type: laser
+    location:
+      - 1300
+      - -636
+  - type: laser
+    location:
+      - 1500
+      - -636
+  - type: short vertical laser
+    location:
+      - 1100
+      - -636
+  - type: laser
+    location:
+      - 2000
+      - -636
+  - type: laser
+    location:
+      - 1900
+      - -636
+  - type: laser
+    location:
+      - 2300
+      - -636
+  - type: laser
+    location:
+      - 2200
+      - -636
+  - type: short vertical laser
+    location:
+      - 2600
+      - -636
+  - type: vertical laser
+    location:
+      - -760
+      - 193
+on off obstacles: []
+bullet rotators: []
+flip gravity:
+  - type: purple-blue
+    location:
+      - 1600
+      - 464
+  - type: purple-blue
+    location:
+      - 1800
+      - 364
+  - type: purple-blue
+    location:
+      - 2889
+      - -356
+speed: []
+slow: []
+disappearing: []
+jumpers: []
+buttons:
+  - type: red
+    location:
+      - 2730
+      - -259

@@ -1,0 +1,759 @@
+background: (255, 83, 248)
+player:
+  size:
+    - 80
+    - 80
+  speed: 10
+  jump speed: 30
+  gravity: 1.5
+  die sound: sound\die sound.mp3
+  location:
+    - 300
+    - 684
+  images:
+    regular: graphics\character.png
+    right: graphics\right character.png
+    left: graphics\left character.png
+    jump: graphics\jump character.png
+    die: graphics\die character.png
+monster:
+  location:
+    - 4900
+    - -836
+  size:
+    - 80
+    - 80
+  gravity: 0.1
+  speed: 5
+  jump speed: 30
+  die sound: sound\die sound.mp3
+  images:
+    regular: graphics\monster.png
+    right: graphics\monster right.png
+    left: graphics\monster left.png
+    jump: graphics\monster jump.png
+    die: graphics\die monster.png
+  horns:
+    image: graphics\monster horns.png
+    size:
+      - 107
+      - 50
+    relative location:
+      - -13
+      - -35
+gun:
+  image: graphics\gun.png
+  location:
+    - 4303
+    - -611
+  size:
+    - 95
+    - 75
+  price: 234
+  strength: 10
+  bullet speed: 15
+  bullet image: graphics\bullet.png
+checkpoints:
+  green flag image: graphics\green flag.png
+  red flag image: graphics\red flag.png
+  sound: sound\ping.mp3
+  locations: []
+coins:
+  image: graphics\coin.png
+  size:
+    - 50
+    - 50
+  sound: sound\cha-ching.mp3
+  locations:
+    - - 476
+      - 694
+    - - 515
+      - 667
+    - - 550
+      - 650
+    - - 575
+      - 666
+    - - 596
+      - 696
+    - - 633
+      - 683
+    - - 663
+      - 659
+    - - 692
+      - 650
+    - - 721
+      - 681
+    - - 743
+      - 706
+    - - 771
+      - 696
+    - - 459
+      - 714
+    - - 795
+      - 671
+    - - 811
+      - 643
+    - - 841
+      - 659
+    - - 856
+      - 676
+    - - 870
+      - 703
+    - - 884
+      - 716
+    - - 906
+      - 692
+    - - 931
+      - 665
+    - - 955
+      - 640
+    - - 969
+      - 658
+    - - 991
+      - 692
+    - - 1004
+      - 722
+    - - 3825
+      - -611
+    - - 3925
+      - -611
+    - - 4025
+      - -611
+    - - 4125
+      - -611
+    - - 3810
+      - -603
+    - - 3850
+      - -607
+    - - 3874
+      - -607
+    - - 3875
+      - -609
+    - - 3898
+      - -599
+    - - 3899
+      - -599
+    - - 3913
+      - -598
+    - - 3918
+      - -598
+    - - 3929
+      - -598
+    - - 3938
+      - -598
+    - - 3965
+      - -599
+    - - 3995
+      - -597
+    - - 3997
+      - -597
+    - - 4010
+      - -599
+    - - 4032
+      - -592
+    - - 4036
+      - -594
+    - - 4061
+      - -596
+    - - 4087
+      - -592
+    - - 4104
+      - -589
+    - - 4115
+      - -589
+    - - 4126
+      - -588
+    - - 4126
+      - -590
+    - - 4108
+      - -604
+    - - 4079
+      - -629
+    - - 4056
+      - -623
+    - - 4029
+      - -622
+    - - 4018
+      - -626
+    - - 3985
+      - -617
+    - - 3976
+      - -617
+    - - 3961
+      - -618
+    - - 3904
+      - -624
+    - - 3891
+      - -618
+    - - 3880
+      - -617
+    - - 3859
+      - -622
+    - - 3819
+      - -608
+    - - 3820
+      - -610
+    - - 3842
+      - -624
+    - - 3834
+      - -627
+    - - 3823
+      - -622
+    - - 3832
+      - -616
+    - - 3849
+      - -609
+    - - 3859
+      - -592
+    - - 3917
+      - -572
+    - - 3886
+      - -572
+    - - 3842
+      - -589
+    - - 3841
+      - -589
+    - - 3835
+      - -587
+    - - 3808
+      - -570
+    - - 3809
+      - -584
+    - - 3808
+      - -584
+    - - 3930
+      - -567
+    - - 3913
+      - -568
+    - - 3848
+      - -579
+    - - 3849
+      - -579
+    - - 3864
+      - -568
+    - - 3961
+      - -576
+    - - 3972
+      - -581
+    - - 3996
+      - -573
+    - - 3997
+      - -573
+    - - 4001
+      - -572
+    - - 4010
+      - -572
+    - - 4010
+      - -571
+    - - 4022
+      - -572
+    - - 4036
+      - -577
+    - - 4044
+      - -579
+    - - 4047
+      - -579
+    - - 4055
+      - -575
+    - - 4063
+      - -574
+    - - 4080
+      - -573
+    - - 4081
+      - -573
+    - - 4110
+      - -563
+    - - 4115
+      - -560
+    - - 4117
+      - -559
+    - - 4145
+      - -553
+    - - 4148
+      - -562
+    - - 4148
+      - -570
+    - - 4144
+      - -588
+    - - 4137
+      - -600
+    - - 4141
+      - -612
+    - - 4140
+      - -618
+    - - 4133
+      - -626
+    - - 4123
+      - -626
+    - - 4118
+      - -626
+    - - 4115
+      - -627
+    - - 4107
+      - -626
+    - - 4108
+      - -616
+    - - 4112
+      - -607
+    - - 4111
+      - -607
+    - - 4104
+      - -593
+    - - 4103
+      - -592
+    - - 4087
+      - -599
+    - - 4086
+      - -599
+    - - 4085
+      - -603
+    - - 4081
+      - -618
+    - - 4081
+      - -622
+    - - 4078
+      - -629
+    - - 4058
+      - -640
+    - - 4058
+      - -624
+    - - 4057
+      - -620
+    - - 4054
+      - -615
+    - - 4051
+      - -606
+    - - 4046
+      - -599
+    - - 4032
+      - -615
+    - - 4015
+      - -641
+    - - 4011
+      - -640
+    - - 4002
+      - -637
+    - - 3995
+      - -637
+    - - 3993
+      - -637
+    - - 3986
+      - -637
+    - - 3946
+      - -644
+    - - 3945
+      - -644
+    - - 3939
+      - -642
+    - - 3917
+      - -641
+    - - 3887
+      - -650
+    - - 3878
+      - -643
+    - - 3860
+      - -645
+    - - 3850
+      - -645
+    - - 3834
+      - -641
+    - - 3809
+      - -636
+    - - 3816
+      - -605
+    - - 3808
+      - -602
+    - - 3870
+      - -613
+    - - 3914
+      - -601
+    - - 3922
+      - -607
+    - - 3936
+      - -613
+    - - 4002
+      - -614
+    - - 3999
+      - -613
+    - - 4014
+      - -613
+    - - 4010
+      - -612
+    - - 3989
+      - -609
+    - - 3994
+      - -610
+    - - 4024
+      - -609
+    - - 4022
+      - -609
+    - - 3967
+      - -602
+    - - 3898
+      - -605
+    - - 3887
+      - -603
+    - - 3879
+      - -603
+    - - 3819
+      - -630
+    - - 3842
+      - -613
+    - - 3845
+      - -613
+    - - 3832
+      - -596
+    - - 3812
+      - -563
+    - - 3825
+      - -567
+    - - 3842
+      - -570
+    - - 3845
+      - -570
+    - - 3861
+      - -569
+    - - 3866
+      - -568
+    - - 3878
+      - -566
+    - - 3890
+      - -566
+    - - 3910
+      - -558
+    - - 3932
+      - -570
+    - - 3946
+      - -571
+    - - 3964
+      - -578
+    - - 3976
+      - -576
+    - - 3977
+      - -576
+    - - 3978
+      - -576
+    - - 4024
+      - -570
+    - - 4048
+      - -572
+    - - 4053
+      - -572
+    - - 4096
+      - -570
+    - - 4094
+      - -568
+    - - 4127
+      - -569
+    - - 4130
+      - -568
+    - - 4141
+      - -570
+    - - 4152
+      - -574
+    - - 4177
+      - -612
+    - - 4187
+      - -562
+    - - 4175
+      - -599
+    - - 4178
+      - -609
+    - - 4193
+      - -577
+    - - 4185
+      - -574
+    - - 4176
+      - -573
+    - - 4175
+      - -573
+    - - 4174
+      - -574
+    - - 4173
+      - -581
+    - - 4171
+      - -589
+    - - 4171
+      - -592
+    - - 4170
+      - -596
+    - - 4169
+      - -613
+    - - 4170
+      - -613
+    - - 4172
+      - -614
+    - - 4171
+      - -626
+    - - 4174
+      - -626
+    - - 4178
+      - -628
+    - - 4179
+      - -641
+    - - 4177
+      - -641
+    - - 4176
+      - -641
+    - - 4165
+      - -641
+    - - 4160
+      - -640
+    - - 4158
+      - -640
+    - - 4156
+      - -640
+    - - 4149
+      - -641
+    - - 4144
+      - -643
+    - - 4139
+      - -644
+    - - 4102
+      - -653
+    - - 4119
+      - -646
+    - - 4115
+      - -647
+    - - 4099
+      - -647
+    - - 4092
+      - -647
+    - - 4081
+      - -648
+    - - 4047
+      - -644
+    - - 4049
+      - -644
+    - - 4045
+      - -644
+    - - 4039
+      - -644
+    - - 4021
+      - -648
+    - - 3978
+      - -644
+coins that slows the monster:
+  image: graphics\red coin.png
+  size:
+    - 81
+    - 81
+  sound: sound\cha-ching.mp3
+  speed down: 4
+  locations: []
+boxes:
+  - type: single box
+    location:
+      - 2200
+      - 664
+  - type: single box
+    location:
+      - 1100
+      - 664
+  - type: single box
+    location:
+      - 3100
+      - 664
+  - type: fast single box
+    location:
+      - - 3500
+        - 664
+      - - 3500
+        - 264
+  - type: fast single box
+    location:
+      - - 3500
+        - -136
+      - - 3500
+        - -536
+  - type: single box
+    location:
+      - 3800
+      - -536
+  - type: single box
+    location:
+      - 3900
+      - -536
+  - type: single box
+    location:
+      - 4000
+      - -536
+  - type: single box
+    location:
+      - 4100
+      - -536
+  - type: single box
+    location:
+      - 4200
+      - -536
+  - type: single box
+    location:
+      - 4300
+      - -536
+  - type: single box
+    location:
+      - 4400
+      - -536
+  - type: single box
+    location:
+      - 4500
+      - -536
+  - type: single box
+    location:
+      - 4600
+      - -536
+  - type: single box
+    location:
+      - 4700
+      - -536
+  - type: single box
+    location:
+      - 4800
+      - -536
+  - type: single box
+    location:
+      - 4900
+      - -536
+  - type: single box
+    location:
+      - 5000
+      - -536
+  - type: sad signboard
+    location:
+      - 1000
+      - 664
+  - type: single box
+    location:
+      - 200
+      - 664
+  - type: single box
+    location:
+      - 200
+      - 564
+  - type: single box
+    location:
+      - 200
+      - 464
+  - type: single box
+    location:
+      - 200
+      - 364
+  - type: single box
+    location:
+      - 200
+      - 264
+  - type: single box
+    location:
+      - 300
+      - 264
+  - type: fast single box
+    location:
+      - - 3700
+        - -136
+      - - 3700
+        - 264
+obstacles:
+  - type: gear
+    location:
+      - - 1200
+        - 664
+      - - 2100
+        - 664
+  - type: gear
+    location:
+      - - 2300
+        - 664
+      - - 3000
+        - 664
+on off obstacles:
+  - type: spikes
+    location:
+      - 1000
+      - 739
+bullet rotators:
+  - type: right
+    location:
+      - 4400
+      - -736
+  - type: down
+    location:
+      - 4500
+      - -736
+  - type: right
+    location:
+      - 4500
+      - -636
+  - type: up
+    location:
+      - 4600
+      - -636
+  - type: right
+    location:
+      - 4600
+      - -736
+  - type: down
+    location:
+      - 4700
+      - -736
+  - type: right
+    location:
+      - 4700
+      - -636
+  - type: up
+    location:
+      - 4800
+      - -636
+  - type: right
+    location:
+      - 4800
+      - -736
+  - type: down
+    location:
+      - 4900
+      - -736
+  - type: right
+    location:
+      - 4900
+      - -636
+  - type: up
+    location:
+      - 5000
+      - -636
+  - type: up
+    location:
+      - 5000
+      - -736
+  - type: left
+    location:
+      - 5000
+      - -836
+  - type: down
+    location:
+      - 4900
+      - -936
+  - type: down
+    location:
+      - 4400
+      - -636
+  - type: right
+    location:
+      - 4600
+      - -936
+  - type: up
+    location:
+      - 4600
+      - -836
+  - type: up
+    location:
+      - 4500
+      - -936
+  - type: up
+    location:
+      - 4500
+      - -836
+flip gravity: []
+speed: []
+slow: []
+disappearing: []
+jumpers: []
+buttons: []

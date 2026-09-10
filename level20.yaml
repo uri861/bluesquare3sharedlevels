@@ -1,0 +1,543 @@
+background: (200, 84, 255)
+player:
+  size:
+    - 80
+    - 80
+  speed: 10
+  jump speed: 30
+  gravity: 1.5
+  die sound: sound\die sound.mp3
+  location:
+    - 700
+    - -336
+  images:
+    regular: graphics\character.png
+    right: graphics\right character.png
+    left: graphics\left character.png
+    jump: graphics\jump character.png
+    die: graphics\die character.png
+monster:
+  location:
+    - -1535
+    - -1222
+  size:
+    - 80
+    - 80
+  gravity: 0.1
+  speed: 5
+  jump speed: 30
+  die sound: sound\die sound.mp3
+  images:
+    regular: graphics\monster.png
+    right: graphics\monster right.png
+    left: graphics\monster left.png
+    jump: graphics\monster jump.png
+    die: graphics\die monster.png
+  horns:
+    image: graphics\monster horns.png
+    size:
+      - 107
+      - 50
+    relative location:
+      - -13
+      - -35
+gun:
+  image: graphics\gun.png
+  location:
+    - -26
+    - -829
+  size:
+    - 95
+    - 75
+  price: 3
+  strength: 10
+  bullet speed: 15
+  bullet image: graphics\bullet.png
+checkpoints:
+  green flag image: graphics\green flag.png
+  red flag image: graphics\red flag.png
+  sound: sound\ping.mp3
+  locations: []
+coins:
+  image: graphics\coin.png
+  size:
+    - 50
+    - 50
+  sound: sound\cha-ching.mp3
+  locations:
+    - - 725
+      - -711
+    - - -1575
+      - -411
+    - - 725
+      - -1011
+coins that slows the monster:
+  image: graphics\red coin.png
+  size:
+    - 81
+    - 81
+  sound: sound\cha-ching.mp3
+  speed down: 4
+  locations: []
+boxes:
+  - type: single box
+    location:
+      - - 600
+        - 664
+      - - 600
+        - -336
+  - type: single box
+    location:
+      - 500
+      - 564
+  - type: single box
+    location:
+      - 500
+      - 464
+  - type: single box
+    location:
+      - 500
+      - 364
+  - type: single box
+    location:
+      - 500
+      - 164
+  - type: single box
+    location:
+      - 500
+      - 64
+  - type: single box
+    location:
+      - 500
+      - -36
+  - type: single box
+    location:
+      - 500
+      - -136
+  - type: single box
+    location:
+      - 900
+      - 564
+  - type: single box
+    location:
+      - 900
+      - 464
+  - type: single box
+    location:
+      - 900
+      - 364
+  - type: single box
+    location:
+      - 900
+      - 264
+  - type: single box
+    location:
+      - 900
+      - 164
+  - type: single box
+    location:
+      - 900
+      - 64
+  - type: single box
+    location:
+      - 900
+      - -36
+  - type: single box
+    location:
+      - 900
+      - -236
+  - type: single box
+    location:
+      - 500
+      - -436
+  - type: single box
+    location:
+      - 900
+      - -336
+  - type: single box
+    location:
+      - 900
+      - -436
+  - type: single box
+    location:
+      - 600
+      - -536
+  - type: single box
+    location:
+      - 800
+      - -536
+  - type: single box
+    location:
+      - 800
+      - -636
+  - type: single box
+    location:
+      - 600
+      - -636
+  - type: single box
+    location:
+      - 600
+      - -736
+  - type: single box
+    location:
+      - 800
+      - -736
+  - type: single box
+    location:
+      - - 700
+        - 664
+      - - 700
+        - -336
+  - type: single box
+    location:
+      - - 800
+        - 664
+      - - 800
+        - -336
+  - type: single box
+    location:
+      - 400
+      - 364
+  - type: single box
+    location:
+      - 200
+      - 364
+  - type: single box
+    location:
+      - 300
+      - 364
+  - type: single box
+    location:
+      - 0
+      - 364
+  - type: single box
+    location:
+      - 100
+      - 364
+  - type: single box
+    location:
+      - -100
+      - 264
+  - type: single box
+    location:
+      - -200
+      - 164
+  - type: single box
+    location:
+      - -300
+      - 64
+  - type: single box
+    location:
+      - -400
+      - 64
+  - type: single box
+    location:
+      - -500
+      - 64
+  - type: single box
+    location:
+      - -600
+      - 64
+  - type: single box
+    location:
+      - -700
+      - 64
+  - type: single box
+    location:
+      - -700
+      - -36
+  - type: single box
+    location:
+      - -700
+      - -136
+  - type: single box
+    location:
+      - -800
+      - -136
+  - type: single box
+    location:
+      - -900
+      - -236
+  - type: single box
+    location:
+      - -1000
+      - -236
+  - type: single box
+    location:
+      - -1100
+      - -236
+  - type: single box
+    location:
+      - -1200
+      - -236
+  - type: single box
+    location:
+      - -1300
+      - -236
+  - type: single box
+    location:
+      - -1500
+      - -236
+  - type: single box
+    location:
+      - -1400
+      - -236
+  - type: single box
+    location:
+      - 300
+      - 64
+  - type: single box
+    location:
+      - 400
+      - -36
+  - type: single box
+    location:
+      - 600
+      - -836
+  - type: single box
+    location:
+      - 600
+      - -936
+  - type: single box
+    location:
+      - 800
+      - -836
+  - type: single box
+    location:
+      - 800
+      - -936
+  - type: single box
+    location:
+      - 1000
+      - -36
+  - type: single box
+    location:
+      - 1100
+      - -36
+  - type: single box
+    location:
+      - 1200
+      - -36
+  - type: single box
+    location:
+      - 1300
+      - -136
+  - type: single box
+    location:
+      - 1500
+      - -336
+  - type: single box
+    location:
+      - 1200
+      - -536
+  - type: single box
+    location:
+      - 700
+      - -936
+  - type: single box
+    location:
+      - 600
+      - -1036
+  - type: single box
+    location:
+      - 600
+      - -1136
+  - type: single box
+    location:
+      - 600
+      - -1236
+  - type: single box
+    location:
+      - 600
+      - -1336
+  - type: single box
+    location:
+      - 600
+      - -1436
+  - type: single box
+    location:
+      - 0
+      - -736
+  - type: single box
+    location:
+      - -100
+      - -736
+  - type: single box
+    location:
+      - -200
+      - -736
+  - type: single box
+    location:
+      - -300
+      - -736
+  - type: single box
+    location:
+      - -400
+      - -736
+  - type: single box
+    location:
+      - -500
+      - -836
+  - type: single box
+    location:
+      - -700
+      - -1036
+  - type: single box
+    location:
+      - -800
+      - -1036
+  - type: single box
+    location:
+      - -900
+      - -1036
+  - type: single box
+    location:
+      - -1000
+      - -1036
+  - type: single box
+    location:
+      - -1100
+      - -1036
+  - type: single box
+    location:
+      - -1200
+      - -1036
+  - type: single box
+    location:
+      - - -1300
+        - -1036
+      - - -1300
+        - -1236
+  - type: single box
+    location:
+      - -1547
+      - -1140
+  - type: single box
+    location:
+      - -1642
+      - -1228
+obstacles:
+  - type: laser
+    location:
+      - 494
+      - 692
+  - type: laser
+    location:
+      - 688
+      - 692
+  - type: gear
+    location:
+      - -400
+      - -36
+  - type: fast
+    location:
+      - - -900
+        - -536
+      - - -1200
+        - -236
+  - type: fast
+    location:
+      - - -900
+        - -236
+      - - -1200
+        - -536
+  - type: gear
+    location:
+      - -1600
+      - -236
+  - type: gear
+    location:
+      - -1700
+      - -236
+  - type: gear
+    location:
+      - -1800
+      - -336
+  - type: gear
+    location:
+      - -1900
+      - -436
+  - type: gear
+    location:
+      - -1900
+      - -536
+  - type: gear
+    location:
+      - -1900
+      - -636
+  - type: gear
+    location:
+      - 700
+      - -836
+  - type: gear
+    location:
+      - 1400
+      - -236
+  - type: gear
+    location:
+      - -600
+      - -936
+  - type: laser
+    location:
+      - -1600
+      - -936
+  - type: laser
+    location:
+      - -1900
+      - -936
+  - type: laser
+    location:
+      - -2200
+      - -936
+  - type: laser
+    location:
+      - -2500
+      - -936
+  - type: laser
+    location:
+      - 1600
+      - -236
+  - type: laser
+    location:
+      - 1900
+      - -236
+  - type: laser
+    location:
+      - 2200
+      - -236
+on off obstacles: []
+bullet rotators:
+  - type: right
+    location:
+      - -700
+      - -1136
+  - type: right
+    location:
+      - -1446
+      - -1151
+  - type: right
+    location:
+      - -1445
+      - -1304
+flip gravity: []
+speed: []
+slow: []
+disappearing: []
+jumpers:
+  - type: yellow
+    location:
+      - 900
+      - -536
+  - type: yellow
+    location:
+      - 900
+      - -836
+  - type: yellow
+    location:
+      - 200
+      - -336
+  - type: yellow
+    location:
+      - 200
+      - -636
+buttons: []

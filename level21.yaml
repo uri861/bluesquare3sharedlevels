@@ -1,0 +1,1931 @@
+background: (8, 210, 255)
+player:
+  size:
+    - 80
+    - 80
+  speed: 10
+  jump speed: 30
+  gravity: 1.5
+  die sound: sound\die sound.mp3
+  location:
+    - 500
+    - 484
+  images:
+    regular: graphics\character.png
+    right: graphics\right character.png
+    left: graphics\left character.png
+    jump: graphics\jump character.png
+    die: graphics\die character.png
+monster:
+  location:
+    - -4100
+    - 484
+  size:
+    - 80
+    - 80
+  gravity: 0.1
+  speed: 5
+  jump speed: 30
+  die sound: sound\die sound.mp3
+  images:
+    regular: graphics\monster.png
+    right: graphics\monster right.png
+    left: graphics\monster left.png
+    jump: graphics\monster jump.png
+    die: graphics\die monster.png
+  horns:
+    image: graphics\monster horns.png
+    size:
+      - 107
+      - 50
+    relative location:
+      - -13
+      - -35
+gun:
+  image: graphics\gun.png
+  location:
+    - -3897
+    - 389
+  size:
+    - 95
+    - 75
+  price: 15
+  strength: 10
+  bullet speed: 15
+  bullet image: graphics\bullet.png
+checkpoints:
+  green flag image: graphics\green flag.png
+  red flag image: graphics\red flag.png
+  sound: sound\ping.mp3
+  locations:
+    - - 397
+      - 173
+    - - -3574
+      - 531
+    - - -100
+      - 264
+    - - -4205
+      - 170
+coins:
+  image: graphics\coin.png
+  size:
+    - 50
+    - 50
+  sound: sound\cha-ching.mp3
+  locations:
+    - - 3726
+      - 460
+    - - 3739
+      - 500
+    - - 1143
+      - 569
+    - - 1513
+      - 548
+    - - 3273
+      - 565
+    - - -2852
+      - 687
+    - - -2907
+      - 664
+    - - -2879
+      - 688
+    - - -2865
+      - 652
+    - - -2818
+      - 684
+    - - -2829
+      - 648
+    - - -2885
+      - 648
+    - - -2690
+      - 675
+    - - -2998
+      - 464
+    - - 3706
+      - 480
+coins that slows the monster:
+  image: graphics\red coin.png
+  size:
+    - 81
+    - 81
+  sound: sound\cha-ching.mp3
+  speed down: 4
+  locations: []
+boxes:
+  - type: single box
+    location:
+      - -100
+      - 364
+  - type: single box
+    location:
+      - 0
+      - 464
+  - type: single box
+    location:
+      - 100
+      - 564
+  - type: single box
+    location:
+      - 200
+      - 564
+  - type: single box
+    location:
+      - 300
+      - 564
+  - type: single box
+    location:
+      - 400
+      - 564
+  - type: single box
+    location:
+      - 500
+      - 564
+  - type: single box
+    location:
+      - 600
+      - 564
+  - type: black line col
+    location:
+      - 400
+      - 364
+  - type: black line col
+    location:
+      - 400
+      - 264
+  - type: single box
+    location:
+      - 700
+      - 464
+  - type: single box
+    location:
+      - 800
+      - 364
+  - type: single box
+    location:
+      - - 1041
+        - 668
+      - - 1177
+        - 655
+  - type: single box
+    location:
+      - - 1432
+        - 657
+      - - 1632
+        - 678
+  - type: fast single box
+    location:
+      - - 2200
+        - 664
+      - - 2400
+        - 464
+  - type: fast single box
+    location:
+      - - 2900
+        - 664
+      - - 2700
+        - 464
+  - type: single box
+    location:
+      - - 3182
+        - 655
+      - - 3362
+        - 638
+  - type: single box
+    location:
+      - 3650
+      - 613
+  - type: single box
+    location:
+      - 3723
+      - 534
+  - type: single box
+    location:
+      - 3893
+      - 534
+  - type: single box
+    location:
+      - 3976
+      - 598
+  - type: single box
+    location:
+      - 3884
+      - 611
+  - type: single box
+    location:
+      - 3809
+      - 589
+  - type: single box
+    location:
+      - 3739
+      - 602
+  - type: single box
+    location:
+      - - 1911
+        - 729
+      - - 1911
+        - 615
+  - type: log
+    location:
+      - 3821
+      - 230
+  - type: single box
+    location:
+      - 3810
+      - 495
+  - type: single box
+    location:
+      - - -396
+        - 472
+      - - -335
+        - 538
+  - type: single box
+    location:
+      - - -623
+        - 553
+      - - -626
+        - 507
+  - type: single box
+    location:
+      - - -903
+        - 502
+      - - -1015
+        - 510
+  - type: left signboard
+    location:
+      - -1529
+      - -364
+  - type: laser down
+    location:
+      - -1541
+      - -348
+  - type: fast single box
+    location:
+      - - -1129
+        - 370
+      - - -1333
+        - -46
+  - type: single box
+    location:
+      - -1822
+      - 602
+  - type: single box
+    location:
+      - -1906
+      - 547
+  - type: fast single box
+    location:
+      - - -2037
+        - 333
+      - - -2153
+        - 228
+  - type: fast single box
+    location:
+      - - -2289
+        - 131
+      - - -2544
+        - 76
+  - type: left signboard
+    location:
+      - -2661
+      - -150
+  - type: laser down
+    location:
+      - -2674
+      - -138
+  - type: single box
+    location:
+      - -2712
+      - 469
+  - type: single box
+    location:
+      - -2644
+      - 530
+  - type: single box
+    location:
+      - -2612
+      - 612
+  - type: single box
+    location:
+      - -2629
+      - 694
+  - type: single box
+    location:
+      - -2707
+      - 706
+  - type: single box
+    location:
+      - -2783
+      - 716
+  - type: single box
+    location:
+      - -2869
+      - 727
+  - type: single box
+    location:
+      - -2960
+      - 710
+  - type: single box
+    location:
+      - -3028
+      - 707
+  - type: single box
+    location:
+      - -3074
+      - 655
+  - type: single box
+    location:
+      - -3053
+      - 593
+  - type: single box
+    location:
+      - -3003
+      - 548
+  - type: single box
+    location:
+      - -2942
+      - 492
+  - type: single box
+    location:
+      - -2918
+      - 431
+  - type: single box
+    location:
+      - -1978
+      - 469
+  - type: single box
+    location:
+      - - -3268
+        - 598
+      - - -3312
+        - 614
+  - type: single box
+    location:
+      - -4000
+      - 564
+  - type: single box
+    location:
+      - -4100
+      - 564
+  - type: single box
+    location:
+      - -4200
+      - 564
+  - type: single box
+    location:
+      - -3800
+      - 364
+  - type: single box
+    location:
+      - -4300
+      - 564
+  - type: single box
+    location:
+      - -4400
+      - 564
+  - type: single box
+    location:
+      - -4500
+      - 564
+  - type: single box
+    location:
+      - -4600
+      - 464
+  - type: single box
+    location:
+      - -4700
+      - 364
+  - type: black line col
+    location:
+      - -4200
+      - 364
+  - type: black line col
+    location:
+      - -4200
+      - 264
+  - type: single box
+    location:
+      - - -3579
+        - 604
+      - - -3627
+        - 610
+  - type: left signboard
+    location:
+      - -3752
+      - 521
+  - type: left signboard
+    location:
+      - -3820
+      - 519
+  - type: left signboard
+    location:
+      - -3884
+      - 519
+  - type: laser down
+    location:
+      - -3898
+      - 536
+  - type: laser down
+    location:
+      - -3831
+      - 532
+  - type: laser down
+    location:
+      - -3765
+      - 533
+obstacles:
+  - type: gear
+    location:
+      - -226
+      - 656
+  - type: gear
+    location:
+      - -147
+      - 678
+  - type: gear
+    location:
+      - -73
+      - 678
+  - type: gear
+    location:
+      - 3
+      - 689
+  - type: gear
+    location:
+      - 77
+      - 675
+  - type: gear
+    location:
+      - 156
+      - 693
+  - type: gear
+    location:
+      - 235
+      - 676
+  - type: gear
+    location:
+      - 310
+      - 698
+  - type: gear
+    location:
+      - 380
+      - 677
+  - type: gear
+    location:
+      - 459
+      - 699
+  - type: gear
+    location:
+      - 543
+      - 697
+  - type: gear
+    location:
+      - 612
+      - 695
+  - type: gear
+    location:
+      - 682
+      - 689
+  - type: gear
+    location:
+      - 777
+      - 690
+  - type: gear
+    location:
+      - 745
+      - 665
+  - type: gear
+    location:
+      - 863
+      - 687
+  - type: gear
+    location:
+      - 840
+      - 684
+  - type: gear
+    location:
+      - 926
+      - 699
+  - type: gear
+    location:
+      - 1007
+      - 700
+  - type: gear
+    location:
+      - 1069
+      - 695
+  - type: gear
+    location:
+      - 1153
+      - 703
+  - type: gear
+    location:
+      - 1222
+      - 710
+  - type: gear
+    location:
+      - 1292
+      - 692
+  - type: gear
+    location:
+      - 1358
+      - 706
+  - type: gear
+    location:
+      - 1434
+      - 702
+  - type: gear
+    location:
+      - 1507
+      - 699
+  - type: gear
+    location:
+      - 1584
+      - 713
+  - type: gear
+    location:
+      - 1635
+      - 695
+  - type: gear
+    location:
+      - 1713
+      - 704
+  - type: gear
+    location:
+      - 1781
+      - 682
+  - type: gear
+    location:
+      - 1987
+      - 687
+  - type: gear
+    location:
+      - 2068
+      - 699
+  - type: gear
+    location:
+      - 2165
+      - 688
+  - type: gear
+    location:
+      - 2148
+      - 689
+  - type: gear
+    location:
+      - 2247
+      - 690
+  - type: gear
+    location:
+      - 2340
+      - 699
+  - type: gear
+    location:
+      - 2425
+      - 680
+  - type: gear
+    location:
+      - 2510
+      - 698
+  - type: gear
+    location:
+      - 2594
+      - 692
+  - type: gear
+    location:
+      - 2680
+      - 693
+  - type: gear
+    location:
+      - 2769
+      - 689
+  - type: gear
+    location:
+      - 2857
+      - 692
+  - type: gear
+    location:
+      - 2946
+      - 695
+  - type: gear
+    location:
+      - 3006
+      - 684
+  - type: gear
+    location:
+      - 3053
+      - 717
+  - type: gear
+    location:
+      - 3109
+      - 690
+  - type: gear
+    location:
+      - 3171
+      - 700
+  - type: gear
+    location:
+      - 3230
+      - 682
+  - type: gear
+    location:
+      - 3290
+      - 670
+  - type: gear
+    location:
+      - 3367
+      - 699
+  - type: gear
+    location:
+      - 3460
+      - 684
+  - type: gear
+    location:
+      - 3531
+      - 702
+  - type: gear
+    location:
+      - 3424
+      - 681
+  - type: gear
+    location:
+      - 3599
+      - 691
+  - type: gear
+    location:
+      - 3691
+      - 688
+  - type: gear
+    location:
+      - 3762
+      - 666
+  - type: gear
+    location:
+      - 3848
+      - 665
+  - type: gear
+    location:
+      - 3806
+      - 701
+  - type: gear
+    location:
+      - 3912
+      - 660
+  - type: gear
+    location:
+      - 3990
+      - 686
+  - type: gear
+    location:
+      - 3883
+      - 730
+  - type: gear
+    location:
+      - 4051
+      - 653
+  - type: gear
+    location:
+      - 4084
+      - 693
+  - type: gear
+    location:
+      - 4161
+      - 653
+  - type: gear
+    location:
+      - 4223
+      - 692
+  - type: gear
+    location:
+      - 4288
+      - 660
+  - type: gear
+    location:
+      - 4346
+      - 681
+  - type: gear
+    location:
+      - 4410
+      - 668
+  - type: gear
+    location:
+      - 4476
+      - 691
+  - type: gear
+    location:
+      - 3805
+      - 111
+  - type: gear
+    location:
+      - 3789
+      - 57
+  - type: gear
+    location:
+      - 3738
+      - 16
+  - type: gear
+    location:
+      - 3689
+      - 9
+  - type: gear
+    location:
+      - 3638
+      - 21
+  - type: gear
+    location:
+      - 3866
+      - 84
+  - type: gear
+    location:
+      - 3907
+      - 42
+  - type: gear
+    location:
+      - 3949
+      - 23
+  - type: gear
+    location:
+      - 3998
+      - 36
+  - type: gear
+    location:
+      - 4024
+      - 84
+  - type: gear
+    location:
+      - 3821
+      - 52
+  - type: gear
+    location:
+      - 3842
+      - -4
+  - type: gear
+    location:
+      - 3864
+      - -40
+  - type: gear
+    location:
+      - 3912
+      - -90
+  - type: gear
+    location:
+      - 3642
+      - 565
+  - type: gear
+    location:
+      - 3891
+      - 492
+  - type: gear
+    location:
+      - 3977
+      - 558
+  - type: gear
+    location:
+      - 1832
+      - 695
+  - type: gear
+    location:
+      - 1894
+      - 673
+  - type: gear
+    location:
+      - 1942
+      - 696
+  - type: gear
+    location:
+      - - -317
+        - 671
+      - - -317
+        - 609
+  - type: gear
+    location:
+      - - -395
+        - 652
+      - - -390
+        - 542
+  - type: gear
+    location:
+      - - -466
+        - 608
+      - - -463
+        - 441
+  - type: gear
+    location:
+      - - -540
+        - 641
+      - - -542
+        - 535
+  - type: gear
+    location:
+      - - -611
+        - 683
+      - - -620
+        - 596
+  - type: gear
+    location:
+      - - -688
+        - 652
+      - - -707
+        - 529
+  - type: gear
+    location:
+      - - -789
+        - 638
+      - - -790
+        - 419
+  - type: gear
+    location:
+      - - -880
+        - 666
+      - - -867
+        - 516
+  - type: gear
+    location:
+      - - -957
+        - 684
+      - - -951
+        - 592
+  - type: gear
+    location:
+      - - -1033
+        - 673
+      - - -1035
+        - 537
+  - type: gear
+    location:
+      - - -1120
+        - 652
+      - - -1115
+        - 446
+  - type: gear
+    location:
+      - - -1206
+        - 620
+      - - -1201
+        - 308
+  - type: gear
+    location:
+      - - -1295
+        - 572
+      - - -1300
+        - 140
+  - type: gear
+    location:
+      - - -1388
+        - 524
+      - - -1393
+        - -11
+  - type: gear
+    location:
+      - - -1207
+        - 687
+      - - -1326
+        - 627
+  - type: gear
+    location:
+      - - -1313
+        - 705
+      - - -1420
+        - 679
+  - type: gear
+    location:
+      - - -1419
+        - 598
+      - - -1501
+        - 443
+  - type: gear
+    location:
+      - - -1578
+        - 691
+      - - -1318
+        - 265
+  - type: gear
+    location:
+      - - -1687
+        - 669
+      - - -1490
+        - 288
+  - type: gear
+    location:
+      - - -1572
+        - 562
+      - - -1612
+        - 397
+  - type: gear
+    location:
+      - - -1253
+        - 490
+      - - -1253
+        - 391
+  - type: gear
+    location:
+      - - -1344
+        - 426
+      - - -1443
+        - 205
+  - type: gear
+    location:
+      - - -1628
+        - 517
+      - - -1530
+        - 136
+  - type: gear
+    location:
+      - - -1509
+        - -48
+      - - -1502
+        - 31
+  - type: gear
+    location:
+      - - -1574
+        - -85
+      - - -1607
+        - -9
+  - type: gear
+    location:
+      - 3800
+      - 160
+  - type: gear
+    location:
+      - -286
+      - 653
+  - type: gear
+    location:
+      - -349
+      - 610
+  - type: gear
+    location:
+      - -399
+      - 573
+  - type: gear
+    location:
+      - -442
+      - 525
+  - type: gear
+    location:
+      - -504
+      - 540
+  - type: gear
+    location:
+      - -535
+      - 581
+  - type: gear
+    location:
+      - -566
+      - 617
+  - type: gear
+    location:
+      - -644
+      - 640
+  - type: gear
+    location:
+      - -698
+      - 604
+  - type: gear
+    location:
+      - -736
+      - 573
+  - type: gear
+    location:
+      - -759
+      - 528
+  - type: gear
+    location:
+      - -797
+      - 493
+  - type: gear
+    location:
+      - -847
+      - 537
+  - type: gear
+    location:
+      - -879
+      - 566
+  - type: gear
+    location:
+      - -944
+      - 626
+  - type: gear
+    location:
+      - -992
+      - 612
+  - type: gear
+    location:
+      - -1045
+      - 584
+  - type: gear
+    location:
+      - -1103
+      - 542
+  - type: gear
+    location:
+      - -1143
+      - 499
+  - type: gear
+    location:
+      - -1196
+      - 458
+  - type: gear
+    location:
+      - -1244
+      - 393
+  - type: gear
+    location:
+      - -1261
+      - 311
+  - type: gear
+    location:
+      - -1334
+      - 284
+  - type: gear
+    location:
+      - -1365
+      - 214
+  - type: gear
+    location:
+      - -1354
+      - 155
+  - type: gear
+    location:
+      - -1378
+      - 81
+  - type: gear
+    location:
+      - -1418
+      - 38
+  - type: gear
+    location:
+      - -1454
+      - -9
+  - type: gear
+    location:
+      - -1514
+      - -19
+  - type: gear
+    location:
+      - -1563
+      - -26
+  - type: gear
+    location:
+      - -1624
+      - 38
+  - type: gear
+    location:
+      - -1677
+      - 111
+  - type: gear
+    location:
+      - -1602
+      - 87
+  - type: gear
+    location:
+      - -1543
+      - 50
+  - type: gear
+    location:
+      - -1477
+      - 75
+  - type: gear
+    location:
+      - -1425
+      - 120
+  - type: gear
+    location:
+      - -1418
+      - 187
+  - type: gear
+    location:
+      - -1410
+      - 227
+  - type: gear
+    location:
+      - -1379
+      - 288
+  - type: gear
+    location:
+      - -1339
+      - 330
+  - type: gear
+    location:
+      - -1289
+      - 377
+  - type: gear
+    location:
+      - -1262
+      - 469
+  - type: gear
+    location:
+      - -1214
+      - 519
+  - type: gear
+    location:
+      - -1166
+      - 553
+  - type: gear
+    location:
+      - -421
+      - 660
+  - type: gear
+    location:
+      - -479
+      - 660
+  - type: gear
+    location:
+      - -522
+      - 676
+  - type: gear
+    location:
+      - -676
+      - 695
+  - type: gear
+    location:
+      - -773
+      - 625
+  - type: gear
+    location:
+      - -812
+      - 568
+  - type: gear
+    location:
+      - -734
+      - 683
+  - type: gear
+    location:
+      - -843
+      - 695
+  - type: gear
+    location:
+      - -812
+      - 691
+  - type: gear
+    location:
+      - -851
+      - 636
+  - type: gear
+    location:
+      - -944
+      - 677
+  - type: gear
+    location:
+      - -896
+      - 695
+  - type: gear
+    location:
+      - -997
+      - 671
+  - type: gear
+    location:
+      - -1053
+      - 673
+  - type: gear
+    location:
+      - -1080
+      - 625
+  - type: gear
+    location:
+      - -1167
+      - 615
+  - type: gear
+    location:
+      - -1119
+      - 682
+  - type: gear
+    location:
+      - -1257
+      - 680
+  - type: gear
+    location:
+      - -1266
+      - 575
+  - type: gear
+    location:
+      - -1204
+      - 675
+  - type: gear
+    location:
+      - -1143
+      - 609
+  - type: gear
+    location:
+      - -1221
+      - 605
+  - type: gear
+    location:
+      - -1232
+      - 599
+  - type: gear
+    location:
+      - -1304
+      - 548
+  - type: gear
+    location:
+      - -1332
+      - 488
+  - type: gear
+    location:
+      - -1367
+      - 442
+  - type: gear
+    location:
+      - -1380
+      - 366
+  - type: gear
+    location:
+      - -1423
+      - 273
+  - type: gear
+    location:
+      - -1479
+      - 216
+  - type: gear
+    location:
+      - -1437
+      - 336
+  - type: gear
+    location:
+      - -1488
+      - 148
+  - type: gear
+    location:
+      - -1418
+      - 391
+  - type: gear
+    location:
+      - -1408
+      - 457
+  - type: gear
+    location:
+      - -1439
+      - 490
+  - type: gear
+    location:
+      - -1484
+      - 561
+  - type: gear
+    location:
+      - -1588
+      - 605
+  - type: gear
+    location:
+      - -1689
+      - 663
+  - type: gear
+    location:
+      - -1517
+      - 627
+  - type: gear
+    location:
+      - -1604
+      - 674
+  - type: gear
+    location:
+      - -1490
+      - 676
+  - type: gear
+    location:
+      - -1364
+      - 682
+  - type: gear
+    location:
+      - -1439
+      - 624
+  - type: gear
+    location:
+      - -1369
+      - 571
+  - type: gear
+    location:
+      - -1401
+      - 552
+  - type: gear
+    location:
+      - -1755
+      - 682
+  - type: gear
+    location:
+      - -1825
+      - 681
+  - type: gear
+    location:
+      - -1874
+      - 658
+  - type: gear
+    location:
+      - -1917
+      - 606
+  - type: gear
+    location:
+      - -1948
+      - 574
+  - type: gear
+    location:
+      - -1977
+      - 521
+  - type: gear
+    location:
+      - -1999
+      - 472
+  - type: gear
+    location:
+      - -2045
+      - 426
+  - type: gear
+    location:
+      - -2078
+      - 369
+  - type: gear
+    location:
+      - -2116
+      - 318
+  - type: gear
+    location:
+      - -2166
+      - 290
+  - type: gear
+    location:
+      - -2227
+      - 229
+  - type: gear
+    location:
+      - -2283
+      - 195
+  - type: gear
+    location:
+      - -2357
+      - 150
+  - type: gear
+    location:
+      - -2425
+      - 122
+  - type: gear
+    location:
+      - -2510
+      - 140
+  - type: gear
+    location:
+      - -2587
+      - 211
+  - type: gear
+    location:
+      - -2603
+      - 279
+  - type: gear
+    location:
+      - -2613
+      - 341
+  - type: gear
+    location:
+      - -2556
+      - 176
+  - type: gear
+    location:
+      - -2565
+      - 379
+  - type: gear
+    location:
+      - -2510
+      - 357
+  - type: gear
+    location:
+      - -2435
+      - 381
+  - type: gear
+    location:
+      - -2357
+      - 446
+  - type: gear
+    location:
+      - -2614
+      - 399
+  - type: gear
+    location:
+      - -2340
+      - 494
+  - type: gear
+    location:
+      - -2347
+      - 557
+  - type: gear
+    location:
+      - -2396
+      - 606
+  - type: gear
+    location:
+      - -2451
+      - 628
+  - type: gear
+    location:
+      - -2468
+      - 635
+  - type: gear
+    location:
+      - -2532
+      - 659
+  - type: gear
+    location:
+      - - -2541
+        - 330
+      - - -2547
+        - 259
+  - type: gear
+    location:
+      - - -2502
+        - 317
+      - - -2492
+        - 258
+  - type: gear
+    location:
+      - - -2512
+        - 197
+      - - -2422
+        - 338
+  - type: gear
+    location:
+      - - -2435
+        - 175
+      - - -2414
+        - 271
+  - type: gear
+    location:
+      - - -2344
+        - 232
+      - - -2375
+        - 377
+  - type: gear
+    location:
+      - - -2358
+        - 298
+      - - -2274
+        - 259
+  - type: gear
+    location:
+      - - -2338
+        - 695
+      - - -2263
+        - 294
+  - type: gear
+    location:
+      - - -1978
+        - 675
+      - - -2347
+        - 360
+  - type: gear
+    location:
+      - - -2224
+        - 720
+      - - -2174
+        - 375
+  - type: gear
+    location:
+      - - -2066
+        - 713
+      - - -2250
+        - 496
+  - type: gear
+    location:
+      - - -2166
+        - 720
+      - - -2072
+        - 491
+  - type: gear
+    location:
+      - - -2068
+        - 650
+      - - -2230
+        - 395
+  - type: gear
+    location:
+      - - -2258
+        - 622
+      - - -2121
+        - 435
+  - type: gear
+    location:
+      - - -2152
+        - 624
+      - - -2192
+        - 483
+  - type: gear
+    location:
+      - - -2047
+        - 566
+      - - -2140
+        - 557
+  - type: gear
+    location:
+      - - -2279
+        - 565
+      - - -2270
+        - 403
+  - type: gear
+    location:
+      - - -2416
+        - 682
+      - - -2313
+        - 637
+  - type: gear
+    location:
+      - - -2270
+        - 688
+      - - -2297
+        - 435
+  - type: gear
+    location:
+      - - -2307
+        - 347
+      - - -2218
+        - 329
+  - type: gear
+    location:
+      - -2387
+      - 218
+  - type: gear
+    location:
+      - -2429
+      - 209
+  - type: gear
+    location:
+      - - -2206
+        - 641
+      - - -2134
+        - 492
+  - type: gear
+    location:
+      - - -1913
+        - 682
+      - - -1986
+        - 592
+  - type: gear
+    location:
+      - -2525
+      - 337
+  - type: gear
+    location:
+      - -2463
+      - 294
+  - type: gear
+    location:
+      - -2420
+      - 331
+  - type: gear
+    location:
+      - -2387
+      - 346
+  - type: gear
+    location:
+      - -2305
+      - 469
+  - type: gear
+    location:
+      - -2250
+      - 537
+  - type: gear
+    location:
+      - -2253
+      - 591
+  - type: gear
+    location:
+      - -2212
+      - 620
+  - type: gear
+    location:
+      - -2069
+      - 619
+  - type: gear
+    location:
+      - -2025
+      - 612
+  - type: gear
+    location:
+      - -2158
+      - 590
+  - type: gear
+    location:
+      - -2157
+      - 528
+  - type: gear
+    location:
+      - -2006
+      - 513
+  - type: gear
+    location:
+      - -2157
+      - 452
+  - type: gear
+    location:
+      - -2141
+      - 395
+  - type: gear
+    location:
+      - -2197
+      - 301
+  - type: gear
+    location:
+      - -2317
+      - 269
+  - type: gear
+    location:
+      - -2229
+      - 421
+  - type: gear
+    location:
+      - -2127
+      - 658
+  - type: gear
+    location:
+      - -2092
+      - 562
+  - type: gear
+    location:
+      - -2019
+      - 660
+  - type: gear
+    location:
+      - -2233
+      - 586
+  - type: gear
+    location:
+      - -2406
+      - 672
+  - type: gear
+    location:
+      - -2374
+      - 624
+  - type: gear
+    location:
+      - -2492
+      - 683
+  - type: gear
+    location:
+      - -1965
+      - 641
+  - type: gear
+    location:
+      - -2219
+      - 548
+  - type: gear
+    location:
+      - -2265
+      - 522
+  - type: gear
+    location:
+      - -2252
+      - 308
+  - type: gear
+    location:
+      - -2155
+      - 318
+  - type: gear
+    location:
+      - - -2512
+        - 679
+      - - -2549
+        - 574
+  - type: gear
+    location:
+      - - -2552
+        - 682
+      - - -2575
+        - 633
+  - type: gear
+    location:
+      - - -3195
+        - 684
+      - - -3127
+        - 586
+  - type: gear
+    location:
+      - -3390
+      - 685
+  - type: gear
+    location:
+      - -3328
+      - 669
+  - type: gear
+    location:
+      - -3282
+      - 687
+  - type: gear
+    location:
+      - -3234
+      - 664
+  - type: gear
+    location:
+      - -3146
+      - 665
+  - type: gear
+    location:
+      - -3441
+      - 662
+  - type: gear
+    location:
+      - -3494
+      - 706
+  - type: gear
+    location:
+      - -3542
+      - 684
+  - type: gear
+    location:
+      - -3585
+      - 691
+  - type: gear
+    location:
+      - -3645
+      - 682
+  - type: gear
+    location:
+      - -3721
+      - 682
+  - type: gear
+    location:
+      - - -3274
+        - 649
+      - - -3239
+        - 608
+  - type: gear
+    location:
+      - - -3165
+        - 681
+      - - -3079
+        - 560
+  - type: gear
+    location:
+      - -3769
+      - 680
+  - type: gear
+    location:
+      - -3822
+      - 695
+  - type: gear
+    location:
+      - -3871
+      - 688
+  - type: gear
+    location:
+      - -3939
+      - 663
+  - type: gear
+    location:
+      - -3990
+      - 683
+  - type: gear
+    location:
+      - -4038
+      - 685
+  - type: gear
+    location:
+      - -4082
+      - 676
+  - type: gear
+    location:
+      - -4139
+      - 672
+  - type: gear
+    location:
+      - -4231
+      - 662
+  - type: gear
+    location:
+      - -4195
+      - 692
+  - type: gear
+    location:
+      - -4289
+      - 691
+  - type: gear
+    location:
+      - -4354
+      - 663
+  - type: gear
+    location:
+      - -4405
+      - 695
+  - type: gear
+    location:
+      - -4444
+      - 668
+  - type: gear
+    location:
+      - -4500
+      - 681
+  - type: gear
+    location:
+      - -4575
+      - 679
+  - type: gear
+    location:
+      - -4633
+      - 676
+  - type: gear
+    location:
+      - -4696
+      - 692
+  - type: gear
+    location:
+      - -4762
+      - 681
+  - type: gear
+    location:
+      - -4828
+      - 697
+  - type: gear
+    location:
+      - -4882
+      - 672
+  - type: gear
+    location:
+      - -4941
+      - 687
+  - type: gear
+    location:
+      - -5007
+      - 672
+  - type: gear
+    location:
+      - -5063
+      - 687
+  - type: gear
+    location:
+      - -5128
+      - 668
+  - type: gear
+    location:
+      - -5187
+      - 703
+  - type: gear
+    location:
+      - -5282
+      - 685
+  - type: gear
+    location:
+      - -5244
+      - 688
+  - type: fast
+    location:
+      - - -3800
+        - 364
+      - - -3500
+        - 64
+  - type: gear
+    location:
+      - -5341
+      - 674
+  - type: gear
+    location:
+      - -5411
+      - 685
+  - type: gear
+    location:
+      - -5478
+      - 676
+  - type: gear
+    location:
+      - -5516
+      - 681
+  - type: gear
+    location:
+      - -5572
+      - 675
+  - type: gear
+    location:
+      - -5618
+      - 686
+  - type: red gear
+    location:
+      - -800
+      - 364
+  - type: red gear
+    location:
+      - -808
+      - 297
+  - type: red gear
+    location:
+      - -792
+      - 231
+  - type: red gear
+    location:
+      - -795
+      - 164
+  - type: red gear
+    location:
+      - -800
+      - 435
+on off obstacles: []
+bullet rotators:
+  - type: left
+    location:
+      - -4300
+      - 464
+flip gravity: []
+speed:
+  - type: left
+    location:
+      - -3900
+      - 464
+slow: []
+disappearing: []
+jumpers: []
+buttons:
+  - type: red
+    location:
+      - 3726
+      - 505

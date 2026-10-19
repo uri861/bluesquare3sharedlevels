@@ -1,0 +1,1002 @@
+background: (0, 191, 255)
+player:
+  size:
+    - 80
+    - 80
+  speed: 10
+  jump speed: 30
+  gravity: 1.5
+  die sound: sound\die sound.mp3
+  location:
+    - -2100
+    - 564
+  images:
+    regular: graphics\character.png
+    right: graphics\right character.png
+    left: graphics\left character.png
+    jump: graphics\jump character.png
+    die: graphics\die character.png
+monster:
+  location:
+    - -2492
+    - 674
+  size:
+    - 80
+    - 80
+  gravity: 0.1
+  speed: 5
+  jump speed: 30
+  die sound: sound\die sound.mp3
+  images:
+    regular: graphics\monster.png
+    right: graphics\monster right.png
+    left: graphics\monster left.png
+    jump: graphics\monster jump.png
+    die: graphics\die monster.png
+  horns:
+    image: graphics\monster horns.png
+    size:
+      - 107
+      - 50
+    relative location:
+      - -13
+      - -35
+gun:
+  image: graphics\gun.png
+  location:
+    - -4397
+    - 577
+  size:
+    - 95
+    - 75
+  price: 5
+  strength: 10
+  bullet speed: 15
+  bullet image: graphics\bullet.png
+checkpoints:
+  green flag image: graphics\green flag.png
+  red flag image: graphics\red flag.png
+  sound: sound\ping.mp3
+  locations:
+    - - -2921
+      - 667
+coins:
+  image: graphics\coin.png
+  size:
+    - 50
+    - 50
+  sound: sound\cha-ching.mp3
+  locations:
+    - - -3375
+      - 489
+    - - -3075
+      - 689
+    - - -4275
+      - 489
+    - - -3591
+      - 593
+    - - -4175
+      - 589
+coins that slows the monster:
+  image: graphics\red coin.png
+  size:
+    - 81
+    - 81
+  sound: sound\cha-ching.mp3
+  speed down: 4
+  locations: []
+boxes:
+  - type: single box
+    location:
+      - 8900
+      - -136
+  - type: single box
+    location:
+      - 8900
+      - -36
+  - type: single box
+    location:
+      - 8900
+      - 64
+  - type: single box
+    location:
+      - 8900
+      - 164
+  - type: single box
+    location:
+      - 8900
+      - 264
+  - type: single box
+    location:
+      - 8900
+      - 364
+  - type: single box
+    location:
+      - 8900
+      - 464
+  - type: single box
+    location:
+      - 8900
+      - 664
+  - type: single box
+    location:
+      - 8800
+      - 664
+  - type: single box
+    location:
+      - 8200
+      - 64
+  - type: single box
+    location:
+      - 7900
+      - 564
+  - type: single box
+    location:
+      - 7700
+      - 164
+  - type: single box
+    location:
+      - - 7500
+        - 664
+      - - 7500
+        - 64
+  - type: single box
+    location:
+      - - 7500
+        - 564
+      - - 7500
+        - -36
+  - type: single box
+    location:
+      - - 7500
+        - 464
+      - - 7500
+        - -136
+  - type: single box
+    location:
+      - - 8200
+        - 664
+      - - 7900
+        - 264
+  - type: single box
+    location:
+      - - 8200
+        - 564
+      - - 7900
+        - 164
+  - type: single box
+    location:
+      - - 7000
+        - 264
+      - - 6000
+        - 264
+  - type: single box
+    location:
+      - - 7000
+        - 364
+      - - 6000
+        - 364
+  - type: single box
+    location:
+      - - 7000
+        - 464
+      - - 6000
+        - 464
+  - type: single box
+    location:
+      - - 6700
+        - 164
+      - - 6700
+        - 664
+  - type: single box
+    location:
+      - - 6600
+        - 164
+      - - 6600
+        - 664
+  - type: single box
+    location:
+      - - 6300
+        - 664
+      - - 6300
+        - 164
+  - type: single box
+    location:
+      - 5400
+      - 64
+  - type: single box
+    location:
+      - 5400
+      - 164
+  - type: single box
+    location:
+      - 5200
+      - 464
+  - type: single box
+    location:
+      - 5200
+      - 564
+  - type: single box
+    location:
+      - - 5600
+        - 664
+      - - 4900
+        - 164
+  - type: single box
+    location:
+      - - 5600
+        - 564
+      - - 4900
+        - 64
+  - type: single box
+    location:
+      - - 4900
+        - 664
+      - - 5800
+        - 664
+  - type: single box
+    location:
+      - - 4100
+        - 464
+      - - 2000
+        - 464
+  - type: single box
+    location:
+      - - 1300
+        - 364
+      - - 3600
+        - 364
+  - type: single box
+    location:
+      - - 3300
+        - 164
+      - - 3300
+        - 664
+  - type: single box
+    location:
+      - - 2600
+        - 664
+      - - 2600
+        - 164
+  - type: single box
+    location:
+      - - 3200
+        - 664
+      - - 3200
+        - 164
+  - type: single box
+    location:
+      - - 1700
+        - 164
+      - - 1700
+        - 664
+  - type: single box
+    location:
+      - -2400
+      - 664
+  - type: happy signboard
+    location:
+      - -2386
+      - 571
+  - type: single box
+    location:
+      - - 1500
+        - 64
+      - - 200
+        - 64
+  - type: single box
+    location:
+      - - 1500
+        - 164
+      - - 200
+        - 164
+  - type: single box
+    location:
+      - - 1500
+        - 264
+      - - 200
+        - 264
+  - type: fast single box
+    location:
+      - - 1500
+        - 364
+      - - 200
+        - 364
+  - type: fast single box
+    location:
+      - - 200
+        - 464
+      - - 1500
+        - 464
+  - type: single box
+    location:
+      - - 1500
+        - 564
+      - - 200
+        - 564
+  - type: single box
+    location:
+      - - 1500
+        - 664
+      - - 200
+        - 664
+  - type: fast single box
+    location:
+      - - 1400
+        - 64
+      - - 1400
+        - 664
+  - type: fast single box
+    location:
+      - - 1300
+        - 664
+      - - 1300
+        - 64
+  - type: fast single box
+    location:
+      - - 400
+        - 64
+      - - 400
+        - 664
+  - type: single box
+    location:
+      - - -100
+        - 464
+      - - -1600
+        - 464
+  - type: single box
+    location:
+      - - -100
+        - 564
+      - - -1600
+        - 564
+  - type: single box
+    location:
+      - -1300
+      - 664
+  - type: single box
+    location:
+      - -500
+      - 664
+  - type: single box
+    location:
+      - - -100
+        - 364
+      - - -1600
+        - 364
+  - type: single box
+    location:
+      - - -100
+        - 264
+      - - -1600
+        - 264
+  - type: single box
+    location:
+      - 3900
+      - 464
+  - type: single box
+    location:
+      - 3900
+      - 364
+  - type: single box
+    location:
+      - 3900
+      - 264
+  - type: single box
+    location:
+      - 3700
+      - 664
+  - type: single box
+    location:
+      - 6700
+      - 364
+  - type: single box
+    location:
+      - 6700
+      - 464
+  - type: single box
+    location:
+      - 6700
+      - 564
+  - type: single box
+    location:
+      - 6700
+      - 664
+  - type: single box
+    location:
+      - 6200
+      - 664
+  - type: single box
+    location:
+      - 5500
+      - 664
+  - type: single box
+    location:
+      - 6100
+      - 264
+  - type: single box
+    location:
+      - 6100
+      - 364
+  - type: fast single box
+    location:
+      - - 2300
+        - 164
+      - - -1600
+        - 264
+  - type: fast single box
+    location:
+      - - 2300
+        - 364
+      - - -1600
+        - 464
+  - type: fast single box
+    location:
+      - - 2300
+        - 464
+      - - -1600
+        - 564
+  - type: fast single box
+    location:
+      - - 2300
+        - 564
+      - - -1600
+        - 664
+  - type: fast single box
+    location:
+      - - -1600
+        - 664
+      - - 2300
+        - 664
+  - type: sad signboard
+    location:
+      - -3485
+      - 668
+  - type: sad signboard
+    location:
+      - -3842
+      - 451
+  - type: sad signboard
+    location:
+      - -3169
+      - 447
+  - type: log
+    location:
+      - -4700
+      - 464
+  - type: single box
+    location:
+      - 3900
+      - 164
+  - type: single box
+    location:
+      - 3800
+      - 64
+  - type: single box
+    location:
+      - 7900
+      - -36
+  - type: single box
+    location:
+      - 5718
+      - 164
+  - type: single box
+    location:
+      - 4594
+      - 521
+  - type: single box
+    location:
+      - 4631
+      - -46
+  - type: single box
+    location:
+      - 4224
+      - 106
+  - type: single box
+    location:
+      - 3941
+      - 315
+  - type: single box
+    location:
+      - 2799
+      - 459
+  - type: single box
+    location:
+      - 2097
+      - 660
+  - type: single box
+    location:
+      - 2388
+      - 352
+  - type: single box
+    location:
+      - 2015
+      - 114
+  - type: single box
+    location:
+      - 1108
+      - -5
+  - type: single box
+    location:
+      - -356
+      - -9
+  - type: single box
+    location:
+      - -533
+      - 192
+  - type: sad signboard
+    location:
+      - 9000
+      - -236
+  - type: sad signboard
+    location:
+      - 8860
+      - -214
+  - type: sad signboard
+    location:
+      - 8834
+      - -232
+  - type: sad signboard
+    location:
+      - 8875
+      - -259
+  - type: sad signboard
+    location:
+      - 8900
+      - -230
+  - type: sad signboard
+    location:
+      - 8906
+      - -210
+  - type: sad signboard
+    location:
+      - 8927
+      - -220
+  - type: sad signboard
+    location:
+      - 8945
+      - -237
+  - type: sad signboard
+    location:
+      - 8951
+      - -195
+  - type: sad signboard
+    location:
+      - 8972
+      - -263
+  - type: sad signboard
+    location:
+      - 8956
+      - -309
+  - type: sad signboard
+    location:
+      - 8918
+      - -300
+  - type: sad signboard
+    location:
+      - 8931
+      - -298
+  - type: sad signboard
+    location:
+      - 8902
+      - -331
+  - type: sad signboard
+    location:
+      - 8877
+      - -334
+  - type: sad signboard
+    location:
+      - 8867
+      - -300
+  - type: sad signboard
+    location:
+      - 8861
+      - -294
+  - type: sad signboard
+    location:
+      - 8844
+      - -296
+  - type: sad signboard
+    location:
+      - 8908
+      - -259
+  - type: sad signboard
+    location:
+      - 8896
+      - -282
+  - type: sad signboard
+    location:
+      - 8916
+      - -274
+  - type: sad signboard
+    location:
+      - 8933
+      - -268
+  - type: sad signboard
+    location:
+      - 8960
+      - -296
+  - type: sad signboard
+    location:
+      - 8970
+      - -319
+  - type: sad signboard
+    location:
+      - 8898
+      - -270
+  - type: sad signboard
+    location:
+      - 8896
+      - -267
+  - type: sad signboard
+    location:
+      - 8953
+      - -265
+  - type: sad signboard
+    location:
+      - 8896
+      - -286
+  - type: sad signboard
+    location:
+      - 8871
+      - -259
+  - type: sad signboard
+    location:
+      - 8869
+      - -239
+  - type: sad signboard
+    location:
+      - 8908
+      - -245
+  - type: sad signboard
+    location:
+      - 8863
+      - -317
+  - type: sad signboard
+    location:
+      - 8852
+      - -338
+  - type: sad signboard
+    location:
+      - 8927
+      - -323
+  - type: sad signboard
+    location:
+      - 8939
+      - -338
+  - type: sad signboard
+    location:
+      - 8929
+      - -298
+  - type: sad signboard
+    location:
+      - 8927
+      - -268
+  - type: sad signboard
+    location:
+      - 8889
+      - -265
+  - type: sad signboard
+    location:
+      - 8904
+      - -288
+  - type: single box
+    location:
+      - 6800
+      - 564
+  - type: fast single box
+    location:
+      - - 8600
+        - 364
+      - - 8400
+        - -136
+  - type: happy signboard
+    location:
+      - 9000
+      - 664
+  - type: happy signboard
+    location:
+      - 9100
+      - 664
+  - type: happy signboard
+    location:
+      - 9200
+      - 664
+  - type: happy signboard
+    location:
+      - 9300
+      - 664
+  - type: happy signboard
+    location:
+      - 9400
+      - 664
+  - type: happy signboard
+    location:
+      - 9500
+      - 664
+  - type: happy signboard
+    location:
+      - 9600
+      - 664
+  - type: happy signboard
+    location:
+      - 9700
+      - 664
+  - type: happy signboard
+    location:
+      - 9800
+      - 664
+  - type: sad signboard
+    location:
+      - 9900
+      - 664
+  - type: sad signboard
+    location:
+      - -3393
+      - 621
+  - type: sad signboard
+    location:
+      - -4009
+      - 617
+  - type: sad signboard
+    location:
+      - -4186
+      - 416
+  - type: left signboard
+    location:
+      - 8042
+      - -462
+  - type: happy signboard
+    location:
+      - 8083
+      - -462
+  - type: sad signboard
+    location:
+      - -3780
+      - 568
+  - type: sad signboard
+    location:
+      - -3693
+      - 683
+  - type: sad signboard
+    location:
+      - -3565
+      - 348
+  - type: sad signboard
+    location:
+      - -4077
+      - 659
+obstacles:
+  - type: vertical laser
+    location:
+      - - -2300
+        - 464
+      - - 8900
+        - 464
+  - type: vertical laser
+    location:
+      - - -2300
+        - 164
+      - - 8900
+        - 164
+  - type: vertical laser
+    location:
+      - - -2300
+        - -136
+      - - 8900
+        - -136
+  - type: short vertical laser
+    location:
+      - - 7600
+        - 264
+      - - 3400
+        - 264
+  - type: short vertical laser
+    location:
+      - -3140
+      - 443
+  - type: short vertical laser
+    location:
+      - -3456
+      - 664
+  - type: gear
+    location:
+      - -4719
+      - 444
+  - type: red gear
+    location:
+      - 8898
+      - -169
+  - type: gear
+    location:
+      - 8896
+      - -292
+  - type: gear
+    location:
+      - 8892
+      - -290
+  - type: gear
+    location:
+      - 8958
+      - -218
+  - type: gear
+    location:
+      - 8971
+      - -303
+  - type: gear
+    location:
+      - 8932
+      - -363
+  - type: gear
+    location:
+      - 8841
+      - -350
+  - type: gear
+    location:
+      - 8830
+      - -269
+  - type: gear
+    location:
+      - 8823
+      - -234
+  - type: gear
+    location:
+      - 8860
+      - -361
+  - type: gear
+    location:
+      - 8828
+      - -347
+  - type: short vertical laser
+    location:
+      - -3364
+      - 614
+  - type: short vertical laser
+    location:
+      - -3812
+      - 445
+  - type: short vertical laser
+    location:
+      - -3977
+      - 610
+  - type: short vertical laser
+    location:
+      - -4156
+      - 408
+  - type: short vertical laser
+    location:
+      - -3661
+      - 679
+  - type: short vertical laser
+    location:
+      - -3535
+      - 341
+  - type: short vertical laser
+    location:
+      - -4048
+      - 654
+on off obstacles: []
+bullet rotators: []
+flip gravity: []
+speed: []
+slow:
+  - type: red
+    location:
+      - 200
+      - -136
+    size:
+      - 2200
+      - 900
+  - type: red
+    location:
+      - -2300
+      - -136
+    size:
+      - 2500
+      - 900
+  - type: red
+    location:
+      - 100
+      - -136
+    size:
+      - 2900
+      - 900
+  - type: red
+    location:
+      - 2500
+      - 264
+    size:
+      - 1300
+      - 400
+  - type: red
+    location:
+      - 2800
+      - -136
+    size:
+      - 3400
+      - 900
+  - type: red
+    location:
+      - 6200
+      - -136
+    size:
+      - 1600
+      - 900
+  - type: red
+    location:
+      - 7400
+      - -136
+    size:
+      - 1600
+      - 900
+disappearing:
+  - type: red
+    location:
+      - 3800
+      - 564
+  - type: red
+    location:
+      - 3800
+      - 464
+  - type: red
+    location:
+      - 3800
+      - 364
+  - type: red
+    location:
+      - 3797
+      - 423
+  - type: red
+    location:
+      - 3791
+      - 519
+  - type: white
+    location:
+      - 8800
+      - 564
+  - type: red
+    location:
+      - 3798
+      - 466
+  - type: red
+    location:
+      - 3803
+      - 411
+  - type: red
+    location:
+      - 3809
+      - 550
+  - type: red
+    location:
+      - 3785
+      - 563
+  - type: red
+    location:
+      - 3783
+      - 487
+  - type: red
+    location:
+      - 3824
+      - 481
+  - type: red
+    location:
+      - 3792
+      - 439
+  - type: red
+    location:
+      - 3788
+      - 535
+  - type: white
+    location:
+      - 8799
+      - 554
+  - type: white
+    location:
+      - 8803
+      - 546
+  - type: white
+    location:
+      - 8795
+      - 541
+jumpers: []
+buttons: []

@@ -12,6 +12,21 @@
    },
    "w": 240,
    "h": 240
+  },
+  {
+   "id": "r1s2cnu5cqoz457qihdlggkq",
+   "kind": "skin",
+   "label": "hat skin",
+   "creator": "user7924061",
+   "price": 20,
+   "at": "2026-10-29T18:45:37.989Z",
+   "images": {
+    "regular": "https://raw.githubusercontent.com/uri861/bluesquare3sharedlevels/main/community/r1s2cnu5cqoz457qihdlggkq/regular.png",
+    "right": "https://raw.githubusercontent.com/uri861/bluesquare3sharedlevels/main/community/r1s2cnu5cqoz457qihdlggkq/right.png",
+    "left": "https://raw.githubusercontent.com/uri861/bluesquare3sharedlevels/main/community/r1s2cnu5cqoz457qihdlggkq/left.png",
+    "jump": "https://raw.githubusercontent.com/uri861/bluesquare3sharedlevels/main/community/r1s2cnu5cqoz457qihdlggkq/jump.png",
+    "die": "https://raw.githubusercontent.com/uri861/bluesquare3sharedlevels/main/community/r1s2cnu5cqoz457qihdlggkq/die.png"
+   }
   }
  ]
 }

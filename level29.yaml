@@ -1,0 +1,2177 @@
+background: (18, 238, 185)
+player:
+  size:
+    - 80
+    - 80
+  speed: 10
+  jump speed: 30
+  gravity: 1.5
+  die sound: sound\die sound.mp3
+  location:
+    - 1300
+    - 684
+  images:
+    regular: graphics\character.png
+    right: graphics\right character.png
+    left: graphics\left character.png
+    jump: graphics\jump character.png
+    die: graphics\die character.png
+monster:
+  location:
+    - -10679
+    - 479
+  size:
+    - 80
+    - 80
+  gravity: 0.1
+  speed: 5
+  jump speed: 30
+  die sound: sound\die sound.mp3
+  images:
+    regular: graphics\monster.png
+    right: graphics\monster right.png
+    left: graphics\monster left.png
+    jump: graphics\monster jump.png
+    die: graphics\die monster.png
+  horns:
+    image: graphics\monster horns.png
+    size:
+      - 107
+      - 50
+    relative location:
+      - -13
+      - -35
+gun:
+  image: graphics\gun.png
+  location:
+    - -9897
+    - 576
+  size:
+    - 95
+    - 75
+  price: 104
+  strength: 10
+  bullet speed: 15
+  bullet image: graphics\bullet.png
+checkpoints:
+  green flag image: graphics\green flag.png
+  red flag image: graphics\red flag.png
+  sound: sound\ping.mp3
+  locations:
+    - - -7259
+      - 170
+coins:
+  image: graphics\coin.png
+  size:
+    - 50
+    - 50
+  sound: sound\cha-ching.mp3
+  locations:
+    - - -1633
+      - 439
+    - - -1593
+      - 438
+    - - -1543
+      - 441
+    - - -1565
+      - 439
+    - - -1513
+      - 439
+    - - -1480
+      - 439
+    - - -1452
+      - 441
+    - - -1429
+      - 441
+    - - -1433
+      - 467
+    - - -1451
+      - 494
+    - - -1469
+      - 522
+    - - -1497
+      - 550
+    - - -1516
+      - 571
+    - - -1635
+      - 457
+    - - -1612
+      - 494
+    - - -1555
+      - 567
+    - - -1529
+      - 553
+    - - -1540
+      - 528
+    - - -1510
+      - 528
+    - - -1469
+      - 494
+    - - -1457
+      - 464
+    - - -1483
+      - 490
+    - - -1503
+      - 516
+    - - -1497
+      - 473
+    - - -1516
+      - 485
+    - - -1528
+      - 512
+    - - -1543
+      - 492
+    - - -1547
+      - 467
+    - - -1574
+      - 466
+    - - -1595
+      - 469
+    - - -1532
+      - 592
+    - - -1455
+      - 522
+    - - -1475
+      - 549
+    - - -1492
+      - 579
+    - - -1523
+      - 602
+    - - -1558
+      - 593
+    - - -1577
+      - 567
+    - - -1605
+      - 531
+    - - -1614
+      - 500
+    - - -1409
+      - 470
+    - - -1384
+      - 498
+    - - -1380
+      - 521
+    - - -1388
+      - 549
+    - - -1448
+      - 564
+    - - -1409
+      - 559
+    - - -1611
+      - 564
+    - - -1526
+      - 633
+    - - -1529
+      - 651
+    - - -1522
+      - 671
+    - - -1630
+      - 724
+    - - -1602
+      - 711
+    - - -1575
+      - 699
+    - - -1547
+      - 694
+    - - -1516
+      - 691
+    - - -1483
+      - 706
+    - - -1463
+      - 715
+    - - -1452
+      - 730
+    - - -1475
+      - 730
+    - - -1492
+      - 731
+    - - -1519
+      - 727
+    - - -1562
+      - 733
+    - - -1599
+      - 743
+    - - -1430
+      - 734
+    - - -1571
+      - 546
+    - - -1578
+      - 524
+    - - -1578
+      - 501
+    - - -1614
+      - 549
+    - - -1626
+      - 525
+    - - -1638
+      - 497
+    - - -1641
+      - 464
+    - - -1669
+      - 461
+    - - -1688
+      - 476
+    - - -1713
+      - 509
+    - - -1704
+      - 538
+    - - -1678
+      - 555
+    - - -1647
+      - 558
+    - - -3275
+      - -11
+    - - -3375
+      - -11
+    - - -3324
+      - -103
+    - - -2775
+      - 289
+    - - -3917
+      - 104
+    - - -3919
+      - 48
+    - - -4722
+      - 685
+    - - -4751
+      - 676
+    - - -4772
+      - 654
+    - - -4781
+      - 624
+    - - -4738
+      - 566
+    - - -4712
+      - 564
+    - - -4696
+      - 573
+    - - -4678
+      - 594
+    - - -4665
+      - 620
+    - - -4677
+      - 646
+    - - -4692
+      - 673
+    - - -4710
+      - 670
+    - - -4716
+      - 657
+    - - -4730
+      - 649
+    - - -4738
+      - 633
+    - - -4722
+      - 602
+    - - -4719
+      - 610
+    - - -4700
+      - 617
+    - - -4704
+      - 636
+    - - -4749
+      - 601
+    - - -4776
+      - 601
+    - - -4765
+      - 572
+coins that slows the monster:
+  image: graphics\red coin.png
+  size:
+    - 81
+    - 81
+  sound: sound\cha-ching.mp3
+  speed down: 4
+  locations: []
+boxes:
+  - type: black line col
+    location:
+      - 1100
+      - 464
+  - type: black line col
+    location:
+      - 500
+      - 464
+  - type: black line
+    location:
+      - 500
+      - 464
+  - type: black line
+    location:
+      - 700
+      - 464
+  - type: short black line
+    location:
+      - 900
+      - 464
+  - type: short black line
+    location:
+      - 1000
+      - 464
+  - type: short black line
+    location:
+      - 957
+      - 464
+  - type: short black line
+    location:
+      - 1006
+      - 464
+  - type: black line col
+    location:
+      - 900
+      - 464
+  - type: black line col
+    location:
+      - 700
+      - 464
+  - type: black line
+    location:
+      - 500
+      - 564
+  - type: black line
+    location:
+      - 700
+      - 564
+  - type: black line
+    location:
+      - 820
+      - 565
+  - type: black line
+    location:
+      - 500
+      - 664
+  - type: black line
+    location:
+      - 700
+      - 664
+  - type: black line
+    location:
+      - 800
+      - 664
+  - type: black line
+    location:
+      - 820
+      - 663
+  - type: black line col
+    location:
+      - -600
+      - 464
+  - type: black line col
+    location:
+      - -1200
+      - 464
+  - type: black line
+    location:
+      - -1200
+      - 464
+  - type: black line
+    location:
+      - -1000
+      - 464
+  - type: black line
+    location:
+      - -900
+      - 464
+  - type: black line
+    location:
+      - -879
+      - 463
+  - type: black line
+    location:
+      - -1200
+      - 564
+  - type: black line
+    location:
+      - -1000
+      - 564
+  - type: black line
+    location:
+      - -900
+      - 564
+  - type: black line
+    location:
+      - -1200
+      - 664
+  - type: black line
+    location:
+      - -1000
+      - 664
+  - type: black line
+    location:
+      - -900
+      - 664
+  - type: black line
+    location:
+      - -878
+      - 564
+  - type: black line
+    location:
+      - -880
+      - 664
+  - type: black line col
+    location:
+      - -800
+      - 464
+  - type: black line col
+    location:
+      - -1000
+      - 464
+  - type: single box
+    location:
+      - -400
+      - 464
+  - type: single box
+    location:
+      - -300
+      - 464
+  - type: single box
+    location:
+      - -200
+      - 464
+  - type: single box
+    location:
+      - -2900
+      - 364
+  - type: single box
+    location:
+      - -2800
+      - 364
+  - type: single box
+    location:
+      - -2700
+      - 364
+  - type: single box
+    location:
+      - -2600
+      - 464
+  - type: single box
+    location:
+      - -2500
+      - 564
+  - type: single box
+    location:
+      - -2400
+      - 664
+  - type: short black line
+    location:
+      - -2843
+      - 493
+  - type: short black line
+    location:
+      - -2803
+      - 495
+  - type: short black line
+    location:
+      - -2854
+      - 741
+  - type: short black line
+    location:
+      - -2792
+      - 741
+  - type: short black line
+    location:
+      - -2840
+      - 616
+  - type: short black line
+    location:
+      - -2810
+      - 616
+  - type: short black line col
+    location:
+      - -2729
+      - 509
+  - type: short black line col
+    location:
+      - -2724
+      - 621
+  - type: single box
+    location:
+      - -3000
+      - 264
+  - type: single box
+    location:
+      - -3100
+      - 164
+  - type: single box
+    location:
+      - -3200
+      - 64
+  - type: single box
+    location:
+      - -3300
+      - 64
+  - type: single box
+    location:
+      - -3400
+      - 64
+  - type: single box
+    location:
+      - -3500
+      - 64
+  - type: short black line col
+    location:
+      - -3300
+      - 264
+  - type: short black line col
+    location:
+      - -3300
+      - 364
+  - type: short black line col
+    location:
+      - -3300
+      - 464
+  - type: short black line
+    location:
+      - -3400
+      - 564
+  - type: short black line
+    location:
+      - -3300
+      - 564
+  - type: short black line
+    location:
+      - -3400
+      - 264
+  - type: single box
+    location:
+      - -3600
+      - 164
+  - type: single box
+    location:
+      - -3700
+      - 264
+  - type: single box
+    location:
+      - -4200
+      - 464
+  - type: single box
+    location:
+      - -4300
+      - 564
+  - type: single box
+    location:
+      - -4400
+      - 664
+  - type: short black line
+    location:
+      - -4018
+      - 486
+  - type: short black line
+    location:
+      - -3941
+      - 488
+  - type: short black line
+    location:
+      - -3957
+      - 597
+  - type: short black line
+    location:
+      - -4008
+      - 597
+  - type: short black line
+    location:
+      - -4004
+      - 732
+  - type: short black line
+    location:
+      - -3927
+      - 732
+  - type: short black line col
+    location:
+      - -4008
+      - 648
+  - type: short black line col
+    location:
+      - -4011
+      - 595
+  - type: short black line col
+    location:
+      - -3866
+      - 495
+  - type: short black line col
+    location:
+      - -3871
+      - 513
+  - type: single box
+    location:
+      - -4100
+      - 364
+  - type: single box
+    location:
+      - -4000
+      - 364
+  - type: single box
+    location:
+      - -3900
+      - 364
+  - type: single box
+    location:
+      - -3800
+      - 364
+  - type: short black line
+    location:
+      - -3935
+      - 163
+  - type: short black line
+    location:
+      - -5200
+      - 664
+  - type: short black line
+    location:
+      - -5300
+      - 664
+  - type: short black line
+    location:
+      - -5400
+      - 664
+  - type: short black line col
+    location:
+      - -5100
+      - 564
+  - type: short black line col
+    location:
+      - -5100
+      - 464
+  - type: short black line col
+    location:
+      - -5100
+      - 364
+  - type: short black line
+    location:
+      - -5100
+      - 364
+  - type: short black line
+    location:
+      - -5010
+      - 395
+  - type: short black line
+    location:
+      - -4938
+      - 419
+  - type: short black line
+    location:
+      - -5100
+      - 275
+  - type: short black line
+    location:
+      - -4996
+      - 298
+  - type: short black line
+    location:
+      - -4933
+      - 332
+  - type: short black line col
+    location:
+      - -4844
+      - 331
+  - type: short black line
+    location:
+      - -4992
+      - 406
+  - type: short black line
+    location:
+      - -5069
+      - 377
+  - type: short black line
+    location:
+      - -4971
+      - 317
+  - type: short black line
+    location:
+      - -5058
+      - 286
+  - type: short black line col
+    location:
+      - -5400
+      - 564
+  - type: short black line col
+    location:
+      - -5400
+      - 464
+  - type: short black line col
+    location:
+      - -5400
+      - 364
+  - type: short black line
+    location:
+      - -5500
+      - 364
+  - type: short black line
+    location:
+      - -5577
+      - 399
+  - type: short black line
+    location:
+      - -5645
+      - 430
+  - type: short black line
+    location:
+      - -5607
+      - 413
+  - type: short black line
+    location:
+      - -5550
+      - 383
+  - type: short black line
+    location:
+      - -5658
+      - 327
+  - type: short black line col
+    location:
+      - -5654
+      - 338
+  - type: short black line
+    location:
+      - -5567
+      - 290
+  - type: short black line
+    location:
+      - -5615
+      - 307
+  - type: short black line
+    location:
+      - -5537
+      - 277
+  - type: short black line
+    location:
+      - -5506
+      - 268
+  - type: short black line
+    location:
+      - -5407
+      - 266
+  - type: short black line
+    location:
+      - -5207
+      - 269
+  - type: short black line col
+    location:
+      - -5315
+      - 259
+  - type: short black line col
+    location:
+      - -5214
+      - 259
+  - type: short black line
+    location:
+      - -5308
+      - 347
+  - type: short black line col
+    location:
+      - -5330
+      - 485
+  - type: short black line col
+    location:
+      - -5260
+      - 487
+  - type: short black line col
+    location:
+      - -5183
+      - 491
+  - type: short black line
+    location:
+      - -5264
+      - 485
+  - type: short black line
+    location:
+      - -5264
+      - 580
+  - type: short black line col
+    location:
+      - -5950
+      - 286
+  - type: short black line col
+    location:
+      - -5909
+      - 237
+  - type: short black line col
+    location:
+      - -5860
+      - 207
+  - type: short black line col
+    location:
+      - -5817
+      - 162
+  - type: short black line col
+    location:
+      - -5782
+      - 120
+  - type: short black line col
+    location:
+      - -5895
+      - 420
+  - type: short black line col
+    location:
+      - -5803
+      - 420
+  - type: short black line
+    location:
+      - -5891
+      - 508
+  - type: short black line
+    location:
+      - -6187
+      - 339
+  - type: short black line col
+    location:
+      - -6187
+      - 250
+  - type: short black line col
+    location:
+      - -6094
+      - 147
+  - type: short black line
+    location:
+      - -6181
+      - 249
+  - type: short black line
+    location:
+      - -6181
+      - 147
+  - type: short black line
+    location:
+      - -6600
+      - 664
+  - type: short black line
+    location:
+      - -6700
+      - 664
+  - type: short black line
+    location:
+      - -6800
+      - 664
+  - type: short black line col
+    location:
+      - -6800
+      - 564
+  - type: short black line col
+    location:
+      - -6800
+      - 464
+  - type: short black line col
+    location:
+      - -6800
+      - 364
+  - type: short black line col
+    location:
+      - -6500
+      - 564
+  - type: short black line col
+    location:
+      - -6500
+      - 464
+  - type: short black line col
+    location:
+      - -6500
+      - 364
+  - type: short black line
+    location:
+      - -6500
+      - 364
+  - type: short black line
+    location:
+      - -6412
+      - 419
+  - type: short black line
+    location:
+      - -6340
+      - 471
+  - type: short black line
+    location:
+      - -6356
+      - 450
+  - type: short black line
+    location:
+      - -6443
+      - 394
+  - type: short black line
+    location:
+      - -6500
+      - 264
+  - type: short black line
+    location:
+      - -6367
+      - 318
+  - type: short black line
+    location:
+      - -6418
+      - 288
+  - type: short black line col
+    location:
+      - -6217
+      - 382
+  - type: short black line
+    location:
+      - -6311
+      - 353
+  - type: short black line
+    location:
+      - -6600
+      - 264
+  - type: short black line
+    location:
+      - -6800
+      - 264
+  - type: short black line
+    location:
+      - -6700
+      - 364
+  - type: short black line col
+    location:
+      - -6700
+      - 264
+  - type: short black line col
+    location:
+      - -6600
+      - 264
+  - type: short black line col
+    location:
+      - -6632
+      - 480
+  - type: short black line
+    location:
+      - -6718
+      - 475
+  - type: short black line
+    location:
+      - -6684
+      - 525
+  - type: short black line col
+    location:
+      - -6633
+      - 518
+  - type: short black line
+    location:
+      - -6900
+      - 364
+  - type: short black line
+    location:
+      - -6971
+      - 393
+  - type: short black line
+    location:
+      - -7052
+      - 426
+  - type: short black line
+    location:
+      - -7003
+      - 408
+  - type: short black line
+    location:
+      - -6938
+      - 380
+  - type: short black line
+    location:
+      - -6900
+      - 264
+  - type: short black line
+    location:
+      - -7063
+      - 327
+  - type: short black line
+    location:
+      - -6988
+      - 293
+  - type: short black line
+    location:
+      - -6951
+      - 278
+  - type: short black line
+    location:
+      - -6997
+      - 310
+  - type: short black line col
+    location:
+      - -7059
+      - 329
+  - type: sticky box
+    location:
+      - -6800
+      - 564
+  - type: sticky box
+    location:
+      - -6800
+      - 464
+  - type: sticky box
+    location:
+      - -6800
+      - 364
+  - type: sticky box
+    location:
+      - -6800
+      - 264
+  - type: sticky box
+    location:
+      - -6900
+      - 264
+  - type: sticky box
+    location:
+      - -6992
+      - 295
+  - type: sticky box
+    location:
+      - -7058
+      - 330
+  - type: sticky box
+    location:
+      - -6749
+      - 366
+  - type: sticky box
+    location:
+      - -6744
+      - 431
+  - type: sticky box
+    location:
+      - -6741
+      - 514
+  - type: sticky box
+    location:
+      - -6735
+      - 564
+  - type: short black line
+    location:
+      - -6716
+      - 477
+  - type: short black line
+    location:
+      - -6679
+      - 526
+  - type: single box
+    location:
+      - -7800
+      - 264
+  - type: single box
+    location:
+      - -7700
+      - 264
+  - type: single box
+    location:
+      - -7600
+      - 264
+  - type: single box
+    location:
+      - -7500
+      - 264
+  - type: single box
+    location:
+      - -8000
+      - 264
+  - type: single box
+    location:
+      - -8000
+      - 364
+  - type: single box
+    location:
+      - -8000
+      - 464
+  - type: single box
+    location:
+      - -8000
+      - 564
+  - type: single box
+    location:
+      - -8000
+      - 664
+  - type: single box
+    location:
+      - -8100
+      - 664
+  - type: single box
+    location:
+      - -8200
+      - 664
+  - type: single box
+    location:
+      - -8300
+      - 664
+  - type: single box
+    location:
+      - -8400
+      - 664
+  - type: single box
+    location:
+      - -8100
+      - 264
+  - type: single box
+    location:
+      - -8200
+      - 264
+  - type: single box
+    location:
+      - -8300
+      - 264
+  - type: single box
+    location:
+      - -8400
+      - 264
+  - type: single box
+    location:
+      - -8400
+      - 364
+  - type: single box
+    location:
+      - -8400
+      - 464
+  - type: single box
+    location:
+      - -8400
+      - 564
+  - type: single box
+    location:
+      - -7800
+      - 364
+  - type: single box
+    location:
+      - -7800
+      - 464
+  - type: single box
+    location:
+      - -7800
+      - 664
+  - type: single box
+    location:
+      - -7800
+      - 564
+  - type: single box
+    location:
+      - -7500
+      - 364
+  - type: single box
+    location:
+      - -7600
+      - 464
+  - type: single box
+    location:
+      - -7700
+      - 464
+  - type: single box
+    location:
+      - -7500
+      - 464
+  - type: single box
+    location:
+      - -8600
+      - 264
+  - type: single box
+    location:
+      - -8700
+      - 264
+  - type: single box
+    location:
+      - -8800
+      - 264
+  - type: single box
+    location:
+      - -8900
+      - 264
+  - type: single box
+    location:
+      - -9000
+      - 264
+  - type: single box
+    location:
+      - -8800
+      - 364
+  - type: single box
+    location:
+      - -8800
+      - 464
+  - type: single box
+    location:
+      - -8800
+      - 564
+  - type: single box
+    location:
+      - -8800
+      - 664
+  - type: single box
+    location:
+      - -9200
+      - 264
+  - type: single box
+    location:
+      - -9300
+      - 264
+  - type: single box
+    location:
+      - -9400
+      - 264
+  - type: single box
+    location:
+      - -9500
+      - 264
+  - type: single box
+    location:
+      - -9500
+      - 364
+  - type: single box
+    location:
+      - -9500
+      - 464
+  - type: single box
+    location:
+      - -9400
+      - 464
+  - type: single box
+    location:
+      - -9300
+      - 464
+  - type: single box
+    location:
+      - -9200
+      - 464
+  - type: single box
+    location:
+      - -9200
+      - 564
+  - type: single box
+    location:
+      - -9200
+      - 664
+  - type: single box
+    location:
+      - -9300
+      - 664
+  - type: single box
+    location:
+      - -9400
+      - 664
+  - type: single box
+    location:
+      - -9500
+      - 664
+  - type: single box
+    location:
+      - -7300
+      - 264
+  - type: single box
+    location:
+      - -7300
+      - 364
+  - type: single box
+    location:
+      - -7300
+      - 464
+  - type: single box
+    location:
+      - -7300
+      - 664
+  - type: black line col
+    location:
+      - -10200
+      - 464
+  - type: black line col
+    location:
+      - -10200
+      - 364
+  - type: black line col
+    location:
+      - -10600
+      - 464
+  - type: black line col
+    location:
+      - -10600
+      - 364
+  - type: black line
+    location:
+      - -10600
+      - 364
+  - type: black line
+    location:
+      - -10500
+      - 364
+  - type: short black line
+    location:
+      - -10558
+      - 402
+  - type: short black line
+    location:
+      - -10462
+      - 404
+  - type: short black line
+    location:
+      - -10365
+      - 404
+  - type: short black line col
+    location:
+      - -10555
+      - 411
+  - type: short black line col
+    location:
+      - -10558
+      - 514
+  - type: short black line col
+    location:
+      - -10553
+      - 608
+  - type: short black line col
+    location:
+      - -10552
+      - 660
+  - type: short black line col
+    location:
+      - -10258
+      - 408
+  - type: short black line col
+    location:
+      - -10253
+      - 507
+  - type: short black line col
+    location:
+      - -10250
+      - 590
+  - type: short black line col
+    location:
+      - -10253
+      - 654
+  - type: short black line
+    location:
+      - -9929
+      - 651
+  - type: short black line
+    location:
+      - -10067
+      - 547
+  - type: single box
+    location:
+      - -12300
+      - 664
+  - type: single box
+    location:
+      - 1800
+      - 664
+  - type: single box
+    location:
+      - 1800
+      - 564
+  - type: single box
+    location:
+      - 1800
+      - 464
+  - type: single box
+    location:
+      - 1800
+      - 364
+  - type: single box
+    location:
+      - 1800
+      - 264
+  - type: short black line col
+    location:
+      - -5970
+      - 344
+  - type: short black line col
+    location:
+      - -5992
+      - 389
+  - type: short black line col
+    location:
+      - -6016
+      - 430
+  - type: short black line col
+    location:
+      - -6038
+      - 472
+  - type: short black line col
+    location:
+      - -6065
+      - 510
+  - type: short black line col
+    location:
+      - -6097
+      - 531
+  - type: sad signboard
+    location:
+      - -10851
+      - 664
+  - type: sad signboard
+    location:
+      - -11028
+      - 654
+  - type: sad signboard
+    location:
+      - -11230
+      - 672
+  - type: sad signboard
+    location:
+      - -11416
+      - 668
+  - type: sad signboard
+    location:
+      - -11634
+      - 670
+obstacles:
+  - type: gear
+    location:
+      - -400
+      - 364
+  - type: gear
+    location:
+      - -300
+      - 364
+  - type: gear
+    location:
+      - -200
+      - 364
+  - type: short vertical laser
+    location:
+      - -507
+      - 734
+  - type: short vertical laser
+    location:
+      - -509
+      - 431
+  - type: red gear
+    location:
+      - -2100
+      - 464
+  - type: red gear
+    location:
+      - -2090
+      - 519
+  - type: red gear
+    location:
+      - -2029
+      - 441
+  - type: red gear
+    location:
+      - -1968
+      - 467
+  - type: red gear
+    location:
+      - -1953
+      - 529
+  - type: red gear
+    location:
+      - -1992
+      - 559
+  - type: red gear
+    location:
+      - -2053
+      - 562
+  - type: red gear
+    location:
+      - -1937
+      - 571
+  - type: red gear
+    location:
+      - -1944
+      - 628
+  - type: red gear
+    location:
+      - -2011
+      - 693
+  - type: red gear
+    location:
+      - -2065
+      - 695
+  - type: red gear
+    location:
+      - -2103
+      - 693
+  - type: red gear
+    location:
+      - -1735
+      - 678
+  - type: red gear
+    location:
+      - -1770
+      - 653
+  - type: red gear
+    location:
+      - -1807
+      - 617
+  - type: red gear
+    location:
+      - -1820
+      - 572
+  - type: red gear
+    location:
+      - -1807
+      - 533
+  - type: red gear
+    location:
+      - -1795
+      - 492
+  - type: red gear
+    location:
+      - -1760
+      - 457
+  - type: red gear
+    location:
+      - -1707
+      - 434
+  - type: red gear
+    location:
+      - -1692
+      - 674
+  - type: red gear
+    location:
+      - -1660
+      - 644
+  - type: red gear
+    location:
+      - -1632
+      - 623
+  - type: red gear
+    location:
+      - -1290
+      - 450
+  - type: red gear
+    location:
+      - -1350
+      - 457
+  - type: red gear
+    location:
+      - -1363
+      - 668
+  - type: red gear
+    location:
+      - -1308
+      - 641
+  - type: red gear
+    location:
+      - -1268
+      - 599
+  - type: red gear
+    location:
+      - -1230
+      - 554
+  - type: red gear
+    location:
+      - -1231
+      - 483
+  - type: red gear
+    location:
+      - -1194
+      - 519
+  - type: red gear
+    location:
+      - -1162
+      - 567
+  - type: red gear
+    location:
+      - -1138
+      - 593
+  - type: red gear
+    location:
+      - -1111
+      - 622
+  - type: red gear
+    location:
+      - -1089
+      - 651
+  - type: red gear
+    location:
+      - -1068
+      - 688
+  - type: red gear
+    location:
+      - -903
+      - 364
+  - type: red gear
+    location:
+      - -884
+      - 433
+  - type: red gear
+    location:
+      - -877
+      - 483
+  - type: red gear
+    location:
+      - -881
+      - 531
+  - type: red gear
+    location:
+      - -877
+      - 590
+  - type: red gear
+    location:
+      - -881
+      - 651
+  - type: red gear
+    location:
+      - -883
+      - 693
+  - type: red gear
+    location:
+      - -1377
+      - 627
+  - type: red gear
+    location:
+      - -1388
+      - 571
+  - type: red gear
+    location:
+      - -1370
+      - 511
+  - type: red gear
+    location:
+      - -703
+      - 367
+  - type: red gear
+    location:
+      - -700
+      - 413
+  - type: red gear
+    location:
+      - -700
+      - 443
+  - type: red gear
+    location:
+      - -704
+      - 487
+  - type: red gear
+    location:
+      - -718
+      - 662
+  - type: red gear
+    location:
+      - -706
+      - 512
+  - type: red gear
+    location:
+      - -1654
+      - 451
+  - type: red gear
+    location:
+      - -1618
+      - 476
+  - type: red gear
+    location:
+      - -1618
+      - 519
+  - type: red gear
+    location:
+      - -1618
+      - 570
+  - type: red gear
+    location:
+      - -1968
+      - 681
+  - type: gear
+    location:
+      - -4100
+      - 264
+  - type: gear
+    location:
+      - -4000
+      - 264
+  - type: gear
+    location:
+      - -3900
+      - 264
+  - type: gear
+    location:
+      - -4100
+      - 164
+  - type: gear
+    location:
+      - -4000
+      - 164
+  - type: gear
+    location:
+      - -3900
+      - 164
+  - type: gear
+    location:
+      - -3800
+      - 164
+  - type: gear
+    location:
+      - -3800
+      - 264
+  - type: red gear
+    location:
+      - -706
+      - 528
+  - type: red gear
+    location:
+      - 27
+      - 718
+on off obstacles:
+  - type: vertical laser
+    location:
+      - -11000
+      - 464
+  - type: vertical laser
+    location:
+      - -11200
+      - 464
+  - type: vertical laser
+    location:
+      - -11200
+      - 264
+  - type: vertical laser
+    location:
+      - -11000
+      - 264
+  - type: vertical laser
+    location:
+      - -11600
+      - 464
+  - type: vertical laser
+    location:
+      - -11600
+      - 264
+  - type: spikes
+    location:
+      - -11641
+      - 739
+  - type: spikes
+    location:
+      - -11253
+      - 742
+  - type: spikes
+    location:
+      - -11041
+      - 734
+  - type: vertical laser
+    location:
+      - -12000
+      - 464
+  - type: vertical laser
+    location:
+      - -12000
+      - 264
+  - type: vertical laser
+    location:
+      - -11900
+      - 464
+  - type: vertical laser
+    location:
+      - -11900
+      - 264
+  - type: vertical laser
+    location:
+      - -12100
+      - 464
+  - type: vertical laser
+    location:
+      - -12100
+      - 264
+  - type: vertical laser
+    location:
+      - -12050
+      - 460
+  - type: vertical laser
+    location:
+      - -12049
+      - 261
+  - type: vertical laser
+    location:
+      - -11952
+      - 460
+  - type: vertical laser
+    location:
+      - -11950
+      - 261
+  - type: vertical laser
+    location:
+      - -12200
+      - 464
+  - type: vertical laser
+    location:
+      - -12200
+      - 264
+  - type: vertical laser
+    location:
+      - -12147
+      - 456
+  - type: vertical laser
+    location:
+      - -12149
+      - 269
+  - type: vertical laser
+    location:
+      - -11391
+      - 463
+  - type: vertical laser
+    location:
+      - -11391
+      - 251
+  - type: spikes
+    location:
+      - -11428
+      - 739
+  - type: vertical laser
+    location:
+      - -10824
+      - 458
+  - type: vertical laser
+    location:
+      - -10821
+      - 260
+  - type: spikes
+    location:
+      - -10867
+      - 737
+bullet rotators:
+  - type: right
+    location:
+      - -6787
+      - 547
+  - type: right
+    location:
+      - -10200
+      - 664
+flip gravity: []
+speed:
+  - type: left fast
+    location:
+      - -5200
+      - 564
+  - type: left fast
+    location:
+      - -5200
+      - 464
+  - type: left fast
+    location:
+      - -5200
+      - 364
+  - type: left fast
+    location:
+      - -5200
+      - 264
+  - type: left fast
+    location:
+      - -5017
+      - 308
+  - type: left fast
+    location:
+      - -5400
+      - 564
+  - type: left fast
+    location:
+      - -5400
+      - 464
+  - type: left fast
+    location:
+      - -5400
+      - 364
+  - type: left fast
+    location:
+      - -5400
+      - 264
+  - type: left fast
+    location:
+      - -5581
+      - 298
+slow:
+  - type: red
+    location:
+      - 50
+      - 584
+    size:
+      - 33
+      - 162
+  - type: red
+    location:
+      - -32
+      - 411
+    size:
+      - 93
+      - 243
+  - type: red
+    location:
+      - 68
+      - 340
+    size:
+      - 68
+      - 355
+  - type: red
+    location:
+      - 82
+      - 634
+    size:
+      - 15
+      - 125
+  - type: red
+    location:
+      - 39
+      - 429
+    size:
+      - 82
+      - 184
+  - type: red
+    location:
+      - -98
+      - 251
+    size:
+      - 93
+      - 255
+  - type: red
+    location:
+      - 124
+      - 121
+    size:
+      - 62
+      - 412
+  - type: red
+    location:
+      - 117
+      - 222
+    size:
+      - 95
+      - 371
+  - type: red
+    location:
+      - -7
+      - -22
+    size:
+      - 36
+      - 340
+  - type: red
+    location:
+      - 16
+      - -80
+    size:
+      - 56
+      - 178
+  - type: red
+    location:
+      - -162
+      - -45
+    size:
+      - 105
+      - 326
+  - type: red
+    location:
+      - 32
+      - 192
+    size:
+      - 74
+      - 196
+  - type: red
+    location:
+      - -2880
+      - 213
+    size:
+      - 256
+      - 137
+  - type: red
+    location:
+      - -4858
+      - 307
+    size:
+      - 26
+      - 144
+  - type: red
+    location:
+      - -4873
+      - 224
+    size:
+      - 20
+      - 88
+  - type: red
+    location:
+      - -4618
+      - 576
+    size:
+      - 24
+      - 61
+  - type: red
+    location:
+      - -4629
+      - 619
+    size:
+      - 22
+      - 17
+  - type: red
+    location:
+      - -4596
+      - 444
+    size:
+      - 19
+      - 146
+  - type: red
+    location:
+      - -4583
+      - 310
+    size:
+      - 26
+      - 152
+  - type: red
+    location:
+      - -4563
+      - 235
+    size:
+      - 27
+      - 111
+  - type: red
+    location:
+      - -4855
+      - 206
+    size:
+      - 304
+      - 33
+  - type: red
+    location:
+      - -4834
+      - 438
+    size:
+      - 32
+      - 170
+  - type: red
+    location:
+      - -4806
+      - 593
+    size:
+      - 14
+      - 49
+  - type: red
+    location:
+      - -4795
+      - 622
+    size:
+      - 28
+      - 19
+  - type: red
+    location:
+      - -6648
+      - 371
+    size:
+      - 149
+      - 296
+  - type: red
+    location:
+      - -6592
+      - 274
+    size:
+      - 75
+      - 107
+  - type: red
+    location:
+      - -6506
+      - 274
+    size:
+      - 110
+      - 87
+  - type: red
+    location:
+      - -6517
+      - 276
+    size:
+      - 20
+      - 94
+  - type: red
+    location:
+      - -6399
+      - 293
+    size:
+      - 43
+      - 103
+  - type: red
+    location:
+      - -6416
+      - 351
+    size:
+      - 22
+      - 41
+  - type: red
+    location:
+      - -6374
+      - 319
+    size:
+      - 79
+      - 93
+  - type: red
+    location:
+      - -6325
+      - 401
+    size:
+      - 86
+      - 74
+  - type: red
+    location:
+      - -6297
+      - 364
+    size:
+      - 75
+      - 97
+  - type: red
+    location:
+      - -10230
+      - 413
+    size:
+      - 6
+      - 65
+  - type: red
+    location:
+      - -10229
+      - 507
+    size:
+      - 8
+      - 71
+  - type: red
+    location:
+      - -10233
+      - 602
+    size:
+      - 8
+      - 83
+  - type: red
+    location:
+      - -10585
+      - 414
+    size:
+      - 9
+      - 92
+  - type: red
+    location:
+      - -10582
+      - 536
+    size:
+      - 9
+      - 71
+  - type: red
+    location:
+      - -10576
+      - 650
+    size:
+      - 8
+      - 72
+disappearing: []
+jumpers:
+  - type: yellow
+    location:
+      - -3500
+      - -36
+  - type: yellow
+    location:
+      - -3400
+      - -36
+  - type: yellow
+    location:
+      - -3300
+      - -36
+  - type: yellow
+    location:
+      - -3200
+      - -36
+  - type: yellow
+    location:
+      - -3200
+      - -136
+  - type: yellow
+    location:
+      - -3300
+      - -136
+  - type: yellow
+    location:
+      - -3400
+      - -136
+  - type: yellow
+    location:
+      - -3500
+      - -136
+buttons:
+  - type: red
+    location:
+      - -600
+      - 724
+launchers:
+  - type: pink
+    location:
+      - -297
+      - 616

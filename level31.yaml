@@ -1,0 +1,2456 @@
+background: (1, 0, 0)
+player:
+  size:
+    - 80
+    - 80
+  speed: 10
+  jump speed: 30
+  gravity: 1.5
+  die sound: sound\die sound.mp3
+  location:
+    - 700
+    - 684
+  images:
+    regular: graphics\character.png
+    right: graphics\right character.png
+    left: graphics\left character.png
+    jump: graphics\jump character.png
+    die: graphics\die character.png
+monster:
+  location:
+    - 1300
+    - 684
+  size:
+    - 80
+    - 80
+  gravity: 0.1
+  speed: 5
+  jump speed: 30
+  die sound: sound\die sound.mp3
+  images:
+    regular: graphics\monster.png
+    right: graphics\monster right.png
+    left: graphics\monster left.png
+    jump: graphics\monster jump.png
+    die: graphics\die monster.png
+  horns:
+    image: graphics\monster horns.png
+    size:
+      - 107
+      - 50
+    relative location:
+      - -13
+      - -35
+gun:
+  image: graphics\gun.png
+  location:
+    - -9997
+    - 277
+  size:
+    - 95
+    - 75
+  price: 6
+  strength: 10
+  bullet speed: 15
+  bullet image: graphics\bullet.png
+checkpoints:
+  green flag image: graphics\green flag.png
+  red flag image: graphics\red flag.png
+  sound: sound\ping.mp3
+  locations:
+    - - -500
+      - 664
+    - - -6600
+      - 664
+    - - -9600
+      - 664
+    - - -10192
+      - -2023
+    - - -12429
+      - -2026
+    - - -15759
+      - -2034
+coins:
+  image: graphics\coin.png
+  size:
+    - 50
+    - 50
+  sound: sound\cha-ching.mp3
+  locations:
+    - - -82
+      - 396
+    - - -14
+      - 458
+    - - 32
+      - 540
+    - - -164
+      - 406
+    - - -224
+      - 478
+    - - -270
+      - 556
+coins that slows the monster:
+  image: graphics\red coin.png
+  size:
+    - 81
+    - 81
+  sound: sound\cha-ching.mp3
+  speed down: 4
+  locations:
+    - - -12990
+      - -2826
+boxes:
+  - type: single box
+    location:
+      - 900
+      - 664
+  - type: single box
+    location:
+      - 1000
+      - 664
+  - type: single box
+    location:
+      - -900
+      - 564
+  - type: single box
+    location:
+      - -1100
+      - 364
+  - type: single box
+    location:
+      - -1300
+      - 164
+  - type: single box
+    location:
+      - -1500
+      - 264
+  - type: single box
+    location:
+      - -1500
+      - 364
+  - type: single box
+    location:
+      - -1500
+      - 464
+  - type: single box
+    location:
+      - -1500
+      - 564
+  - type: single box
+    location:
+      - -1500
+      - 664
+  - type: single box
+    location:
+      - -2300
+      - 664
+  - type: single box
+    location:
+      - -2400
+      - 664
+  - type: laser right
+    location:
+      - -2600
+      - 664
+  - type: laser left
+    location:
+      - -3300
+      - 664
+  - type: single box
+    location:
+      - - -2600
+        - 564
+      - - -2800
+        - 564
+  - type: single box
+    location:
+      - - -3200
+        - 564
+      - - -3000
+        - 564
+  - type: single box
+    location:
+      - -4000
+      - 664
+  - type: single box
+    location:
+      - -4100
+      - 664
+  - type: laser right
+    location:
+      - -4300
+      - 664
+  - type: laser left
+    location:
+      - -6000
+      - 664
+  - type: laser left
+    location:
+      - -9367
+      - 671
+  - type: laser down
+    location:
+      - -9742
+      - 458
+  - type: laser up
+    location:
+      - -9744
+      - -349
+  - type: single box
+    location:
+      - -8800
+      - -736
+  - type: left signboard
+    location:
+      - -9085
+      - 66
+  - type: single box
+    location:
+      - -8400
+      - -1236
+  - type: single box
+    location:
+      - -8300
+      - -1536
+  - type: single box
+    location:
+      - -8400
+      - -1836
+  - type: single box
+    location:
+      - -8500
+      - -2136
+  - type: single box
+    location:
+      - -8600
+      - -2136
+  - type: single box
+    location:
+      - -8700
+      - -2136
+  - type: single box
+    location:
+      - -8800
+      - -2136
+  - type: single box
+    location:
+      - -8900
+      - -2136
+  - type: single box
+    location:
+      - -9000
+      - -2136
+  - type: single box
+    location:
+      - -9100
+      - -2136
+  - type: single box
+    location:
+      - -9200
+      - -2136
+  - type: single box
+    location:
+      - -9300
+      - -2136
+  - type: single box
+    location:
+      - -9400
+      - -2136
+  - type: single box
+    location:
+      - -9500
+      - -2136
+  - type: single box
+    location:
+      - -9600
+      - -2136
+  - type: single box
+    location:
+      - -9800
+      - -2136
+  - type: single box
+    location:
+      - -9700
+      - -2136
+  - type: single box
+    location:
+      - -9900
+      - -2136
+  - type: single box
+    location:
+      - -10000
+      - -2136
+  - type: single box
+    location:
+      - -10200
+      - -2136
+  - type: single box
+    location:
+      - -10100
+      - -2136
+  - type: single box
+    location:
+      - -9000
+      - -1836
+  - type: single box
+    location:
+      - -10200
+      - -1936
+  - type: single box
+    location:
+      - -10200
+      - -1836
+  - type: single box
+    location:
+      - -10200
+      - -1636
+  - type: single box
+    location:
+      - -10200
+      - -1736
+  - type: laser right
+    location:
+      - -8799
+      - -427
+  - type: laser left
+    location:
+      - -9619
+      - -427
+  - type: single box
+    location:
+      - -10300
+      - -2136
+  - type: single box
+    location:
+      - -10400
+      - -2136
+  - type: single box
+    location:
+      - -10500
+      - -2136
+  - type: single box
+    location:
+      - -10600
+      - -2136
+  - type: single box
+    location:
+      - -10800
+      - -2136
+  - type: single box
+    location:
+      - -10700
+      - -2136
+  - type: single box
+    location:
+      - -10900
+      - -2136
+  - type: single box
+    location:
+      - -11000
+      - -2136
+  - type: single box
+    location:
+      - -11100
+      - -2136
+  - type: single box
+    location:
+      - -11200
+      - -2136
+  - type: single box
+    location:
+      - -11300
+      - -2136
+  - type: single box
+    location:
+      - -11400
+      - -2136
+  - type: single box
+    location:
+      - -11500
+      - -2136
+  - type: single box
+    location:
+      - -11600
+      - -2136
+  - type: single box
+    location:
+      - -11700
+      - -2136
+  - type: single box
+    location:
+      - -11800
+      - -2136
+  - type: single box
+    location:
+      - -11900
+      - -2136
+  - type: single box
+    location:
+      - -12000
+      - -2136
+  - type: single box
+    location:
+      - -12100
+      - -2136
+  - type: single box
+    location:
+      - -12200
+      - -2136
+  - type: single box
+    location:
+      - -12300
+      - -2136
+  - type: single box
+    location:
+      - -12400
+      - -2136
+  - type: single box
+    location:
+      - -12500
+      - -2136
+  - type: single box
+    location:
+      - -12600
+      - -2136
+  - type: single box
+    location:
+      - -12700
+      - -2136
+  - type: single box
+    location:
+      - -12800
+      - -2136
+  - type: single box
+    location:
+      - -12900
+      - -2136
+  - type: single box
+    location:
+      - -13000
+      - -2136
+  - type: single box
+    location:
+      - -13500
+      - -2136
+  - type: single box
+    location:
+      - -13400
+      - -2136
+  - type: single box
+    location:
+      - -13300
+      - -2136
+  - type: single box
+    location:
+      - -13200
+      - -2136
+  - type: single box
+    location:
+      - -13100
+      - -2136
+  - type: single box
+    location:
+      - -13600
+      - -2136
+  - type: single box
+    location:
+      - -13700
+      - -2136
+  - type: single box
+    location:
+      - -13800
+      - -2136
+  - type: single box
+    location:
+      - -13900
+      - -2136
+  - type: single box
+    location:
+      - -14000
+      - -2136
+  - type: single box
+    location:
+      - -14100
+      - -2136
+  - type: single box
+    location:
+      - -14200
+      - -2136
+  - type: single box
+    location:
+      - -14300
+      - -2136
+  - type: single box
+    location:
+      - -12500
+      - -1936
+  - type: single box
+    location:
+      - -12400
+      - -1936
+  - type: single box
+    location:
+      - -14400
+      - -2136
+  - type: single box
+    location:
+      - -14500
+      - -2136
+  - type: single box
+    location:
+      - -14600
+      - -2136
+  - type: single box
+    location:
+      - -14700
+      - -2136
+  - type: single box
+    location:
+      - -14800
+      - -2136
+  - type: single box
+    location:
+      - -14900
+      - -2136
+  - type: single box
+    location:
+      - -15000
+      - -2136
+  - type: single box
+    location:
+      - -15100
+      - -2136
+  - type: single box
+    location:
+      - -15200
+      - -2136
+  - type: single box
+    location:
+      - -15300
+      - -2136
+  - type: single box
+    location:
+      - -15400
+      - -2136
+  - type: single box
+    location:
+      - -15500
+      - -2136
+  - type: single box
+    location:
+      - -15600
+      - -2136
+  - type: single box
+    location:
+      - -15700
+      - -2136
+  - type: single box
+    location:
+      - -15800
+      - -2136
+  - type: single box
+    location:
+      - -15900
+      - -2136
+  - type: single box
+    location:
+      - -16000
+      - -2136
+  - type: laser right
+    location:
+      - -7497
+      - 672
+  - type: single box
+    location:
+      - -5356
+      - 4
+  - type: single box
+    location:
+      - -16000
+      - -2236
+  - type: single box
+    location:
+      - -15900
+      - -2236
+  - type: single box
+    location:
+      - -15800
+      - -2236
+  - type: single box
+    location:
+      - -15500
+      - -2236
+  - type: single box
+    location:
+      - -15400
+      - -2236
+  - type: single box
+    location:
+      - -15300
+      - -2236
+  - type: single box
+    location:
+      - -15200
+      - -2236
+  - type: single box
+    location:
+      - -15000
+      - -2236
+  - type: single box
+    location:
+      - -14900
+      - -2236
+  - type: single box
+    location:
+      - -14800
+      - -2236
+  - type: single box
+    location:
+      - -14700
+      - -2236
+  - type: single box
+    location:
+      - -14600
+      - -2236
+  - type: single box
+    location:
+      - -14400
+      - -2236
+  - type: single box
+    location:
+      - -14300
+      - -2236
+  - type: single box
+    location:
+      - -14200
+      - -2236
+  - type: single box
+    location:
+      - -14000
+      - -2236
+  - type: single box
+    location:
+      - -13900
+      - -2236
+  - type: single box
+    location:
+      - -13800
+      - -2236
+  - type: single box
+    location:
+      - -13700
+      - -2236
+  - type: single box
+    location:
+      - -13600
+      - -2236
+  - type: single box
+    location:
+      - -13500
+      - -2236
+  - type: single box
+    location:
+      - -13300
+      - -2236
+  - type: single box
+    location:
+      - -13200
+      - -2236
+  - type: single box
+    location:
+      - -13100
+      - -2236
+  - type: single box
+    location:
+      - -12900
+      - -2236
+  - type: single box
+    location:
+      - -12800
+      - -2236
+  - type: single box
+    location:
+      - -12700
+      - -2236
+  - type: single box
+    location:
+      - -12600
+      - -2236
+  - type: happy signboard
+    location:
+      - -15800
+      - -2436
+  - type: single box
+    location:
+      - -13000
+      - -2236
+  - type: down signboard
+    location:
+      - -16000
+      - -1836
+  - type: single box
+    location:
+      - -16100
+      - -1136
+  - type: single box
+    location:
+      - -16200
+      - -1236
+  - type: single box
+    location:
+      - -16300
+      - -1336
+  - type: single box
+    location:
+      - -16400
+      - -1436
+  - type: single box
+    location:
+      - -16500
+      - -1536
+  - type: single box
+    location:
+      - -16600
+      - -1636
+  - type: single box
+    location:
+      - -16700
+      - -1736
+  - type: single box
+    location:
+      - -16800
+      - -1836
+  - type: single box
+    location:
+      - -12100
+      - -3536
+  - type: single box
+    location:
+      - -12300
+      - -3536
+  - type: single box
+    location:
+      - -12200
+      - -3536
+  - type: single box
+    location:
+      - -12000
+      - -3536
+  - type: single box
+    location:
+      - -11900
+      - -3536
+  - type: single box
+    location:
+      - -11800
+      - -3536
+  - type: single box
+    location:
+      - -11700
+      - -3536
+  - type: single box
+    location:
+      - -11600
+      - -3536
+  - type: single box
+    location:
+      - -11500
+      - -3536
+  - type: single box
+    location:
+      - -11400
+      - -3536
+  - type: single box
+    location:
+      - -11300
+      - -3536
+  - type: single box
+    location:
+      - -11200
+      - -3536
+  - type: single box
+    location:
+      - -11100
+      - -3536
+  - type: single box
+    location:
+      - -11100
+      - -3436
+  - type: single box
+    location:
+      - -11100
+      - -3336
+  - type: single box
+    location:
+      - -11100
+      - -3236
+  - type: single box
+    location:
+      - -11100
+      - -3136
+  - type: single box
+    location:
+      - -13000
+      - -2936
+  - type: single box
+    location:
+      - -12500
+      - -3136
+  - type: single box
+    location:
+      - -13300
+      - -3536
+  - type: single box
+    location:
+      - -13200
+      - -3536
+  - type: single box
+    location:
+      - -13100
+      - -3536
+  - type: single box
+    location:
+      - -13000
+      - -3536
+  - type: single box
+    location:
+      - -12900
+      - -3536
+  - type: single box
+    location:
+      - -12800
+      - -3536
+  - type: single box
+    location:
+      - -12700
+      - -3536
+  - type: single box
+    location:
+      - -12600
+      - -3536
+  - type: single box
+    location:
+      - -12500
+      - -3536
+  - type: single box
+    location:
+      - -12400
+      - -3536
+  - type: right signboard
+    location:
+      - -12500
+      - -3236
+  - type: right signboard
+    location:
+      - -12291
+      - -3428
+  - type: single box
+    location:
+      - -12300
+      - -3336
+  - type: single box
+    location:
+      - -15800
+      - -1936
+  - type: right signboard
+    location:
+      - -15600
+      - -3036
+  - type: right signboard
+    location:
+      - -15400
+      - -3036
+  - type: right signboard
+    location:
+      - -15200
+      - -3036
+  - type: right signboard
+    location:
+      - -14900
+      - -3036
+  - type: right signboard
+    location:
+      - -14600
+      - -3036
+  - type: right signboard
+    location:
+      - -14300
+      - -3036
+  - type: right signboard
+    location:
+      - -14000
+      - -3036
+  - type: right signboard
+    location:
+      - -13600
+      - -3036
+  - type: right signboard
+    location:
+      - -13300
+      - -3036
+  - type: up signboard
+    location:
+      - -13000
+      - -3036
+  - type: single box
+    location:
+      - -11100
+      - -3036
+obstacles:
+  - type: gear
+    location:
+      - -100
+      - 664
+  - type: gear
+    location:
+      - -100
+      - 564
+  - type: vertical laser
+    location:
+      - 1900
+      - 464
+  - type: vertical laser
+    location:
+      - 1900
+      - 164
+  - type: vertical laser
+    location:
+      - 1900
+      - -136
+  - type: gear
+    location:
+      - -800
+      - 664
+  - type: gear
+    location:
+      - -1000
+      - 464
+  - type: gear
+    location:
+      - -1200
+      - 264
+  - type: gear
+    location:
+      - -1400
+      - 164
+  - type: gear
+    location:
+      - -1500
+      - 164
+  - type: laser
+    location:
+      - -3271
+      - 704
+  - type: laser
+    location:
+      - -2979
+      - 704
+  - type: laser
+    location:
+      - -2801
+      - 704
+  - type: laser
+    location:
+      - -4510
+      - 706
+  - type: laser
+    location:
+      - -4800
+      - 706
+  - type: laser
+    location:
+      - -5088
+      - 706
+  - type: laser
+    location:
+      - -5385
+      - 706
+  - type: laser
+    location:
+      - -5666
+      - 706
+  - type: laser
+    location:
+      - -5793
+      - 706
+  - type: laser
+    location:
+      - -5976
+      - 706
+  - type: laser
+    location:
+      - -7700
+      - 714
+  - type: laser
+    location:
+      - -7950
+      - 714
+  - type: laser
+    location:
+      - -8200
+      - 714
+  - type: laser
+    location:
+      - -8450
+      - 714
+  - type: laser
+    location:
+      - -8700
+      - 714
+  - type: laser
+    location:
+      - -8950
+      - 714
+  - type: laser
+    location:
+      - -9200
+      - 714
+  - type: laser
+    location:
+      - -9350
+      - 714
+  - type: vertical laser
+    location:
+      - -9700
+      - 264
+  - type: vertical laser
+    location:
+      - -9700
+      - -36
+  - type: vertical laser
+    location:
+      - -9700
+      - -336
+  - type: gear
+    location:
+      - -8700
+      - -786
+  - type: gear
+    location:
+      - -8450
+      - -2036
+  - type: gear
+    location:
+      - -8450
+      - -1936
+  - type: gear
+    location:
+      - -8550
+      - -2036
+  - type: gear
+    location:
+      - -8550
+      - -1936
+  - type: gear
+    location:
+      - -8650
+      - -2036
+  - type: gear
+    location:
+      - -8450
+      - -1836
+  - type: gear
+    location:
+      - -8400
+      - -1736
+  - type: red gear
+    location:
+      - -11100
+      - -2036
+  - type: gear
+    location:
+      - -10300
+      - -1536
+  - type: gear
+    location:
+      - -10400
+      - -1436
+  - type: gear
+    location:
+      - -10500
+      - -1336
+  - type: gear
+    location:
+      - -10600
+      - -1236
+  - type: gear
+    location:
+      - -9550
+      - -2036
+  - type: gear
+    location:
+      - -9550
+      - -1936
+  - type: red gear
+    location:
+      - -9733
+      - -879
+  - type: red gear
+    location:
+      - -9672
+      - -879
+  - type: laser
+    location:
+      - -9600
+      - -386
+  - type: laser
+    location:
+      - -9300
+      - -386
+  - type: laser
+    location:
+      - -9000
+      - -386
+  - type: gear
+    location:
+      - -10600
+      - -1136
+  - type: gear
+    location:
+      - -10600
+      - -1036
+  - type: gear
+    location:
+      - -10600
+      - -936
+  - type: gear
+    location:
+      - -10600
+      - -836
+  - type: gear
+    location:
+      - -10600
+      - -636
+  - type: gear
+    location:
+      - -10600
+      - -736
+  - type: gear
+    location:
+      - -10700
+      - -636
+  - type: gear
+    location:
+      - -10900
+      - -636
+  - type: gear
+    location:
+      - -10800
+      - -636
+  - type: gear
+    location:
+      - -11000
+      - -636
+  - type: gear
+    location:
+      - -10600
+      - -2036
+  - type: gear
+    location:
+      - -10700
+      - -1936
+  - type: gear
+    location:
+      - -10800
+      - -1836
+  - type: gear
+    location:
+      - -10900
+      - -1736
+  - type: gear
+    location:
+      - -11000
+      - -1636
+  - type: gear
+    location:
+      - -11100
+      - -1736
+  - type: gear
+    location:
+      - -11200
+      - -1836
+  - type: gear
+    location:
+      - -11300
+      - -1936
+  - type: gear
+    location:
+      - -11400
+      - -2036
+  - type: gear
+    location:
+      - -11100
+      - -636
+  - type: gear
+    location:
+      - -11200
+      - -636
+  - type: gear
+    location:
+      - -11300
+      - -636
+  - type: gear
+    location:
+      - -11400
+      - -636
+  - type: gear
+    location:
+      - -11500
+      - -636
+  - type: gear
+    location:
+      - -11600
+      - -636
+  - type: gear
+    location:
+      - -11700
+      - -636
+  - type: gear
+    location:
+      - -11800
+      - -636
+  - type: gear
+    location:
+      - -11900
+      - -636
+  - type: gear
+    location:
+      - -12000
+      - -636
+  - type: gear
+    location:
+      - -12100
+      - -636
+  - type: gear
+    location:
+      - -12200
+      - -636
+  - type: gear
+    location:
+      - -12300
+      - -636
+  - type: gear
+    location:
+      - -11500
+      - -2036
+  - type: gear
+    location:
+      - -11600
+      - -2036
+  - type: gear
+    location:
+      - -11700
+      - -2036
+  - type: gear
+    location:
+      - -11800
+      - -2036
+  - type: gear
+    location:
+      - -11900
+      - -2036
+  - type: gear
+    location:
+      - -11300
+      - -1686
+  - type: gear
+    location:
+      - -11350
+      - -1586
+  - type: gear
+    location:
+      - -11400
+      - -1486
+  - type: gear
+    location:
+      - -11450
+      - -1386
+  - type: gear
+    location:
+      - -11500
+      - -1286
+  - type: gear
+    location:
+      - -11550
+      - -1186
+  - type: gear
+    location:
+      - -11600
+      - -1286
+  - type: gear
+    location:
+      - -11650
+      - -1386
+  - type: gear
+    location:
+      - -11700
+      - -1486
+  - type: gear
+    location:
+      - -11750
+      - -1586
+  - type: gear
+    location:
+      - -11800
+      - -1686
+  - type: gear
+    location:
+      - -11550
+      - -1086
+  - type: gear
+    location:
+      - -11550
+      - -986
+  - type: gear
+    location:
+      - -11850
+      - -1786
+  - type: gear
+    location:
+      - -11900
+      - -1886
+  - type: gear
+    location:
+      - -11700
+      - -736
+  - type: gear
+    location:
+      - -11800
+      - -1236
+  - type: gear
+    location:
+      - -11850
+      - -1336
+  - type: gear
+    location:
+      - -11900
+      - -1436
+  - type: gear
+    location:
+      - -11950
+      - -1536
+  - type: gear
+    location:
+      - -11950
+      - -1636
+  - type: gear
+    location:
+      - -11950
+      - -1736
+  - type: gear
+    location:
+      - -11750
+      - -1336
+  - type: gear
+    location:
+      - -11800
+      - -1436
+  - type: gear
+    location:
+      - -11850
+      - -1536
+  - type: gear
+    location:
+      - -11850
+      - -1636
+  - type: gear
+    location:
+      - -12150
+      - -1136
+  - type: gear
+    location:
+      - -12200
+      - -1236
+  - type: gear
+    location:
+      - -12250
+      - -1336
+  - type: gear
+    location:
+      - -12300
+      - -1436
+  - type: gear
+    location:
+      - -12300
+      - -1536
+  - type: gear
+    location:
+      - -12300
+      - -1636
+  - type: gear
+    location:
+      - -12300
+      - -1736
+  - type: gear
+    location:
+      - -12300
+      - -1836
+  - type: gear
+    location:
+      - -12100
+      - -1036
+  - type: gear
+    location:
+      - -12050
+      - -936
+  - type: gear
+    location:
+      - -12050
+      - -836
+  - type: gear
+    location:
+      - -12050
+      - -736
+  - type: gear
+    location:
+      - -14300
+      - -2036
+  - type: gear
+    location:
+      - -14300
+      - -1936
+  - type: gear
+    location:
+      - -14300
+      - -1836
+  - type: gear
+    location:
+      - -14300
+      - -1736
+  - type: gear
+    location:
+      - -14300
+      - -1636
+  - type: gear
+    location:
+      - -13600
+      - -2036
+  - type: gear
+    location:
+      - -13700
+      - -2036
+  - type: gear
+    location:
+      - -13200
+      - -2036
+  - type: gear
+    location:
+      - -13200
+      - -1936
+  - type: gear
+    location:
+      - -14300
+      - -1536
+  - type: gear
+    location:
+      - -14300
+      - -1436
+  - type: gear
+    location:
+      - -14998
+      - -2114
+  - type: gear
+    location:
+      - -15300
+      - -2036
+  - type: gear
+    location:
+      - -15300
+      - -1936
+  - type: gear
+    location:
+      - -15700
+      - -1936
+  - type: gear
+    location:
+      - -12400
+      - -636
+  - type: gear
+    location:
+      - -12600
+      - -636
+  - type: gear
+    location:
+      - -12500
+      - -636
+  - type: gear
+    location:
+      - -12700
+      - -636
+  - type: gear
+    location:
+      - -12800
+      - -636
+  - type: gear
+    location:
+      - -12900
+      - -636
+  - type: gear
+    location:
+      - -13000
+      - -636
+  - type: gear
+    location:
+      - -13100
+      - -636
+  - type: gear
+    location:
+      - -13300
+      - -636
+  - type: gear
+    location:
+      - -13200
+      - -636
+  - type: gear
+    location:
+      - -13400
+      - -636
+  - type: gear
+    location:
+      - -13500
+      - -636
+  - type: gear
+    location:
+      - -13600
+      - -636
+  - type: gear
+    location:
+      - -13700
+      - -636
+  - type: gear
+    location:
+      - -13800
+      - -636
+  - type: gear
+    location:
+      - -13900
+      - -636
+  - type: gear
+    location:
+      - -14000
+      - -636
+  - type: gear
+    location:
+      - -14100
+      - -636
+  - type: gear
+    location:
+      - -14200
+      - -636
+  - type: gear
+    location:
+      - -14300
+      - -636
+  - type: gear
+    location:
+      - -14400
+      - -636
+  - type: gear
+    location:
+      - -14500
+      - -636
+  - type: gear
+    location:
+      - -14700
+      - -636
+  - type: gear
+    location:
+      - -14600
+      - -636
+  - type: gear
+    location:
+      - -14800
+      - -636
+  - type: gear
+    location:
+      - -14900
+      - -636
+  - type: gear
+    location:
+      - -15000
+      - -636
+  - type: gear
+    location:
+      - -15200
+      - -636
+  - type: gear
+    location:
+      - -15300
+      - -636
+  - type: gear
+    location:
+      - -15100
+      - -636
+  - type: gear
+    location:
+      - -15400
+      - -636
+  - type: gear
+    location:
+      - -15500
+      - -636
+  - type: gear
+    location:
+      - -15600
+      - -636
+  - type: gear
+    location:
+      - -15700
+      - -636
+  - type: gear
+    location:
+      - -15800
+      - -636
+  - type: gear
+    location:
+      - -15900
+      - -636
+  - type: gear
+    location:
+      - -16000
+      - -636
+  - type: gear
+    location:
+      - -16100
+      - -636
+  - type: gear
+    location:
+      - -16200
+      - -736
+  - type: gear
+    location:
+      - -16300
+      - -836
+  - type: gear
+    location:
+      - -16400
+      - -936
+  - type: gear
+    location:
+      - -16500
+      - -1036
+  - type: gear
+    location:
+      - -16600
+      - -1136
+  - type: gear
+    location:
+      - -16700
+      - -1236
+  - type: gear
+    location:
+      - -16800
+      - -1336
+  - type: gear
+    location:
+      - -16900
+      - -1436
+  - type: gear
+    location:
+      - -17000
+      - -1536
+  - type: gear
+    location:
+      - -17100
+      - -1636
+  - type: gear
+    location:
+      - -17200
+      - -1736
+  - type: gear
+    location:
+      - -17300
+      - -1836
+  - type: gear
+    location:
+      - -17300
+      - -1936
+  - type: gear
+    location:
+      - -17300
+      - -2036
+  - type: gear
+    location:
+      - -17300
+      - -2136
+  - type: gear
+    location:
+      - -17300
+      - -2336
+  - type: gear
+    location:
+      - -17300
+      - -2236
+  - type: gear
+    location:
+      - -17300
+      - -2436
+  - type: gear
+    location:
+      - -17300
+      - -2536
+  - type: gear
+    location:
+      - -17300
+      - -2736
+  - type: gear
+    location:
+      - -17300
+      - -2636
+  - type: gear
+    location:
+      - -17200
+      - -2836
+  - type: gear
+    location:
+      - -17100
+      - -2936
+  - type: gear
+    location:
+      - -17000
+      - -3036
+  - type: gear
+    location:
+      - -16900
+      - -3136
+  - type: gear
+    location:
+      - -16800
+      - -3236
+  - type: gear
+    location:
+      - -16700
+      - -3336
+  - type: gear
+    location:
+      - -16600
+      - -3436
+  - type: gear
+    location:
+      - -16500
+      - -3536
+  - type: gear
+    location:
+      - -16400
+      - -3536
+  - type: gear
+    location:
+      - -16300
+      - -3536
+  - type: gear
+    location:
+      - -16200
+      - -3536
+  - type: gear
+    location:
+      - -16100
+      - -3536
+  - type: gear
+    location:
+      - -16000
+      - -3536
+  - type: gear
+    location:
+      - -15900
+      - -3536
+  - type: gear
+    location:
+      - -15800
+      - -3536
+  - type: gear
+    location:
+      - -15700
+      - -3536
+  - type: gear
+    location:
+      - -15500
+      - -3536
+  - type: gear
+    location:
+      - -15600
+      - -3536
+  - type: gear
+    location:
+      - -15400
+      - -3536
+  - type: gear
+    location:
+      - -15200
+      - -3536
+  - type: gear
+    location:
+      - -15300
+      - -3536
+  - type: gear
+    location:
+      - -15100
+      - -3536
+  - type: gear
+    location:
+      - -15000
+      - -3536
+  - type: gear
+    location:
+      - -14900
+      - -3536
+  - type: gear
+    location:
+      - -14800
+      - -3536
+  - type: gear
+    location:
+      - -14700
+      - -3536
+  - type: gear
+    location:
+      - -14600
+      - -3536
+  - type: gear
+    location:
+      - -14500
+      - -3536
+  - type: gear
+    location:
+      - -14300
+      - -3536
+  - type: gear
+    location:
+      - -14400
+      - -3536
+  - type: gear
+    location:
+      - -14200
+      - -3536
+  - type: gear
+    location:
+      - -14100
+      - -3536
+  - type: gear
+    location:
+      - -14000
+      - -3536
+  - type: gear
+    location:
+      - -13900
+      - -3536
+  - type: gear
+    location:
+      - -13800
+      - -3536
+  - type: gear
+    location:
+      - -13700
+      - -3536
+  - type: gear
+    location:
+      - -13600
+      - -3536
+  - type: gear
+    location:
+      - -13500
+      - -3536
+  - type: gear
+    location:
+      - -13400
+      - -3536
+  - type: gear
+    location:
+      - -10600
+      - -536
+  - type: gear
+    location:
+      - -10600
+      - -436
+  - type: gear
+    location:
+      - -10600
+      - -336
+  - type: gear
+    location:
+      - -10600
+      - -236
+  - type: gear
+    location:
+      - -10600
+      - -136
+  - type: gear
+    location:
+      - -10600
+      - -36
+  - type: gear
+    location:
+      - -10600
+      - 64
+  - type: gear
+    location:
+      - -10600
+      - 164
+  - type: gear
+    location:
+      - -10600
+      - 264
+  - type: gear
+    location:
+      - -10600
+      - 364
+  - type: gear
+    location:
+      - -10600
+      - 564
+  - type: gear
+    location:
+      - -10600
+      - 464
+  - type: gear
+    location:
+      - -10600
+      - 664
+on off obstacles: []
+bullet rotators:
+  - type: left
+    location:
+      - -8600
+      - -836
+  - type: left
+    location:
+      - -8600
+      - -936
+  - type: left
+    location:
+      - -8600
+      - -1036
+  - type: down
+    location:
+      - -9300
+      - -2236
+  - type: down
+    location:
+      - -9900
+      - -2236
+  - type: down
+    location:
+      - -14100
+      - -2236
+  - type: down
+    location:
+      - -15100
+      - -2236
+  - type: down
+    location:
+      - -15700
+      - -2236
+  - type: left
+    location:
+      - -13000
+      - -1036
+  - type: up
+    location:
+      - -13400
+      - -1036
+  - type: left
+    location:
+      - -13400
+      - -2236
+  - type: left
+    location:
+      - -14100
+      - -1036
+  - type: up
+    location:
+      - -14500
+      - -1036
+  - type: left
+    location:
+      - -14500
+      - -2236
+  - type: left
+    location:
+      - -15100
+      - -1036
+  - type: up
+    location:
+      - -15600
+      - -1036
+  - type: left
+    location:
+      - -15600
+      - -2236
+  - type: left
+    location:
+      - -15700
+      - -1036
+  - type: up
+    location:
+      - -16000
+      - -1036
+  - type: left
+    location:
+      - -12700
+      - -2936
+  - type: down
+    location:
+      - -13300
+      - -2936
+  - type: left
+    location:
+      - -13300
+      - -2336
+  - type: up
+    location:
+      - -13600
+      - -2336
+  - type: left
+    location:
+      - -13600
+      - -2936
+  - type: down
+    location:
+      - -14000
+      - -2936
+  - type: left
+    location:
+      - -14000
+      - -2336
+  - type: right
+    location:
+      - -16000
+      - -2536
+  - type: up
+    location:
+      - -12700
+      - -2536
+  - type: up
+    location:
+      - -14300
+      - -2336
+  - type: left
+    location:
+      - -14300
+      - -2936
+  - type: down
+    location:
+      - -14600
+      - -2936
+  - type: left
+    location:
+      - -14600
+      - -2336
+  - type: up
+    location:
+      - -14900
+      - -2336
+  - type: left
+    location:
+      - -14900
+      - -2936
+  - type: down
+    location:
+      - -15200
+      - -2936
+  - type: left
+    location:
+      - -15200
+      - -2336
+  - type: up
+    location:
+      - -15400
+      - -2336
+  - type: left
+    location:
+      - -15400
+      - -2936
+  - type: down
+    location:
+      - -15600
+      - -2936
+  - type: left
+    location:
+      - -15600
+      - -2336
+  - type: up
+    location:
+      - -15800
+      - -2336
+  - type: down
+    location:
+      - -13000
+      - -2336
+flip gravity:
+  - type: purple-blue
+    location:
+      - -9700
+      - -836
+  - type: purple-blue
+    location:
+      - -11200
+      - -1636
+  - type: purple-blue
+    location:
+      - -11550
+      - -736
+  - type: purple-blue
+    location:
+      - -11600
+      - -1186
+  - type: purple-blue
+    location:
+      - -11800
+      - -736
+  - type: purple-blue
+    location:
+      - -16000
+      - -2036
+  - type: purple-blue
+    location:
+      - -11200
+      - -3436
+speed: []
+slow:
+  - type: red
+    location:
+      - -15800
+      - -2036
+    size:
+      - 1000
+      - 700
+disappearing:
+  - type: red
+    location:
+      - -5600
+      - 364
+  - type: red
+    location:
+      - -5600
+      - 464
+  - type: red
+    location:
+      - -5800
+      - 464
+  - type: red
+    location:
+      - -5800
+      - 564
+  - type: red
+    location:
+      - -6000
+      - 564
+  - type: red
+    location:
+      - -6000
+      - 664
+  - type: red
+    location:
+      - -8700
+      - 164
+  - type: red
+    location:
+      - -8700
+      - 264
+  - type: red
+    location:
+      - -9100
+      - 64
+  - type: red
+    location:
+      - -9100
+      - 164
+  - type: red
+    location:
+      - -9200
+      - -736
+  - type: red
+    location:
+      - -9600
+      - -736
+  - type: red
+    location:
+      - -9500
+      - -736
+  - type: red
+    location:
+      - -9100
+      - -736
+jumpers:
+  - type: yellow
+    location:
+      - -4400
+      - 464
+  - type: yellow
+    location:
+      - -4771
+      - 372
+  - type: yellow
+    location:
+      - -5141
+      - 287
+  - type: yellow
+    location:
+      - -8300
+      - 64
+  - type: yellow
+    location:
+      - -8400
+      - 64
+  - type: yellow
+    location:
+      - -8500
+      - 64
+  - type: yellow
+    location:
+      - -10100
+      - -236
+  - type: yellow
+    location:
+      - -10000
+      - -236
+  - type: yellow
+    location:
+      - -9900
+      - -236
+  - type: yellow
+    location:
+      - -10000
+      - -536
+  - type: yellow
+    location:
+      - -9900
+      - -636
+  - type: yellow
+    location:
+      - -9800
+      - -736
+  - type: yellow
+    location:
+      - -9600
+      - -536
+  - type: yellow
+    location:
+      - -9200
+      - -536
+  - type: yellow
+    location:
+      - -9600
+      - -636
+  - type: yellow
+    location:
+      - -9200
+      - -636
+  - type: yellow
+    location:
+      - -15200
+      - -1936
+  - type: yellow
+    location:
+      - -15300
+      - -1836
+  - type: yellow
+    location:
+      - -15400
+      - -1936
+  - type: yellow
+    location:
+      - -16600
+      - -2036
+  - type: yellow
+    location:
+      - -16400
+      - -2236
+  - type: yellow
+    location:
+      - -16200
+      - -2436
+buttons:
+  - type: red
+    location:
+      - -8590
+      - -1074
+  - type: red
+    location:
+      - -8989
+      - -1874
+launchers:
+  - type: pink
+    location:
+      - -7500
+      - -36
+    angle: 270
+  - type: pink
+    location:
+      - -10000
+      - 664
+  - type: pink
+    location:
+      - -7200
+      - 664
+teleports: []
+low gravity:
+  - location:
+      - -12300
+      - -2036
+    size:
+      - 2100
+      - 500
+  - location:
+      - -10600
+      - -1536
+    size:
+      - 300
+      - 100
+  - location:
+      - -10600
+      - -1436
+    size:
+      - 200
+      - 100
+  - location:
+      - -10600
+      - -1336
+    size:
+      - 100
+      - 100
+  - location:
+      - -12300
+      - -1536
+    size:
+      - 1700
+      - 900
+  - location:
+      - -14500
+      - -2036
+    size:
+      - 500
+      - 800
+chase areas:
+  - type: blue
+    location:
+      - 900
+      - 164
+    size:
+      - 200
+      - 500
+    recording: >-
+      700,683,3,1,0,0;700,683,3,1,0,0;700,684,3,1,0,0;700,684,0,1,0,0;700,684,0,1,0,0;700,684,0,1,0,0;700,684,0,1,0,0;700,684,0,1,0,0;700,684,0,1,0,0;700,684,0,1,0,0;700,684,0,1,0,0;700,684,0,1,0,0;700,684,0,1,0,0;700,684,0,1,0,0;690,684,2,1,0,0;680,684,2,1,0,0;670,684,2,1,0,0;660,684,2,1,0,0;650,684,2,1,0,0;640,684,2,1,0,0;630,684,2,1,0,0;620,684,2,1,0,0;610,684,2,1,0,0;600,684,2,1,0,0;590,684,2,1,0,0;580,684,2,1,0,0;570,684,2,1,0,0;560,684,2,1,0,0;550,684,2,1,0,0;540,684,2,1,0,0;530,684,2,1,0,0;520,684,2,1,0,0;510,684,2,1,0,0;500,684,2,1,0,0;490,684,2,1,0,0;480,684,2,1,0,0;470,684,2,1,0,0;460,684,2,1,0,0;450,684,2,1,0,0;440,684,2,1,0,0;430,684,2,1,0,0;420,684,2,1,0,0;410,684,2,1,0,0;400,684,2,1,0,0;390,684,2,1,0,0;380,684,2,1,0,0;370,684,2,1,0,0;360,684,2,1,0,0;350,684,2,1,0,0;340,684,2,1,0,0;330,684,2,1,0,0;320,684,2,1,0,0;310,684,2,1,0,0;300,684,2,1,0,0;290,684,2,1,0,0;280,684,2,1,0,0;270,684,2,1,0,0;260,684,2,1,0,0;250,684,2,1,0,0;240,684,2,1,0,0;230,684,2,1,0,0;220,684,2,1,0,0;210,684,2,1,0,0;200,684,2,1,0,0;190,684,2,1,0,0;180,684,2,1,0,0;170,684,2,1,0,0;160,684,2,1,0,0;150,684,2,1,0,0;140,684,3,1,0,0;130,654,3,1,0,0;120,626,3,1,0,0;110,599,3,1,0,0;100,573,3,1,0,0;90,549,3,1,0,0;80,527,3,1,0,0;70,506,3,1,0,0;60,486,3,1,0,0;50,468,3,1,0,0;40,452,3,1,0,0;30,437,3,1,0,0;20,423,3,1,0,0;10,411,3,1,0,0;0,401,3,1,0,0;-10,392,3,1,0,0;-20,384,3,1,0,0;-30,378,3,1,0,0;-40,374,3,1,0,0;-50,371,3,1,0,0;-60,369,3,1,0,0;-70,369,3,1,0,0;-80,371,3,1,0,0;-90,374,3,1,0,0;-100,378,3,1,0,0;-110,384,3,1,0,0;-120,392,3,1,0,0;-130,401,3,1,0,0;-140,411,3,1,0,0;-150,423,3,1,0,0;-160,437,3,1,0,0;-170,452,3,1,0,0;-180,468,3,1,0,0;-190,486,3,1,0,0;-200,506,3,1,0,0;-210,527,3,1,0,0;-220,549,3,1,0,0;-230,573,3,1,0,0;-240,599,3,1,0,0;-250,626,3,1,0,0;-260,654,3,1,0,0;-270,684,3,1,0,0;-280,684,2,1,0,0;-290,684,2,1,0,0;-300,684,2,1,0,0;-310,684,2,1,0,0;-320,684,2,1,0,0;-330,684,2,1,0,0;-340,684,2,1,0,0;-350,684,2,1,0,0;-360,684,2,1,0,0;-370,684,2,1,0,0;-380,684,2,1,0,0;-390,684,2,1,0,0;-400,684,2,1,0,0;-410,684,2,1,0,0;-420,684,2,1,0,0;-430,684,2,1,0,0;-440,684,2,1,0,0;-450,684,2,1,0,0;-460,684,2,1,0,0;-470,684,2,1,0,0;-480,684,2,1,0,0
+  - type: blue
+    location:
+      - -100
+      - 264
+    size:
+      - 100
+      - 500
+    recording: >-
+      -490,684,2,1,0,0;-500,684,2,1,0,0;-510,684,2,1,0,0;-520,684,2,1,0,0;-530,684,2,1,0,0;-540,684,2,1,0,0;-550,684,2,1,0,0;-560,684,2,1,0,0;-570,684,2,1,0,0;-580,684,2,1,0,0;-590,684,2,1,0,0;-600,684,2,1,0,0;-610,684,2,1,0,0;-620,684,2,1,0,0;-630,684,2,1,0,0;-640,684,2,1,0,0;-650,684,2,1,0,0;-660,684,2,1,0,0;-670,684,2,1,0,0;-680,684,2,1,0,0;-690,684,3,1,0,0;-700,654,3,1,0,0;-710,626,3,1,0,0;-720,599,3,1,0,0;-730,573,3,1,0,0;-740,549,3,1,0,0;-750,527,3,1,0,0;-760,506,3,1,0,0;-770,486,3,1,0,0;-780,468,3,1,0,0;-790,452,3,1,0,0;-800,437,3,1,0,0;-810,423,3,1,0,0;-820,411,3,1,0,0;-830,401,3,1,0,0;-840,392,3,1,0,0;-850,384,3,1,0,0;-860,378,3,1,0,0;-860,374,3,1,0,0;-860,371,3,1,0,0;-860,369,3,1,0,0;-860,369,3,1,0,0;-860,371,3,1,0,0;-860,374,3,1,0,0;-860,378,3,1,0,0;-860,384,3,1,0,0;-860,392,3,1,0,0;-860,401,3,1,0,0;-860,411,3,1,0,0;-860,423,3,1,0,0;-860,437,3,1,0,0;-860,452,3,1,0,0;-860,468,3,1,0,0;-860,483,3,1,0,0;-860,483,3,1,0,0;-860,453,3,1,0,0;-860,425,3,1,0,0;-870,398,3,1,0,0;-880,372,3,1,0,0;-890,348,3,1,0,0;-900,326,3,1,0,0;-910,305,3,1,0,0;-920,285,3,1,0,0;-930,267,3,1,0,0;-940,251,3,1,0,0;-950,236,3,1,0,0;-960,222,3,1,0,0;-970,210,3,1,0,0;-980,200,3,1,0,0;-990,191,3,1,0,0;-1000,183,3,1,0,0;-1010,177,3,1,0,0;-1020,173,3,1,0,0;-1030,170,3,1,0,0;-1040,168,3,1,0,0;-1040,168,3,1,0,0;-1040,170,3,1,0,0;-1040,173,3,1,0,0;-1040,177,3,1,0,0;-1040,183,3,1,0,0;-1040,191,3,1,0,0;-1040,200,3,1,0,0;-1040,210,3,1,0,0;-1040,222,3,1,0,0;-1040,236,3,1,0,0;-1040,251,3,1,0,0;-1040,267,3,1,0,0;-1040,283,3,1,0,0;-1040,283,3,1,0,0;-1050,253,3,1,0,0;-1060,225,3,1,0,0;-1070,198,3,1,0,0;-1080,172,3,1,0,0;-1090,148,3,1,0,0;-1100,126,3,1,0,0;-1110,105,3,1,0,0;-1120,85,3,1,0,0;-1130,67,3,1,0,0;-1140,51,3,1,0,0;-1150,36,3,1,0,0;-1160,22,3,1,0,0;-1170,10,3,1,0,0;-1180,0,3,1,0,0;-1190,-9,3,1,0,0;-1200,-17,3,1,0,0;-1210,-23,3,1,0,0;-1220,-27,3,1,0,0;-1230,-30,3,1,0,0;-1240,-32,3,1,0,0;-1240,-32,3,1,0,0;-1240,-30,3,1,0,0;-1240,-27,3,1,0,0;-1240,-23,3,1,0,0;-1240,-17,3,1,0,0;-1240,-9,3,1,0,0;-1240,0,3,1,0,0;-1240,10,3,1,0,0;-1240,22,3,1,0,0;-1240,36,3,1,0,0;-1240,51,3,1,0,0;-1240,67,3,1,0,0;-1240,83,3,1,0,0;-1250,83,3,1,0,0;-1260,53,3,1,0,0;-1270,25,3,1,0,0;-1280,-2,3,1,0,0;-1290,-28,3,1,0,0;-1300,-52,3,1,0,0;-1310,-74,3,1,0,0;-1320,-95,3,1,0,0;-1330,-115,3,1,0,0;-1340,-133,3,1,0,0;-1350,-149,3,1,0,0;-1360,-164,3,1,0,0;-1370,-178,3,1,0,0;-1380,-190,3,1,0,0;-1390,-200,3,1,0,0;-1400,-209,3,1,0,0;-1410,-217,3,1,0,0;-1420,-223,3,1,0,0;-1430,-227,3,1,0,0;-1440,-230,3,1,0,0;-1450,-232,3,1,0,0;-1460,-232,3,1,0,0;-1470,-230,3,1,0,0;-1480,-227,3,1,0,0;-1490,-223,3,1,0,0;-1500,-217,3,1,0,0;-1510,-209,3,1,0,0;-1520,-200,3,1,0,0;-1530,-190,3,1,0,0;-1540,-178,3,1,0,0;-1550,-164,3,1,0,0;-1560,-149,3,1,0,0;-1570,-133,3,1,0,0;-1580,-115,3,1,0,0;-1590,-95,3,1,0,0;-1600,-74,3,1,0,0;-1610,-52,3,1,0,0;-1620,-28,3,1,0,0;-1630,-2,3,1,0,0;-1640,25,3,1,0,0;-1650,53,3,1,0,0;-1660,83,3,1,0,0;-1670,115,3,1,0,0;-1680,148,3,1,0,0;-1690,182,3,1,0,0;-1700,218,3,1,0,0;-1710,256,3,1,0,0;-1720,295,3,1,0,0;-1730,335,3,1,0,0;-1740,377,3,1,0,0;-1750,421,3,1,0,0;-1760,466,3,1,0,0;-1770,512,3,1,0,0;-1780,560,3,1,0,0;-1790,610,3,1,0,0;-1800,661,3,1,0,0;-1810,684,3,1,0,0;-1820,684,2,1,0,0;-1830,684,2,1,0,0;-1840,684,2,1,0,0;-1850,684,2,1,0,0;-1860,684,2,1,0,0;-1870,684,2,1,0,0;-1880,684,2,1,0,0;-1890,684,2,1,0,0;-1900,684,2,1,0,0;-1910,684,2,1,0,0;-1920,684,2,1,0,0;-1930,684,2,1,0,0;-1940,684,2,1,0,0;-1950,684,2,1,0,0;-1960,684,2,1,0,0
+  - type: blue
+    location:
+      - -1800
+      - -236
+    size:
+      - 400
+      - 400
+    recording: >-
+      -1970,684,2,1,0,0;-1980,684,2,1,0,0;-1990,684,2,1,0,0;-2000,684,2,1,0,0;-2010,684,2,1,0,0;-2020,684,2,1,0,0;-2030,684,3,1,0,0;-2040,654,3,1,0,0;-2050,626,3,1,0,0;-2060,599,3,1,0,0;-2070,573,3,1,0,0;-2080,549,3,1,0,0;-2090,527,3,1,0,0;-2100,506,3,1,0,0;-2110,486,3,1,0,0;-2120,468,3,1,0,0;-2130,452,3,1,0,0;-2140,437,3,1,0,0;-2150,423,3,1,0,0;-2160,411,3,1,0,0;-2170,401,3,1,0,0;-2180,392,3,1,0,0;-2190,384,3,1,0,0;-2200,378,3,1,0,0;-2210,374,3,1,0,0;-2220,371,3,1,0,0;-2230,369,3,1,0,0;-2240,369,3,1,0,0;-2250,371,3,1,0,0;-2260,374,3,1,0,0;-2270,378,3,1,0,0;-2280,384,3,1,0,0;-2290,392,3,1,0,0;-2300,401,3,1,0,0;-2310,411,3,1,0,0;-2320,423,3,1,0,0;-2330,437,3,1,0,0;-2340,452,3,1,0,0;-2350,468,3,1,0,0;-2360,486,3,1,0,0;-2360,506,3,1,0,0;-2360,527,3,1,0,0;-2360,549,3,1,0,0;-2360,573,3,1,0,0;-2360,583,3,1,0,0;-2360,583,0,1,0,0;-2370,583,2,1,0,0;-2380,583,2,1,0,0;-2390,583,2,1,0,0;-2400,583,2,1,0,0;-2410,583,2,1,0,0;-2420,583,2,1,0,0;-2430,583,3,1,0,0;-2440,553,3,1,0,0;-2450,525,3,1,0,0;-2460,498,3,1,0,0;-2470,472,3,1,0,0;-2480,448,3,1,0,0;-2490,426,3,1,0,0;-2500,405,3,1,0,0;-2510,385,3,1,0,0;-2520,367,3,1,0,0;-2530,351,3,1,0,0;-2540,336,3,1,0,0;-2550,322,3,1,0,0;-2560,310,3,1,0,0;-2570,300,3,1,0,0;-2580,291,3,1,0,0;-2590,283,3,1,0,0;-2600,277,3,1,0,0;-2610,273,3,1,0,0;-2620,270,3,1,0,0;-2630,268,3,1,0,0;-2640,268,3,1,0,0;-2650,270,3,1,0,0;-2660,273,3,1,0,0;-2670,277,3,1,0,0;-2680,283,3,1,0,0;-2690,291,3,1,0,0;-2700,300,3,1,0,0;-2710,310,3,1,0,0;-2720,322,3,1,0,0;-2730,336,3,1,0,0;-2740,351,3,1,0,0;-2750,367,3,1,0,0;-2760,385,3,1,0,0;-2770,405,3,1,0,0;-2780,426,3,1,0,0;-2780,448,3,1,0,0;-2780,472,3,1,0,0;-2780,483,3,1,0,0;-2777,484,0,1,0,0;-2774,484,0,1,0,0;-2781,484,3,1,0,0;-2788,454,3,1,0,0;-2798,426,3,1,0,0;-2808,399,3,1,0,0;-2818,373,3,1,0,0;-2828,349,3,1,0,0;-2838,327,3,1,0,0;-2848,306,3,1,0,0;-2858,286,3,1,0,0;-2868,268,3,1,0,0;-2878,252,3,1,0,0;-2888,237,3,1,0,0;-2898,223,3,1,0,0;-2908,211,3,1,0,0;-2918,201,3,1,0,0;-2928,192,3,1,0,0;-2938,184,3,1,0,0;-2948,178,3,1,0,0;-2958,174,3,1,0,0;-2968,171,3,1,0,0;-2978,169,3,1,0,0;-2988,169,3,1,0,0;-2998,171,3,1,0,0;-3008,174,3,1,0,0;-3018,178,3,1,0,0;-3028,184,3,1,0,0;-3038,192,3,1,0,0;-3048,201,3,1,0,0;-3058,211,3,1,0,0;-3068,223,3,1,0,0;-3078,237,3,1,0,0;-3088,252,3,1,0,0;-3098,268,3,1,0,0;-3108,286,3,1,0,0;-3118,306,3,1,0,0;-3128,327,3,1,0,0;-3138,349,3,1,0,0;-3148,373,3,1,0,0;-3158,399,3,1,0,0;-3168,426,3,1,0,0;-3178,454,3,1,0,0;-3188,483,3,1,0,0;-3201,484,3,1,0,0;-3214,454,3,1,0,0;-3224,426,3,1,0,0;-3234,399,3,1,0,0;-3244,373,3,1,0,0;-3254,349,3,1,0,0;-3264,327,3,1,0,0;-3274,306,3,1,0,0;-3284,286,3,1,0,0;-3294,268,3,1,0,0;-3304,252,3,1,0,0;-3314,237,3,1,0,0;-3324,223,3,1,0,0;-3334,211,3,1,0,0;-3344,201,3,1,0,0;-3354,192,3,1,0,0;-3364,184,3,1,0,0;-3374,178,3,1,0,0;-3384,174,3,1,0,0;-3394,171,3,1,0,0;-3404,169,3,1,0,0;-3414,169,3,1,0,0;-3424,171,3,1,0,0;-3434,174,3,1,0,0;-3444,178,3,1,0,0;-3454,184,3,1,0,0;-3464,192,3,1,0,0;-3474,201,3,1,0,0;-3484,211,3,1,0,0;-3494,223,3,1,0,0;-3504,237,3,1,0,0;-3514,252,3,1,0,0;-3524,268,3,1,0,0;-3534,286,3,1,0,0;-3544,306,3,1,0,0;-3554,327,3,1,0,0;-3564,349,3,1,0,0;-3574,373,3,1,0,0;-3584,399,3,1,0,0;-3594,426,3,1,0,0;-3604,454,3,1,0,0;-3614,484,3,1,0,0;-3624,516,3,1,0,0;-3634,549,3,1,0,0;-3644,583,3,1,0,0;-3654,619,3,1,0,0;-3664,657,3,1,0,0;-3674,684,3,1,0,0
+    movers: 0,-2615,564,5,-1,-2600,564,-2800,564|1,-3185,564,5,-1,-3200,564,-3000,564
+  - type: blue
+    location:
+      - -3400
+      - 64
+    size:
+      - 400
+      - 500
+    recording: >-
+      -3684,684,2,1,0,0;-3694,684,2,1,0,0;-3704,684,2,1,0,0;-3714,684,2,1,0,0;-3724,684,3,1,0,0;-3734,654,3,1,0,0;-3744,626,3,1,0,0;-3754,599,3,1,0,0;-3764,573,3,1,0,0;-3774,549,3,1,0,0;-3784,527,3,1,0,0;-3794,506,3,1,0,0;-3804,486,3,1,0,0;-3814,468,3,1,0,0;-3824,452,3,1,0,0;-3834,437,3,1,0,0;-3844,423,3,1,0,0;-3854,411,3,1,0,0;-3864,401,3,1,0,0;-3874,392,3,1,0,0;-3884,384,3,1,0,0;-3894,378,3,1,0,0;-3904,374,3,1,0,0;-3914,371,3,1,0,0;-3924,369,3,1,0,0;-3934,369,3,1,0,0;-3944,371,3,1,0,0;-3954,374,3,1,0,0;-3964,378,3,1,0,0;-3974,384,3,1,0,0;-3984,392,3,1,0,0;-3994,401,3,1,0,0;-4004,411,3,1,0,0;-4014,423,3,1,0,0;-4024,437,3,1,0,0;-4034,452,3,1,0,0;-4044,468,3,1,0,0;-4054,486,3,1,0,0;-4064,506,3,1,0,0;-4074,527,3,1,0,0;-4084,549,3,1,0,0;-4094,573,3,1,0,0;-4104,583,3,1,0,0;-4114,583,3,1,0,0;-4124,553,3,1,0,0;-4134,525,3,1,0,0;-4144,498,3,1,0,0;-4154,472,3,1,0,0;-4164,448,3,1,0,0;-4174,426,3,1,0,0;-4184,405,3,1,0,0;-4194,385,3,1,0,0;-4204,367,3,1,0,0;-4214,351,3,1,0,0;-4224,336,3,1,0,0;-4234,322,3,1,0,0;-4244,310,3,1,0,0;-4254,300,3,1,0,0;-4264,291,3,1,0,0;-4274,283,3,1,0,0;-4284,277,3,1,0,0;-4294,273,3,1,0,0;-4304,270,3,1,0,0;-4314,268,3,1,0,0;-4324,268,3,1,0,0;-4334,270,3,1,0,0;-4344,273,3,1,0,0;-4354,277,3,1,0,0;-4364,283,3,1,0,0;-4374,291,3,1,0,0;-4384,300,3,1,0,0;-4394,310,3,1,0,0;-4404,322,3,1,0,0;-4414,336,3,1,0,0;-4424,351,3,1,0,0;-4434,367,3,1,0,0;-4434,385,3,1,0,0;-4444,355,3,1,0,0;-4454,327,3,1,0,0;-4464,300,3,1,0,0;-4474,274,3,1,0,0;-4484,250,3,1,0,0;-4494,228,3,1,0,0;-4504,207,3,1,0,0;-4514,187,3,1,0,0;-4524,169,3,1,0,0;-4534,153,3,1,0,0;-4544,138,3,1,0,0;-4554,124,3,1,0,0;-4564,112,3,1,0,0;-4574,102,3,1,0,0;-4584,93,3,1,0,0;-4594,85,3,1,0,0;-4604,79,3,1,0,0;-4614,75,3,1,0,0;-4624,72,3,1,0,0;-4634,70,3,1,0,0;-4644,70,3,1,0,0;-4654,72,3,1,0,0;-4664,75,3,1,0,0;-4674,79,3,1,0,0;-4684,85,3,1,0,0;-4694,93,3,1,0,0;-4704,102,3,1,0,0;-4714,112,3,1,0,0;-4724,124,3,1,0,0;-4734,138,3,1,0,0;-4744,153,3,1,0,0;-4754,169,3,1,0,0;-4764,187,3,1,0,0;-4774,207,3,1,0,0;-4784,228,3,1,0,0;-4794,250,3,1,0,0;-4804,274,3,1,0,0;-4804,300,3,1,0,0;-4814,270,3,1,0,0;-4824,241,3,1,0,0;-4834,214,3,1,0,0;-4844,189,3,1,0,0;-4854,165,3,1,0,0;-4864,142,3,1,0,0;-4874,121,3,1,0,0;-4884,102,3,1,0,0;-4894,84,3,1,0,0;-4904,67,3,1,0,0;-4914,52,3,1,0,0;-4924,39,3,1,0,0;-4934,27,3,1,0,0;-4944,16,3,1,0,0;-4954,7,3,1,0,0;-4964,0,3,1,0,0;-4974,-6,3,1,0,0;-4984,-11,3,1,0,0;-4994,-14,3,1,0,0;-5004,-15,3,1,0,0;-5014,-15,3,1,0,0;-5024,-14,3,1,0,0;-5034,-11,3,1,0,0;-5044,-6,3,1,0,0;-5054,0,3,1,0,0;-5064,7,3,1,0,0;-5074,16,3,1,0,0;-5084,27,3,1,0,0;-5094,39,3,1,0,0;-5104,52,3,1,0,0;-5114,67,3,1,0,0;-5124,84,3,1,0,0;-5134,102,3,1,0,0;-5144,121,3,1,0,0;-5154,142,3,1,0,0;-5164,165,3,1,0,0;-5174,189,3,1,0,0;-5184,214,3,1,0,0;-5184,241,3,1,0,0;-5194,211,3,1,0,0;-5204,183,3,1,0,0;-5214,156,3,1,0,0;-5224,130,3,1,0,0;-5234,106,3,1,0,0;-5244,84,3,1,0,0;-5254,63,3,1,0,0;-5264,43,3,1,0,0;-5274,25,3,1,0,0;-5284,9,3,1,0,0;-5294,-6,3,1,0,0;-5304,-20,3,1,0,0;-5314,-32,3,1,0,0;-5324,-42,3,1,0,0;-5334,-51,3,1,0,0;-5344,-59,3,1,0,0;-5354,-65,3,1,0,0;-5354,-69,3,1,0,0;-5354,-72,3,1,0,0;-5354,-74,3,1,0,0
+    movers: 0,-2753,564,51,1,-2600,564,-2800,564|1,-3047,564,51,1,-3200,564,-3000,564
+  - type: blue
+    location:
+      - -5100
+      - -136
+    size:
+      - 100
+      - 700
+    recording: >-
+      -5354,-74,3,1,0,0;-5354,-74,3,1,0,0;-5354,-72,3,1,0,0;-5354,-69,3,1,0,0;-5354,-65,3,1,0,0;-5354,-59,3,1,0,0;-5364,-51,3,1,0,0;-5374,-42,3,1,0,0;-5384,-32,3,1,0,0;-5394,-20,3,1,0,0;-5404,-6,3,1,0,0;-5414,9,3,1,0,0;-5424,25,3,1,0,0;-5434,43,3,1,0,0;-5444,63,3,1,0,0;-5454,84,3,1,0,0;-5464,106,3,1,0,0;-5474,130,3,1,0,0;-5484,156,3,1,0,0;-5494,183,3,1,0,0;-5504,211,3,1,0,0;-5514,241,3,1,0,0;-5524,273,3,1,0,0;-5534,283,3,1,0,0;-5544,283,2,1,0,0;-5554,283,2,1,0,0;-5564,283,2,1,0,0;-5574,283,2,1,0,0;-5584,283,2,1,0,0;-5594,283,2,1,0,0;-5604,283,2,1,0,0;-5614,283,2,1,0,0;-5624,283,2,1,0,0;-5634,283,2,1,0,0;-5644,283,2,1,0,0;-5654,283,2,1,0,0;-5664,283,2,1,0,0;-5674,283,2,1,0,0;-5684,283,3,1,0,0;-5694,283,3,1,0,0;-5704,285,3,1,0,0;-5714,288,3,1,0,0;-5724,292,3,1,0,0;-5734,298,3,1,0,0;-5744,306,3,1,0,0;-5754,315,3,1,0,0;-5764,325,3,1,0,0;-5774,337,3,1,0,0;-5784,351,3,1,0,0;-5794,366,3,1,0,0;-5804,382,3,1,0,0;-5814,383,3,1,0,0;-5824,383,2,1,0,0;-5834,383,2,1,0,0;-5844,383,2,1,0,0;-5854,383,2,1,0,0;-5864,383,2,1,0,0;-5874,383,2,1,0,0;-5884,383,3,1,0,0;-5894,383,3,1,0,0;-5904,385,3,1,0,0;-5914,388,3,1,0,0;-5924,392,3,1,0,0;-5934,398,3,1,0,0;-5944,406,3,1,0,0;-5954,415,3,1,0,0;-5964,425,3,1,0,0;-5974,437,3,1,0,0;-5984,451,3,1,0,0;-5994,466,3,1,0,0;-6004,482,3,1,0,0;-6014,483,3,1,0,0;-6024,483,2,1,0,0;-6034,483,2,1,0,0;-6044,483,2,1,0,0;-6054,483,2,1,0,0;-6064,483,2,1,0,0;-6074,483,2,1,0,0;-6084,483,3,1,0,0;-6094,483,3,1,0,0;-6104,485,3,1,0,0;-6114,488,3,1,0,0;-6124,492,3,1,0,0;-6134,498,3,1,0,0;-6144,506,3,1,0,0;-6154,515,3,1,0,0;-6164,525,3,1,0,0;-6174,537,3,1,0,0;-6184,551,3,1,0,0;-6194,566,3,1,0,0;-6204,582,3,1,0,0;-6214,600,3,1,0,0;-6224,620,3,1,0,0;-6234,641,3,1,0,0;-6244,663,3,1,0,0;-6254,684,3,1,0,0;-6264,684,2,1,0,0;-6274,684,2,1,0,0;-6284,684,2,1,0,0;-6294,684,2,1,0,0;-6304,684,2,1,0,0;-6314,684,2,1,0,0;-6324,684,2,1,0,0;-6334,684,2,1,0,0;-6344,684,2,1,0,0;-6354,684,2,1,0,0;-6364,684,2,1,0,0;-6374,684,2,1,0,0;-6384,684,2,1,0,0;-6394,684,2,1,0,0;-6404,684,2,1,0,0;-6414,684,2,1,0,0;-6424,684,2,1,0,0;-6434,684,2,1,0,0;-6444,684,2,1,0,0;-6454,684,2,1,0,0;-6464,684,2,1,0,0;-6474,684,2,1,0,0;-6484,684,2,1,0,0;-6494,684,2,1,0,0;-6504,684,2,1,0,0;-6514,684,2,1,0,0;-6524,684,2,1,0,0;-6534,684,2,1,0,0;-6544,684,2,1,0,0;-6554,684,2,1,0,0;-6564,684,2,1,0,0;-6574,684,2,1,0,0;-6584,684,2,1,0,0;-6594,684,2,1,0,0;-6604,684,2,1,0,0;-6614,684,2,1,0,0;-6624,684,2,1,0,0;-6634,684,2,1,0,0;-6644,684,2,1,0,0;-6654,684,2,1,0,0;-6664,684,2,1,0,0;-6674,684,2,1,0,0;-6684,684,2,1,0,0
+    movers: >-
+      0,-2702,564,34,-1,-2600,564,-2800,564|1,-3098,564,34,-1,-3200,564,-3000,564
+  - type: blue
+    location:
+      - -6500
+      - 64
+    size:
+      - 200
+      - 700
+    recording: >-
+      -6694,684,2,1,0,0;-6704,684,2,1,0,0;-6714,684,2,1,0,0;-6724,684,2,1,0,0;-6734,684,2,1,0,0;-6744,684,2,1,0,0;-6754,684,2,1,0,0;-6764,684,2,1,0,0;-6774,684,2,1,0,0;-6784,684,2,1,0,0;-6794,684,2,1,0,0;-6804,684,2,1,0,0;-6814,684,2,1,0,0;-6824,684,2,1,0,0;-6834,684,2,1,0,0;-6844,684,2,1,0,0;-6854,684,2,1,0,0;-6864,684,2,1,0,0;-6874,684,2,1,0,0;-6884,684,2,1,0,0;-6894,684,2,1,0,0;-6904,684,2,1,0,0;-6914,684,2,1,0,0;-6924,684,2,1,0,0;-6934,684,2,1,0,0;-6944,684,2,1,0,0;-6954,684,2,1,0,0;-6964,684,2,1,0,0;-6974,684,2,1,0,0;-6984,684,2,1,0,0;-6994,684,2,1,0,0;-7004,684,2,1,0,0;-7014,684,2,1,0,0;-7024,684,2,1,0,0;-7034,684,2,1,0,0;-7044,684,2,1,0,0;-7054,684,2,1,0,0;-7064,684,2,1,0,0;-7074,684,2,1,0,0;-7084,684,2,1,0,0;-7094,684,2,1,0,0;-7104,684,2,1,0,0;-7114,684,2,1,0,0;-7124,684,2,1,0,0;-7134,684,2,1,0,0;-7144,684,2,1,0,0;-7154,684,2,1,0,0;-7164,684,2,1,0,0;-7174,684,2,1,0,0;-7184,684,2,1,0,0;-7194,684,2,1,0,0;-7203,664,3,1,0,0;-7212,644,3,1,0,0;-7221,624,3,1,0,0;-7230,604,3,1,0,0;-7239,584,3,1,0,0;-7248,563,3,1,0,0;-7257,543,3,1,0,0;-7266,523,3,1,0,0;-7275,503,3,1,0,0;-7283,483,3,1,0,0;-7292,463,3,1,0,0;-7301,443,3,1,0,0;-7310,423,3,1,0,0;-7319,403,3,1,0,0;-7328,383,3,1,0,0;-7337,362,3,1,0,0;-7346,342,3,1,0,0;-7355,322,3,1,0,0;-7364,302,3,1,0,0;-7373,282,3,1,0,0;-7382,262,3,1,0,0;-7391,242,3,1,0,0;-7400,222,3,1,0,0;-7409,202,3,1,0,0;-7418,182,3,1,0,0;-7427,161,3,1,0,0;-7436,141,3,1,0,0;-7445,121,3,1,0,0;-7453,101,3,1,0,0;-7462,81,3,1,0,0;-7471,61,3,1,0,0;-7480,41,3,1,0,0;-7489,21,3,1,0,0;-7498,1,3,1,0,0;-7514,-15,3,1,0,0;-7530,-30,3,1,0,0;-7546,-45,3,1,0,0;-7562,-60,3,1,0,0;-7577,-76,3,1,0,0;-7593,-91,3,1,0,0;-7609,-106,3,1,0,0;-7625,-122,3,1,0,0;-7641,-137,3,1,0,0;-7656,-152,3,1,0,0;-7672,-167,3,1,0,0;-7688,-183,3,1,0,0;-7704,-198,3,1,0,0;-7720,-213,3,1,0,0;-7736,-229,3,1,0,0;-7751,-244,3,1,0,0;-7767,-259,3,1,0,0;-7783,-274,3,1,0,0;-7799,-290,3,1,0,0;-7815,-305,3,1,0,0;-7831,-320,3,1,0,0;-7846,-336,3,1,0,0;-7862,-351,3,1,0,0;-7878,-366,3,1,0,0;-7894,-381,3,1,0,0;-7910,-397,3,1,0,0;-7926,-412,3,1,0,0;-7941,-427,3,1,0,0;-7957,-443,3,1,0,0;-7973,-458,3,1,0,0;-7989,-473,3,1,0,0;-8005,-488,3,1,0,0;-8020,-504,3,1,0,0;-8036,-519,3,1,0,0;-8052,-534,3,1,0,0;-8068,-550,3,1,0,0;-8084,-565,3,1,0,0;-8100,-580,3,1,0,0;-8115,-595,3,1,0,0;-8131,-611,3,1,0,0;-8147,-626,3,1,0,0;-8163,-641,3,1,0,0;-8179,-656,3,1,0,0;-8195,-672,3,1,0,0;-8210,-687,3,1,0,0;-8218,-694,0,1,0,0;-8228,-694,3,1,0,0;-8238,-694,3,1,0,0;-8248,-692,3,1,0,0;-8258,-689,3,1,0,0;-8268,-685,3,1,0,0;-8278,-679,3,1,0,0;-8288,-671,3,1,0,0;-8298,-662,3,1,0,0;-8308,-652,3,1,0,0;-8318,-640,3,1,0,0;-8328,-626,3,1,0,0;-8338,-611,3,1,0,0;-8348,-595,3,1,0,0;-8358,-577,3,1,0,0;-8368,-557,3,1,0,0;-8378,-536,3,1,0,0;-8388,-514,3,1,0,0;-8398,-490,3,1,0,0;-8408,-464,3,1,0,0;-8418,-437,3,1,0,0;-8428,-409,3,1,0,0;-8438,-379,3,1,0,0;-8448,-347,3,1,0,0;-8448,-314,3,1,0,0;-8448,-280,3,1,0,0;-8448,-244,3,1,0,0;-8448,-206,3,1,0,0;-8448,-167,3,1,0,0;-8448,-127,3,1,0,0;-8448,-85,3,1,0,0;-8458,-41,3,1,0,0;-8468,4,3,1,0,0;-8478,50,3,1,0,0;-8478,74,3,1,0,0;-8488,44,3,1,0,0;-8498,16,3,1,0,0;-8508,-11,3,1,0,0;-8518,-37,3,1,0,0;-8528,-61,3,1,0,0;-8538,-83,3,1,0,0;-8548,-104,3,1,0,0;-8558,-124,3,1,0,0;-8568,-142,3,1,0,0;-8578,-158,3,1,0,0;-8588,-173,3,1,0,0;-8598,-187,3,1,0,0;-8608,-199,3,1,0,0;-8618,-209,3,1,0,0;-8628,-218,3,1,0,0;-8638,-226,3,1,0,0;-8648,-232,3,1,0,0;-8658,-236,3,1,0,0;-8668,-239,3,1,0,0;-8678,-241,3,1,0,0;-8688,-241,3,1,0,0;-8698,-239,3,1,0,0;-8698,-236,3,1,0,0;-8698,-232,3,1,0,0;-8698,-226,3,1,0,0;-8698,-218,3,1,0,0;-8698,-209,3,1,0,0;-8698,-199,3,1,0,0;-8698,-187,3,1,0,0;-8698,-173,3,1,0,0;-8698,-158,3,1,0,0;-8698,-142,3,1,0,0;-8698,-124,3,1,0,0;-8698,-104,3,1,0,0;-8698,-83,3,1,0,0;-8698,-61,3,1,0,0;-8698,-37,3,1,0,0;-8698,-11,3,1,0,0;-8698,16,3,1,0,0;-8708,44,3,1,0,0;-8718,74,3,1,0,0;-8728,83,3,1,0,0;-8738,83,3,1,0,0;-8748,53,3,1,0,0;-8758,25,3,1,0,0;-8768,-2,3,1,0,0;-8778,-28,3,1,0,0;-8788,-52,3,1,0,0;-8798,-74,3,1,0,0;-8808,-95,3,1,0,0;-8818,-115,3,1,0,0;-8828,-133,3,1,0,0;-8838,-149,3,1,0,0;-8848,-164,3,1,0,0;-8858,-178,3,1,0,0;-8868,-190,3,1,0,0;-8878,-200,3,1,0,0;-8888,-209,3,1,0,0;-8898,-217,3,1,0,0;-8908,-223,3,1,0,0;-8918,-227,3,1,0,0;-8928,-230,3,1,0,0;-8938,-232,3,1,0,0;-8948,-232,3,1,0,0;-8958,-230,3,1,0,0;-8968,-227,3,1,0,0;-8978,-223,3,1,0,0;-8988,-217,3,1,0,0;-8998,-209,3,1,0,0;-9008,-200,3,1,0,0;-9018,-190,3,1,0,0;-9028,-178,3,1,0,0;-9038,-164,3,1,0,0;-9048,-149,3,1,0,0;-9058,-133,3,1,0,0;-9068,-115,3,1,0,0;-9078,-95,3,1,0,0;-9088,-74,3,1,0,0;-9098,-52,3,1,0,0;-9108,-28,3,1,0,0;-9118,-17,3,1,0,0;-9128,-17,3,1,0,0;-9138,-47,3,1,0,0;-9148,-75,3,1,0,0;-9158,-102,3,1,0,0;-9168,-128,3,1,0,0;-9178,-152,3,1,0,0;-9188,-174,3,1,0,0;-9198,-195,3,1,0,0;-9208,-215,3,1,0,0;-9218,-233,3,1,0,0;-9228,-249,3,1,0,0;-9238,-264,3,1,0,0;-9248,-278,3,1,0,0;-9258,-290,3,1,0,0;-9268,-300,3,1,0,0;-9278,-309,3,1,0,0;-9288,-317,3,1,0,0;-9298,-323,3,1,0,0;-9308,-327,3,1,0,0;-9318,-330,3,1,0,0;-9328,-332,3,1,0,0;-9338,-332,3,1,0,0;-9348,-330,3,1,0,0;-9358,-327,3,1,0,0;-9368,-323,3,1,0,0;-9378,-317,3,1,0,0;-9388,-309,3,1,0,0;-9398,-300,3,1,0,0;-9408,-290,3,1,0,0;-9418,-278,3,1,0,0;-9428,-264,3,1,0,0;-9438,-249,3,1,0,0;-9448,-233,3,1,0,0;-9458,-215,3,1,0,0;-9468,-195,3,1,0,0;-9478,-174,3,1,0,0;-9488,-152,3,1,0,0;-9498,-128,3,1,0,0;-9508,-102,3,1,0,0;-9518,-75,3,1,0,0;-9528,-47,3,1,0,0;-9538,-17,3,1,0,0;-9548,15,3,1,0,0;-9558,48,3,1,0,0;-9568,82,3,1,0,0;-9578,118,3,1,0,0;-9588,156,3,1,0,0;-9598,195,3,1,0,0;-9608,235,3,1,0,0;-9618,277,3,1,0,0;-9628,321,3,1,0,0;-9638,366,3,1,0,0;-9648,412,3,1,0,0;-9658,460,3,1,0,0;-9668,510,3,1,0,0;-9678,561,3,1,0,0;-9688,613,3,1,0,0;-9698,667,3,1,0,0;-9708,684,3,1,0,0;-9718,684,2,1,0,0;-9728,684,2,1,0,0;-9738,684,2,1,0,0;-9748,684,2,1,0,0;-9758,684,2,1,0,0;-9768,684,2,1,0,0;-9778,684,2,1,0,0;-9788,684,2,1,0,0;-9798,684,2,1,0,0;-9808,684,2,1,0,0;-9818,684,2,1,0,0;-9828,684,2,1,0,0;-9838,684,2,1,0,0;-9848,684,2,1,0,0
+    movers: 0,-2735,564,45,1,-2600,564,-2800,564|1,-3065,564,45,1,-3200,564,-3000,564
+  - type: blue
+    location:
+      - -9700
+      - -236
+    size:
+      - 300
+      - 800
+    recording: >-
+      -9810,684,2,1,0,0;-9820,684,2,1,0,0;-9830,684,2,1,0,0;-9840,684,2,1,0,0;-9850,684,2,1,0,0;-9860,684,2,1,0,0;-9870,684,2,1,0,0;-9880,684,2,1,0,0;-9890,684,2,1,0,0;-9900,684,2,1,0,0;-9910,684,2,1,0,0;-9920,684,2,1,0,0;-9930,684,2,1,0,0;-9940,684,2,1,0,0;-9950,684,2,1,0,0;-9960,684,2,1,0,0;-9970,684,2,1,0,0;-9970,684,0,1,0,0;-9968,662,3,1,0,0;-9965,640,3,1,0,0;-9963,618,3,1,0,0;-9961,596,3,1,0,0;-9959,575,3,1,0,0;-9956,553,3,1,0,0;-9954,531,3,1,0,0;-9952,509,3,1,0,0;-9949,487,3,1,0,0;-9947,465,3,1,0,0;-9945,443,3,1,0,0;-9942,421,3,1,0,0;-9940,400,3,1,0,0;-9938,378,3,1,0,0;-9936,356,3,1,0,0;-9933,334,3,1,-1,0;-9931,312,3,1,-1,0;-9929,290,3,1,-1,0;-9926,268,3,1,-1,0;-9924,246,3,1,-1,0;-9922,225,3,1,-1,0;-9919,203,3,1,-1,0;-9917,181,3,1,-1,0;-9915,159,3,1,-1,0;-9913,137,3,1,-1,0;-9910,115,3,1,-1,0;-9908,93,3,1,-1,0;-9906,71,3,1,-1,0;-9903,49,3,1,-1,0;-9901,28,3,1,-1,0;-9899,6,3,1,-1,0;-9896,-16,3,1,-1,0;-9894,-38,3,1,-1,0;-9892,-60,3,1,-1,0;-9890,-82,3,1,-1,0;-9887,-104,3,1,-1,0;-9885,-126,3,1,-1,0;-9883,-147,3,1,-1,0;-9880,-169,3,1,-1,0;-9878,-191,3,1,-1,0;-9876,-213,3,1,-1,0;-9873,-235,3,1,-1,0;-9873,-235,3,1,-1,0;-9873,-265,3,1,-1,0;-9873,-293,3,1,-1,0;-9873,-320,3,1,-1,0;-9873,-346,3,1,-1,0;-9873,-370,3,1,-1,0;-9873,-392,3,1,-1,0;-9873,-413,3,1,-1,0;-9873,-433,3,1,-1,0;-9873,-451,3,1,-1,0;-9873,-467,3,1,-1,0;-9873,-482,3,1,-1,0;-9873,-496,3,1,-1,0;-9873,-508,3,1,-1,0;-9873,-518,3,1,-1,0;-9873,-527,3,1,-1,0;-9873,-535,3,1,-1,0;-9873,-541,3,1,-1,0;-9873,-545,3,1,-1,0;-9873,-548,3,1,-1,0;-9873,-578,3,1,-1,0;-9873,-607,3,1,-1,0;-9873,-634,3,1,-1,0;-9873,-659,3,1,-1,0;-9873,-683,3,1,-1,0;-9873,-706,3,1,-1,0;-9873,-727,3,1,-1,0;-9873,-746,3,1,-1,0;-9863,-764,3,1,1,0;-9853,-781,3,1,1,0;-9843,-796,3,1,1,0;-9833,-809,3,1,1,0;-9823,-821,3,1,1,0;-9813,-832,3,1,1,0;-9803,-841,3,1,1,0;-9793,-848,3,1,1,0;-9793,-854,3,1,1,0;-9793,-859,3,1,1,0;-9793,-862,3,1,1,0;-9793,-863,3,1,1,0;-9793,-863,3,1,1,0;-9793,-862,3,1,1,0;-9793,-859,3,1,1,0;-9793,-854,3,1,1,0;-9793,-848,3,1,1,0;-9793,-841,3,1,1,0;-9793,-832,3,1,1,0;-9793,-821,3,1,1,0;-9793,-809,3,1,1,0;-9793,-796,3,1,1,0;-9793,-781,3,1,1,0;-9793,-764,3,1,1,0;-9793,-794,3,1,1,0;-9793,-823,3,1,1,0;-9793,-850,3,1,1,0;-9793,-875,3,1,1,0;-9793,-899,3,1,1,0;-9793,-922,3,1,1,0;-9783,-943,3,1,1,0;-9773,-962,3,1,1,0;-9763,-980,3,1,1,0;-9753,-997,3,1,1,0;-9743,-1012,3,1,1,0;-9733,-1025,3,1,1,0;-9723,-1037,3,1,1,0;-9713,-1048,3,1,1,0;-9703,-1057,3,1,1,0;-9693,-1064,3,1,1,0;-9683,-1070,3,1,1,0;-9673,-1075,3,1,1,0;-9663,-1078,3,1,1,0;-9653,-1079,3,1,1,0;-9643,-1079,3,1,1,0;-9633,-1078,3,1,1,0;-9623,-1075,3,1,1,0;-9613,-1070,3,1,1,0;-9603,-1064,3,1,1,0;-9593,-1057,3,1,1,0;-9583,-1048,3,1,1,0;-9573,-1037,3,1,1,0;-9563,-1025,3,1,1,0;-9553,-1012,3,1,1,0;-9543,-997,3,1,1,0;-9533,-980,3,1,1,0;-9523,-962,3,1,1,0;-9513,-943,3,1,1,0;-9503,-922,3,1,1,0;-9493,-899,3,1,1,0;-9483,-875,3,1,1,0;-9473,-850,3,1,1,0;-9463,-823,3,1,1,0;-9453,-817,3,1,1,0;-9443,-817,1,1,1,0;-9443,-817,0,1,1,0;-9443,-817,0,1,1,0;-9443,-817,0,1,1,0;-9443,-817,0,1,1,0;-9443,-817,0,1,1,0;-9443,-817,0,1,1,0;-9443,-817,0,1,1,0;-9443,-817,0,1,1,0;-9443,-817,0,1,1,0;-9443,-817,0,1,1,0;-9443,-817,0,1,1,0;-9443,-817,0,1,1,0;-9443,-817,0,1,1,0;-9443,-817,0,1,1,0;-9443,-817,0,1,1,0;-9443,-817,0,1,1,0;-9443,-817,3,1,1,0;-9443,-817,3,1,1,0;-9443,-815,3,1,1,0;-9443,-812,3,1,1,0;-9443,-808,3,1,1,0
+    movers: 0,-2699,564,33,1,-2600,564,-2800,564|1,-3101,564,33,1,-3200,564,-3000,564
+  - type: blue
+    location:
+      - -9700
+      - -1236
+    size:
+      - 200
+      - 400
+    recording: >-
+      -9433,-808,3,1,1,0;-9423,-838,3,1,1,0;-9413,-866,3,1,1,0;-9403,-893,3,1,1,0;-9393,-919,3,1,1,0;-9383,-943,3,1,1,0;-9373,-965,3,1,1,0;-9363,-986,3,1,1,0;-9353,-1006,3,1,1,0;-9343,-1024,3,1,1,0;-9333,-1040,3,1,1,0;-9323,-1055,3,1,1,0;-9313,-1069,3,1,1,0;-9303,-1081,3,1,1,0;-9293,-1091,3,1,1,0;-9283,-1100,3,1,1,0;-9273,-1108,3,1,1,0;-9263,-1114,3,1,1,0;-9253,-1118,3,1,1,0;-9243,-1121,3,1,1,0;-9233,-1123,3,1,1,0;-9223,-1123,3,1,1,0;-9213,-1121,3,1,1,0;-9203,-1118,3,1,1,0;-9193,-1114,3,1,1,0;-9183,-1108,3,1,1,0;-9173,-1100,3,1,1,0;-9163,-1091,3,1,1,0;-9153,-1081,3,1,1,0;-9143,-1069,3,1,1,0;-9133,-1055,3,1,1,0;-9123,-1040,3,1,1,0;-9123,-1024,3,1,1,0;-9123,-1006,3,1,1,0;-9123,-986,3,1,1,0;-9123,-965,3,1,1,0;-9123,-943,3,1,1,1;-9123,-919,3,1,1,0;-9123,-893,3,1,1,0;-9123,-866,3,1,1,0;-9123,-838,3,1,1,0;-9123,-817,3,1,1,0;-9123,-817,0,1,1,0;-9123,-817,0,1,1,0;-9113,-817,3,1,1,0;-9103,-847,3,1,1,0;-9093,-875,3,1,1,0;-9083,-902,3,1,1,0;-9073,-928,3,1,1,1;-9063,-952,3,1,1,0;-9053,-974,3,1,1,0;-9043,-995,3,1,1,0;-9033,-1015,3,1,1,0;-9023,-1033,3,1,1,0;-9013,-1049,3,1,1,0;-9003,-1064,3,1,1,0;-8993,-1078,3,1,1,1;-8983,-1090,3,1,1,0;-8973,-1100,3,1,1,0;-8963,-1109,3,1,1,0;-8953,-1117,3,1,1,0;-8943,-1123,3,1,1,0;-8933,-1127,3,1,1,0;-8923,-1130,3,1,1,0;-8913,-1132,3,1,1,0;-8903,-1132,3,1,1,0;-8893,-1130,3,1,1,0;-8893,-1127,3,1,1,0;-8893,-1123,3,1,1,0;-8893,-1117,3,1,1,0;-8883,-1109,3,1,1,0;-8873,-1100,3,1,1,0;-8863,-1090,3,1,1,0;-8853,-1078,3,1,1,0;-8843,-1064,3,1,1,0;-8833,-1049,3,1,1,0;-8823,-1033,3,1,1,0;-8813,-1015,3,1,1,0;-8803,-995,3,1,1,0;-8793,-974,3,1,1,0;-8793,-952,3,1,1,0;-8793,-928,3,1,1,0;-8793,-902,3,1,1,0;-8793,-875,3,1,1,1;-8793,-847,3,1,1,0;-8793,-817,3,1,1,0
+    movers: 0,-2624,564,8,1,-2600,564,-2800,564|1,-3176,564,8,1,-3200,564,-3000,564
+  - type: blue
+    location:
+      - -9200
+      - -1336
+    size:
+      - 100
+      - 800
+    recording: >-
+      -8793,-817,3,1,1,0;-8793,-847,3,1,1,0;-8793,-875,3,1,1,0;-8793,-902,3,1,1,0;-8793,-928,3,1,1,0;-8793,-952,3,1,1,0;-8783,-974,3,1,1,0;-8773,-995,3,1,1,0;-8763,-1015,3,1,1,0;-8753,-1033,3,1,1,0;-8743,-1049,3,1,1,0;-8733,-1064,3,1,1,0;-8723,-1078,3,1,1,0;-8713,-1090,3,1,1,0;-8703,-1100,3,1,1,0;-8693,-1109,3,1,1,0;-8683,-1117,3,1,1,0;-8673,-1123,3,1,1,0;-8663,-1127,3,1,1,0;-8653,-1130,3,1,1,0;-8643,-1132,3,1,1,0;-8633,-1132,3,1,1,0;-8623,-1130,3,1,1,0;-8613,-1127,3,1,1,0;-8603,-1123,3,1,1,0;-8593,-1117,3,1,1,0;-8583,-1117,3,1,1,0;-8573,-1117,1,1,1,0;-8563,-1117,1,1,1,0;-8563,-1117,0,1,1,0;-8563,-1117,0,1,1,0;-8563,-1117,0,1,1,0;-8563,-1117,0,1,1,0;-8563,-1117,0,1,1,0;-8563,-1117,3,1,1,0;-8553,-1147,3,1,1,0;-8543,-1175,3,1,1,0;-8533,-1202,3,1,1,0;-8523,-1228,3,1,1,0;-8513,-1252,3,1,1,0;-8503,-1274,3,1,1,0;-8493,-1295,3,1,1,0;-8483,-1315,3,1,1,0;-8473,-1333,3,1,1,0;-8463,-1349,3,1,1,0;-8453,-1364,3,1,1,0;-8443,-1378,3,1,1,0;-8433,-1390,3,1,1,0;-8423,-1400,3,1,1,0;-8413,-1409,3,1,1,0;-8403,-1417,3,1,1,0;-8393,-1423,3,1,1,0;-8393,-1427,3,1,1,0;-8393,-1430,3,1,1,0;-8393,-1432,3,1,1,0;-8393,-1432,3,1,1,0;-8393,-1430,3,1,1,0;-8393,-1427,3,1,1,0;-8393,-1423,3,1,1,0;-8393,-1417,3,1,1,0;-8393,-1409,3,1,1,0;-8393,-1400,3,1,1,0;-8393,-1390,3,1,1,0;-8393,-1378,3,1,1,0;-8393,-1364,3,1,1,0;-8393,-1349,3,1,1,0;-8393,-1333,3,1,1,0;-8393,-1317,3,1,1,0;-8393,-1317,0,1,1,0;-8393,-1317,0,1,1,0;-8393,-1317,3,1,1,0;-8393,-1347,3,1,1,0;-8393,-1375,3,1,1,0;-8393,-1402,3,1,1,0;-8393,-1428,3,1,1,0;-8393,-1452,3,1,1,0;-8383,-1474,3,1,1,0;-8381,-1495,3,1,1,0;-8381,-1515,3,1,1,0;-8381,-1533,3,1,1,0;-8381,-1549,3,1,1,0;-8381,-1564,3,1,1,0;-8381,-1578,3,1,1,0;-8381,-1590,3,1,1,0;-8381,-1600,3,1,1,0;-8381,-1609,3,1,1,0;-8371,-1617,3,1,1,0;-8361,-1623,3,1,1,0;-8351,-1627,3,1,1,0;-8341,-1630,3,1,1,0;-8331,-1632,3,1,1,0;-8321,-1632,3,1,1,0;-8311,-1630,3,1,1,0;-8301,-1627,3,1,1,0;-8291,-1623,3,1,1,0;-8291,-1617,3,1,1,0;-8291,-1617,3,1,1,0;-8291,-1617,0,1,1,0;-8291,-1617,0,1,1,0;-8291,-1617,0,1,1,0;-8291,-1617,0,1,1,0;-8291,-1617,0,1,1,0;-8291,-1617,0,1,1,0;-8291,-1617,0,1,1,0;-8291,-1617,0,1,1,0;-8291,-1617,0,1,1,0;-8291,-1617,0,1,1,0;-8291,-1617,0,1,1,0;-8291,-1617,0,1,1,0;-8291,-1617,3,1,1,0;-8291,-1647,3,1,1,0;-8291,-1675,3,1,1,0;-8291,-1702,3,1,1,0;-8291,-1728,3,1,1,0;-8291,-1752,3,1,1,0;-8291,-1774,3,1,1,0;-8291,-1795,3,1,1,0;-8291,-1815,3,1,1,0;-8291,-1833,3,1,1,0;-8291,-1849,3,1,1,0;-8291,-1864,3,1,1,0;-8291,-1878,3,1,1,0;-8291,-1890,3,1,1,0;-8291,-1900,3,1,1,0;-8299,-1909,3,1,-1,0;-8309,-1917,3,1,-1,0;-8319,-1923,3,1,-1,0;-8329,-1927,3,1,-1,0;-8339,-1930,3,1,-1,0;-8349,-1932,3,1,-1,0;-8359,-1932,3,1,-1,0;-8369,-1930,3,1,-1,0;-8369,-1927,3,1,-1,0;-8369,-1923,3,1,-1,0;-8369,-1917,3,1,-1,0;-8369,-1917,3,1,-1,0;-8369,-1917,0,1,-1,0;-8369,-1917,0,1,-1,0;-8369,-1917,0,1,-1,0;-8369,-1917,0,1,-1,0;-8369,-1917,0,1,-1,0;-8369,-1917,0,1,-1,0;-8369,-1917,0,1,-1,0;-8369,-1917,3,1,-1,0;-8369,-1947,3,1,-1,0;-8369,-1975,3,1,-1,0;-8369,-2002,3,1,-1,0;-8369,-2028,3,1,-1,0;-8369,-2052,3,1,-1,0;-8369,-2074,3,1,-1,0;-8369,-2095,3,1,-1,0;-8369,-2115,3,1,-1,0;-8369,-2133,3,1,-1,0;-8369,-2149,3,1,-1,0;-8379,-2164,3,1,-1,0;-8389,-2178,3,1,-1,0;-8399,-2190,3,1,-1,0;-8399,-2200,3,1,-1,0;-8399,-2209,3,1,-1,0;-8409,-2217,3,1,-1,0;-8419,-2223,3,1,-1,0;-8429,-2227,3,1,-1,0;-8439,-2230,3,1,-1,0;-8449,-2232,3,1,-1,0;-8459,-2232,3,1,-1,0;-8469,-2230,3,1,-1,0;-8479,-2227,3,1,-1,0;-8489,-2223,3,1,-1,0;-8499,-2217,3,1,-1,0;-8509,-2217,3,1,-1,0;-8519,-2217,2,1,-1,0;-8529,-2217,2,1,-1,0;-8539,-2217,2,1,-1,0;-8549,-2217,2,1,-1,0;-8559,-2217,2,1,-1,0;-8569,-2217,2,1,-1,0;-8579,-2217,2,1,-1,0;-8589,-2217,2,1,-1,0;-8599,-2217,2,1,-1,0;-8609,-2217,2,1,-1,0;-8619,-2217,2,1,-1,0;-8629,-2217,2,1,-1,0;-8639,-2217,2,1,-1,0;-8649,-2217,2,1,-1,0;-8659,-2217,2,1,-1,0;-8669,-2217,2,1,-1,0;-8679,-2217,2,1,-1,0;-8689,-2217,2,1,-1,0;-8699,-2217,2,1,-1,0;-8709,-2217,2,1,-1,0;-8719,-2217,2,1,-1,0;-8729,-2217,2,1,-1,0;-8739,-2217,2,1,-1,0;-8749,-2217,2,1,-1,0;-8759,-2217,2,1,-1,0;-8769,-2217,2,1,-1,0;-8779,-2217,2,1,-1,0;-8789,-2217,2,1,-1,0;-8799,-2217,2,1,-1,0;-8809,-2217,2,1,-1,0;-8819,-2217,2,1,-1,0;-8829,-2217,2,1,-1,0;-8839,-2217,2,1,-1,0;-8849,-2217,2,1,-1,0;-8859,-2217,2,1,-1,0;-8869,-2217,2,1,-1,0;-8879,-2217,2,1,-1,0;-8889,-2217,2,1,-1,0;-8899,-2217,2,1,-1,0;-8909,-2217,2,1,-1,0;-8919,-2217,2,1,-1,0;-8929,-2217,2,1,-1,0;-8939,-2217,2,1,-1,0;-8949,-2217,2,1,-1,0;-8959,-2217,2,1,-1,0;-8969,-2217,2,1,-1,0;-8979,-2217,2,1,-1,0;-8989,-2217,2,1,-1,0;-8999,-2217,2,1,-1,0;-9009,-2217,2,1,-1,0;-9019,-2217,2,1,-1,0;-9029,-2217,2,1,-1,0;-9039,-2217,2,1,-1,0;-9049,-2217,2,1,-1,1;-9059,-2217,2,1,-1,0;-9069,-2217,2,1,-1,0;-9079,-2217,2,1,-1,0;-9089,-2217,2,1,-1,0;-9099,-2217,2,1,-1,0;-9109,-2217,2,1,-1,0;-9119,-2217,2,1,-1,0;-9129,-2217,2,1,-1,0;-9129,-2217,0,1,-1,1
+    movers: 0,-2663,564,21,1,-2600,564,-2800,564|1,-3137,564,21,1,-3200,564,-3000,564
+  - type: blue
+    location:
+      - -9900
+      - -2036
+    size:
+      - 800
+      - 300
+    recording: >-
+      -9129,-2217,3,1,-1,0;-9129,-2247,3,1,-1,0;-9129,-2275,3,1,-1,0;-9129,-2302,3,1,-1,0;-9139,-2328,3,1,-1,0;-9149,-2352,3,1,-1,0;-9159,-2374,3,1,-1,0;-9169,-2395,3,1,-1,0;-9179,-2415,3,1,-1,0;-9189,-2433,3,1,-1,0;-9199,-2449,3,1,-1,0;-9209,-2464,3,1,-1,0;-9219,-2478,3,1,-1,0;-9229,-2490,3,1,-1,0;-9239,-2500,3,1,-1,0;-9249,-2509,3,1,-1,0;-9259,-2517,3,1,-1,0;-9269,-2523,3,1,-1,0;-9279,-2527,3,1,-1,0;-9289,-2530,3,1,-1,0;-9299,-2532,3,1,-1,0;-9309,-2532,3,1,-1,0;-9319,-2530,3,1,-1,0;-9329,-2527,3,1,-1,0;-9339,-2523,3,1,-1,0;-9349,-2517,3,1,-1,0;-9359,-2509,3,1,-1,0;-9369,-2500,3,1,-1,0;-9379,-2490,3,1,-1,0;-9389,-2478,3,1,-1,0;-9399,-2464,3,1,-1,0;-9409,-2449,3,1,-1,0;-9419,-2433,3,1,-1,0;-9429,-2415,3,1,-1,0;-9439,-2395,3,1,-1,0;-9449,-2374,3,1,-1,0;-9459,-2352,3,1,-1,0;-9469,-2328,3,1,-1,0;-9479,-2302,3,1,-1,0;-9489,-2275,3,1,-1,0;-9499,-2247,3,1,-1,0;-9509,-2217,3,1,-1,0;-9519,-2217,3,1,-1,0;-9529,-2217,2,1,-1,0;-9539,-2217,2,1,-1,0;-9549,-2217,2,1,-1,0;-9559,-2217,2,1,-1,0;-9569,-2217,2,1,-1,0;-9579,-2217,2,1,-1,0;-9589,-2217,2,1,-1,1;-9599,-2217,2,1,-1,0;-9599,-2217,0,1,-1,0;-9599,-2217,0,1,-1,0;-9599,-2217,0,1,-1,0;-9599,-2217,0,1,-1,0;-9599,-2217,0,1,-1,0;-9599,-2217,0,1,-1,0;-9599,-2217,0,1,-1,0;-9599,-2217,0,1,-1,0;-9599,-2217,0,1,-1,1;-9599,-2217,0,1,-1,0;-9599,-2217,0,1,-1,0;-9599,-2217,0,1,-1,0;-9599,-2217,0,1,-1,0;-9599,-2217,0,1,-1,0;-9599,-2217,0,1,-1,0;-9599,-2217,0,1,-1,1;-9599,-2217,0,1,-1,0;-9599,-2217,0,1,-1,0;-9599,-2217,0,1,-1,0;-9599,-2217,0,1,-1,0;-9599,-2217,0,1,-1,0;-9599,-2217,0,1,-1,0;-9599,-2217,0,1,-1,0;-9599,-2217,0,1,-1,1;-9599,-2217,0,1,-1,0;-9599,-2217,0,1,-1,0;-9599,-2217,0,1,-1,0;-9599,-2217,0,1,-1,0;-9599,-2217,0,1,-1,0;-9599,-2217,0,1,-1,0;-9599,-2217,0,1,-1,0;-9589,-2217,1,1,1,0;-9579,-2217,1,1,1,0;-9569,-2217,1,1,1,0;-9559,-2217,1,1,1,0;-9549,-2217,1,1,1,0;-9539,-2217,1,1,1,0;-9539,-2217,0,1,1,0;-9539,-2217,0,1,1,0;-9539,-2217,0,1,1,0;-9539,-2217,0,1,1,0;-9539,-2217,0,1,1,0;-9539,-2217,0,1,1,1;-9539,-2217,0,1,1,0;-9539,-2217,0,1,1,0;-9539,-2217,0,1,1,0;-9539,-2217,0,1,1,0;-9539,-2217,0,1,1,0;-9539,-2217,0,1,1,0;-9539,-2217,0,1,1,0;-9539,-2217,0,1,1,0;-9539,-2217,0,1,1,1;-9539,-2217,0,1,1,0;-9539,-2217,0,1,1,0;-9539,-2217,0,1,1,0;-9539,-2217,0,1,1,0;-9539,-2217,0,1,1,0;-9539,-2217,0,1,1,0;-9539,-2217,0,1,1,0;-9539,-2217,0,1,1,0;-9539,-2217,0,1,1,1;-9539,-2217,0,1,1,0;-9539,-2217,0,1,1,0;-9539,-2217,0,1,1,0;-9539,-2217,0,1,1,0;-9539,-2217,0,1,1,0;-9539,-2217,0,1,1,0;-9539,-2217,0,1,1,0;-9539,-2217,0,1,1,0;-9549,-2217,2,1,-1,0;-9559,-2217,2,1,-1,0;-9569,-2217,2,1,-1,0;-9579,-2217,2,1,-1,0;-9589,-2217,2,1,-1,0;-9599,-2217,2,1,-1,0;-9609,-2217,2,1,-1,0;-9619,-2217,2,1,-1,0;-9619,-2217,0,1,-1,0;-9619,-2217,0,1,-1,0;-9619,-2217,0,1,-1,0;-9619,-2217,0,1,-1,0;-9619,-2217,0,1,-1,0;-9619,-2217,0,1,-1,0;-9619,-2217,0,1,-1,1;-9619,-2217,0,1,-1,0;-9619,-2217,0,1,-1,0;-9619,-2217,0,1,-1,0;-9619,-2217,0,1,-1,0;-9619,-2217,0,1,-1,0;-9619,-2217,0,1,-1,0;-9619,-2217,0,1,-1,0;-9619,-2217,0,1,-1,0;-9619,-2217,0,1,-1,0;-9609,-2217,1,1,1,0;-9599,-2217,1,1,1,0;-9589,-2217,1,1,1,0;-9579,-2217,1,1,1,0;-9569,-2217,1,1,1,0;-9559,-2217,1,1,1,0;-9549,-2217,1,1,1,0;-9549,-2217,0,1,1,0;-9549,-2217,0,1,1,0;-9549,-2217,0,1,1,0;-9549,-2217,0,1,1,0;-9549,-2217,0,1,1,0;-9549,-2217,0,1,1,0;-9549,-2217,0,1,1,1;-9549,-2217,0,1,1,0;-9549,-2217,0,1,1,0;-9549,-2217,0,1,1,0;-9549,-2217,0,1,1,0;-9549,-2217,0,1,1,0;-9549,-2217,0,1,1,0;-9549,-2217,0,1,1,0;-9549,-2217,0,1,1,0;-9549,-2217,0,1,1,0;-9549,-2217,0,1,1,0;-9549,-2217,0,1,1,0;-9549,-2217,0,1,1,0;-9559,-2217,2,1,-1,0;-9569,-2217,2,1,-1,0;-9579,-2217,2,1,-1,0;-9589,-2217,2,1,-1,0;-9599,-2217,2,1,-1,0;-9609,-2217,2,1,-1,0;-9619,-2217,2,1,-1,0;-9619,-2217,0,1,-1,0;-9619,-2217,0,1,-1,0;-9619,-2217,0,1,-1,0;-9619,-2217,0,1,-1,0;-9619,-2217,0,1,-1,1;-9619,-2217,0,1,-1,0;-9619,-2217,0,1,-1,0;-9619,-2217,0,1,-1,0;-9619,-2217,0,1,-1,0;-9619,-2217,0,1,-1,0;-9619,-2217,0,1,-1,0;-9609,-2217,1,1,1,0;-9599,-2217,1,1,1,0;-9589,-2217,1,1,1,0;-9579,-2217,1,1,1,0;-9569,-2217,1,1,1,0;-9559,-2217,1,1,1,0;-9559,-2217,0,1,1,0;-9559,-2217,0,1,1,0;-9559,-2217,0,1,1,0;-9559,-2217,0,1,1,0;-9559,-2217,0,1,1,0;-9559,-2217,0,1,1,0;-9559,-2217,0,1,1,0;-9559,-2217,0,1,1,0;-9559,-2217,0,1,1,0;-9559,-2217,0,1,1,1
+    movers: >-
+      0,-2699,564,33,-1,-2600,564,-2800,564|1,-3101,564,33,-1,-3200,564,-3000,564
+  - type: blue
+    location:
+      - -9000
+      - -2036
+    size:
+      - 100
+      - 200
+    recording: >-
+      -9549,-2217,1,1,1,0;-9539,-2217,1,1,1,0;-9529,-2217,1,1,1,0;-9519,-2217,1,1,1,0;-9509,-2217,1,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,1;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,1;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,1;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,1;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,1;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9509,-2217,0,1,1,0;-9519,-2217,2,1,-1,0;-9529,-2217,2,1,-1,0;-9539,-2217,2,1,-1,0;-9549,-2217,2,1,-1,0;-9559,-2217,2,1,-1,0;-9569,-2217,2,1,-1,0;-9579,-2217,2,1,-1,0;-9589,-2217,2,1,-1,0;-9599,-2217,2,1,-1,0;-9609,-2217,2,1,-1,0;-9619,-2217,2,1,-1,0;-9629,-2217,2,1,-1,0;-9639,-2217,2,1,-1,0;-9649,-2217,2,1,-1,0;-9649,-2217,0,1,-1,0;-9649,-2217,0,1,-1,0;-9649,-2217,0,1,-1,0;-9649,-2217,0,1,-1,0;-9649,-2217,0,1,-1,1;-9649,-2217,0,1,-1,0;-9649,-2217,0,1,-1,0;-9649,-2217,0,1,-1,0;-9649,-2217,0,1,-1,0;-9649,-2217,0,1,-1,0;-9649,-2217,0,1,-1,0;-9649,-2217,0,1,-1,0;-9649,-2217,0,1,-1,0;-9649,-2217,0,1,-1,0;-9649,-2217,0,1,-1,0;-9649,-2217,0,1,-1,1;-9649,-2217,0,1,-1,0;-9649,-2217,0,1,-1,0;-9649,-2217,0,1,-1,0;-9649,-2217,0,1,-1,0;-9649,-2217,0,1,-1,0;-9649,-2217,0,1,-1,0;-9649,-2217,3,1,-1,0;-9659,-2247,3,1,-1,0;-9669,-2275,3,1,-1,0;-9679,-2302,3,1,-1,0;-9689,-2328,3,1,-1,0;-9699,-2352,3,1,-1,0;-9709,-2374,3,1,-1,0;-9719,-2395,3,1,-1,0;-9729,-2415,3,1,-1,0;-9739,-2433,3,1,-1,0;-9749,-2449,3,1,-1,0;-9759,-2464,3,1,-1,0;-9769,-2478,3,1,-1,0;-9779,-2490,3,1,-1,0;-9789,-2500,3,1,-1,0;-9799,-2509,3,1,-1,0;-9809,-2517,3,1,-1,0;-9819,-2523,3,1,-1,0;-9829,-2527,3,1,-1,0;-9839,-2530,3,1,-1,0;-9849,-2532,3,1,-1,0;-9859,-2532,3,1,-1,0;-9869,-2530,3,1,-1,0;-9879,-2527,3,1,-1,0;-9889,-2523,3,1,-1,0;-9899,-2517,3,1,-1,0;-9909,-2509,3,1,-1,0;-9919,-2500,3,1,-1,0;-9929,-2490,3,1,-1,0;-9939,-2478,3,1,-1,0;-9949,-2464,3,1,-1,0;-9959,-2449,3,1,-1,0;-9969,-2433,3,1,-1,0;-9979,-2415,3,1,-1,0;-9989,-2395,3,1,-1,0;-9999,-2374,3,1,-1,0;-10009,-2352,3,1,-1,0;-10019,-2328,3,1,-1,0;-10029,-2302,3,1,-1,0;-10039,-2275,3,1,-1,0;-10049,-2247,3,1,-1,0;-10059,-2217,3,1,-1,0;-10069,-2217,3,1,-1,0;-10079,-2217,2,1,-1,0;-10089,-2217,2,1,-1,0;-10099,-2217,2,1,-1,0;-10109,-2217,2,1,-1,0;-10119,-2217,2,1,-1,0;-10129,-2217,2,1,-1,0;-10139,-2217,2,1,-1,0;-10149,-2217,2,1,-1,0;-10159,-2217,2,1,-1,0;-10169,-2217,2,1,-1,0;-10179,-2217,2,1,-1,0;-10189,-2217,2,1,-1,0;-10199,-2217,2,1,-1,0
+    movers: >-
+      0,-2690,564,30,-1,-2600,564,-2800,564|1,-3110,564,30,-1,-3200,564,-3000,564
+  - type: blue
+    location:
+      - -10300
+      - -2036
+    size:
+      - 100
+      - 500
+    recording: >-
+      -10209,-2217,2,1,-1,0;-10219,-2217,2,1,-1,0;-10229,-2217,2,1,-1,0;-10239,-2217,2,1,-1,0;-10249,-2217,2,1,-1,0;-10259,-2217,2,1,-1,0;-10269,-2217,2,1,-1,0;-10279,-2217,2,1,-1,0;-10289,-2217,2,1,-1,0;-10299,-2217,2,1,-1,0;-10309,-2217,2,1,-1,0;-10319,-2217,2,1,-1,0;-10329,-2217,2,1,-1,0;-10339,-2217,2,1,-1,0;-10349,-2217,2,1,-1,0;-10359,-2217,2,1,-1,0;-10369,-2217,2,1,-1,0;-10379,-2217,2,1,-1,0;-10389,-2217,2,1,-1,0;-10399,-2217,2,1,-1,0;-10409,-2217,2,1,-1,0;-10419,-2217,2,1,-1,0;-10429,-2217,2,1,-1,0;-10439,-2217,2,1,-1,0;-10449,-2217,2,1,-1,0;-10459,-2217,2,1,-1,0;-10469,-2217,2,1,-1,0;-10479,-2217,2,1,-1,0;-10489,-2217,2,1,-1,0;-10499,-2217,2,1,-1,0;-10509,-2217,2,1,-1,0;-10519,-2217,2,1,-1,0;-10529,-2217,2,1,-1,0;-10539,-2217,2,1,-1,0;-10549,-2217,2,1,-1,0;-10559,-2217,2,1,-1,0;-10569,-2217,2,1,-1,0;-10579,-2217,2,1,-1,0;-10589,-2217,2,1,-1,0;-10599,-2217,2,1,-1,0;-10609,-2217,2,1,-1,0;-10619,-2217,2,1,-1,0;-10629,-2217,2,1,-1,0;-10639,-2217,2,1,-1,0;-10649,-2217,2,1,-1,0;-10659,-2217,2,1,-1,0;-10669,-2217,2,1,-1,0;-10679,-2217,2,1,-1,0;-10689,-2217,2,1,-1,0;-10699,-2217,2,1,-1,0;-10709,-2217,2,1,-1,0;-10719,-2217,2,1,-1,0;-10729,-2217,2,1,-1,0;-10739,-2217,2,1,-1,0;-10749,-2217,2,1,-1,0;-10759,-2217,2,1,-1,0;-10769,-2217,2,1,-1,0;-10779,-2217,2,1,-1,0;-10789,-2217,2,1,-1,0;-10799,-2217,2,1,-1,0;-10809,-2217,2,1,-1,0;-10819,-2217,2,1,-1,0;-10829,-2217,2,1,-1,0;-10839,-2217,2,1,-1,0;-10849,-2217,2,1,-1,0;-10859,-2217,2,1,-1,0;-10869,-2217,2,1,-1,0;-10879,-2217,2,1,-1,0;-10889,-2217,2,1,-1,0;-10899,-2217,2,1,-1,0;-10909,-2217,2,1,-1,0;-10919,-2217,2,1,-1,0;-10929,-2217,2,1,-1,0;-10939,-2217,2,1,-1,0;-10949,-2217,2,1,-1,0;-10959,-2217,2,1,-1,0;-10969,-2217,2,1,-1,0;-10979,-2217,2,1,-1,0;-10989,-2217,2,1,-1,0;-10999,-2217,2,1,-1,0;-11009,-2217,2,1,-1,0;-11019,-2217,2,1,-1,0;-11029,-2217,2,1,-1,0;-11039,-2217,2,1,-1,0;-11049,-2217,2,1,-1,0;-11059,-2217,2,1,-1,0;-11069,-2217,2,1,-1,0;-11079,-2217,2,1,-1,0;-11089,-2217,2,1,-1,0;-11099,-2217,2,1,-1,0;-11109,-2217,2,1,-1,0;-11119,-2217,2,1,-1,0;-11129,-2217,2,1,-1,0;-11139,-2217,2,1,-1,0;-11149,-2217,2,1,-1,0;-11159,-2217,2,1,-1,0;-11169,-2217,2,1,-1,0;-11179,-2217,2,1,-1,0;-11189,-2217,2,1,-1,0;-11199,-2217,2,1,-1,0;-11209,-2217,2,1,-1,0;-11219,-2217,2,1,-1,0;-11229,-2217,2,1,-1,0;-11239,-2217,2,1,-1,0;-11249,-2217,2,1,-1,0;-11259,-2217,2,1,-1,0;-11269,-2217,2,1,-1,0;-11279,-2217,2,1,-1,0;-11289,-2217,2,1,-1,0;-11299,-2217,2,1,-1,0;-11309,-2217,2,1,-1,0;-11319,-2217,2,1,-1,0;-11329,-2217,2,1,-1,0;-11339,-2217,2,1,-1,0;-11349,-2217,2,1,-1,0;-11359,-2217,2,1,-1,0;-11369,-2217,2,1,-1,0;-11379,-2217,2,1,-1,0;-11389,-2217,2,1,-1,0;-11399,-2217,2,1,-1,0;-11409,-2217,2,1,-1,0;-11419,-2217,2,1,-1,0;-11429,-2217,2,1,-1,0;-11439,-2217,2,1,-1,0;-11449,-2217,2,1,-1,0;-11459,-2217,2,1,-1,0;-11469,-2217,2,1,-1,0;-11479,-2217,2,1,-1,0;-11489,-2217,2,1,-1,0;-11499,-2217,2,1,-1,0;-11509,-2217,2,1,-1,0;-11519,-2217,2,1,-1,0;-11529,-2217,2,1,-1,0;-11539,-2217,2,1,-1,0;-11549,-2217,2,1,-1,0;-11559,-2217,2,1,-1,0;-11569,-2217,2,1,-1,0;-11579,-2217,2,1,-1,0;-11589,-2217,2,1,-1,0;-11599,-2217,2,1,-1,0;-11609,-2217,2,1,-1,0;-11619,-2217,2,1,-1,0;-11629,-2217,2,1,-1,0;-11639,-2217,2,1,-1,0;-11649,-2217,2,1,-1,0;-11659,-2217,2,1,-1,0;-11669,-2217,2,1,-1,0;-11679,-2217,2,1,-1,0;-11689,-2217,2,1,-1,0;-11699,-2217,2,1,-1,0;-11709,-2217,2,1,-1,0;-11719,-2217,2,1,-1,0;-11729,-2217,2,1,-1,0;-11739,-2217,2,1,-1,0;-11749,-2217,2,1,-1,0;-11759,-2217,2,1,-1,0;-11769,-2217,2,1,-1,0;-11779,-2217,2,1,-1,0;-11789,-2217,2,1,-1,0;-11799,-2217,2,1,-1,0;-11809,-2217,2,1,-1,0;-11819,-2217,2,1,-1,0;-11829,-2217,2,1,-1,0;-11839,-2217,2,1,-1,0;-11849,-2217,2,1,-1,0;-11859,-2217,2,1,-1,0;-11869,-2217,2,1,-1,0;-11879,-2217,2,1,-1,0;-11889,-2217,2,1,-1,0;-11899,-2217,2,1,-1,0;-11909,-2217,2,1,-1,0;-11919,-2217,2,1,-1,0;-11929,-2217,2,1,-1,0;-11939,-2217,2,1,-1,0;-11949,-2217,2,1,-1,0;-11959,-2217,2,1,-1,0;-11969,-2217,2,1,-1,0;-11979,-2217,2,1,-1,0;-11989,-2217,2,1,-1,0;-11999,-2217,2,1,-1,0;-12009,-2217,2,1,-1,0;-12019,-2217,2,1,-1,0;-12029,-2217,2,1,-1,0;-12039,-2217,2,1,-1,0;-12049,-2217,2,1,-1,0;-12059,-2217,2,1,-1,0;-12069,-2217,2,1,-1,0;-12079,-2217,2,1,-1,0;-12089,-2217,2,1,-1,0;-12099,-2217,2,1,-1,0;-12109,-2217,2,1,-1,0;-12119,-2217,2,1,-1,0;-12129,-2217,2,1,-1,0;-12139,-2217,2,1,-1,0;-12149,-2217,2,1,-1,0;-12159,-2217,2,1,-1,0;-12169,-2217,2,1,-1,0;-12179,-2217,2,1,-1,0;-12179,-2217,3,1,-1,0;-12179,-2247,3,1,-1,0;-12179,-2275,3,1,-1,0;-12179,-2302,3,1,-1,0;-12179,-2328,3,1,-1,0;-12179,-2352,3,1,-1,0;-12179,-2374,3,1,-1,0;-12179,-2395,3,1,-1,0;-12179,-2415,3,1,-1,0;-12179,-2433,3,1,-1,0;-12179,-2449,3,1,-1,0;-12179,-2464,3,1,-1,0;-12179,-2478,3,1,-1,0;-12179,-2490,3,1,-1,0;-12179,-2500,3,1,-1,0;-12179,-2509,3,1,-1,0;-12179,-2517,3,1,-1,0;-12179,-2523,3,1,-1,0;-12179,-2527,3,1,-1,0;-12179,-2530,3,1,-1,0;-12179,-2532,3,1,-1,0;-12179,-2532,3,1,-1,0;-12179,-2530,3,1,-1,0;-12179,-2527,3,1,-1,0;-12179,-2523,3,1,-1,0;-12179,-2517,3,1,-1,0;-12179,-2509,3,1,-1,0;-12179,-2500,3,1,-1,0;-12179,-2490,3,1,-1,0;-12179,-2478,3,1,-1,0;-12179,-2464,3,1,-1,0;-12179,-2449,3,1,-1,0;-12179,-2433,3,1,-1,0;-12179,-2415,3,1,-1,0;-12179,-2395,3,1,-1,0;-12179,-2374,3,1,-1,0;-12179,-2352,3,1,-1,0;-12179,-2328,3,1,-1,0;-12179,-2302,3,1,-1,0;-12179,-2275,3,1,-1,0;-12179,-2247,3,1,-1,0;-12179,-2217,3,1,-1,0;-12179,-2217,3,1,-1,0;-12179,-2217,0,1,-1,0;-12179,-2217,0,1,-1,0;-12179,-2217,0,1,-1,0;-12179,-2217,0,1,-1,0;-12179,-2217,0,1,-1,0;-12179,-2217,0,1,-1,0;-12179,-2217,0,1,-1,0;-12179,-2217,0,1,-1,0;-12179,-2217,0,1,-1,0;-12179,-2217,0,1,-1,0;-12179,-2217,0,1,-1,0;-12179,-2217,0,1,-1,0;-12179,-2217,0,1,-1,0;-12179,-2217,0,1,-1,0;-12179,-2217,0,1,-1,0;-12179,-2217,0,1,-1,0;-12179,-2217,0,1,-1,0;-12179,-2217,0,1,-1,0;-12179,-2217,0,1,-1,0;-12179,-2217,0,1,-1,0;-12179,-2217,0,1,-1,0;-12189,-2217,2,1,-1,0;-12199,-2217,2,1,-1,0;-12209,-2217,2,1,-1,0;-12219,-2217,2,1,-1,0;-12229,-2217,2,1,-1,0;-12239,-2217,2,1,-1,0;-12249,-2217,2,1,-1,0;-12259,-2217,2,1,-1,0;-12269,-2217,2,1,-1,0;-12279,-2217,2,1,-1,0;-12289,-2217,2,1,-1,0;-12299,-2217,2,1,-1,0;-12309,-2217,2,1,-1,0;-12319,-2217,2,1,-1,0;-12329,-2217,2,1,-1,0;-12339,-2217,2,1,-1,0;-12349,-2217,2,1,-1,0;-12359,-2217,2,1,-1,0;-12369,-2217,2,1,-1,0;-12379,-2217,2,1,-1,0;-12389,-2217,2,1,-1,0;-12399,-2217,2,1,-1,0;-12409,-2217,3,1,-1,0;-12419,-2247,3,1,-1,0;-12429,-2275,3,1,-1,0;-12439,-2302,3,1,-1,0;-12449,-2328,3,1,-1,0;-12459,-2352,3,1,-1,0;-12469,-2374,3,1,-1,0;-12479,-2395,3,1,-1,0;-12489,-2415,3,1,-1,0;-12499,-2433,3,1,-1,0;-12509,-2449,3,1,-1,0;-12519,-2464,3,1,-1,0;-12529,-2478,3,1,-1,0;-12539,-2490,3,1,-1,0;-12549,-2500,3,1,-1,0;-12559,-2509,3,1,-1,0;-12569,-2517,3,1,-1,0;-12579,-2523,3,1,-1,0;-12589,-2527,3,1,-1,0;-12599,-2530,3,1,-1,0;-12599,-2532,3,1,-1,0;-12599,-2532,3,1,-1,0;-12599,-2530,3,1,-1,0;-12599,-2527,3,1,-1,0;-12599,-2523,3,1,-1,0;-12599,-2517,3,1,-1,0;-12599,-2509,3,1,-1,0;-12599,-2500,3,1,-1,0;-12599,-2490,3,1,-1,0;-12599,-2478,3,1,-1,0;-12599,-2464,3,1,-1,0;-12599,-2449,3,1,-1,0;-12609,-2433,3,1,-1,0;-12619,-2415,3,1,-1,0;-12629,-2395,3,1,-1,0;-12639,-2374,3,1,-1,0;-12649,-2352,3,1,-1,0;-12659,-2328,3,1,-1,0;-12669,-2317,3,1,-1,0;-12679,-2317,2,1,-1,0;-12689,-2317,2,1,-1,0;-12699,-2317,2,1,-1,0;-12709,-2317,2,1,-1,0;-12719,-2317,2,1,-1,0;-12729,-2317,2,1,-1,0;-12739,-2317,2,1,-1,0;-12749,-2317,2,1,-1,0;-12759,-2317,2,1,-1,0;-12769,-2317,2,1,-1,0;-12779,-2317,2,1,-1,0;-12789,-2317,2,1,-1,0;-12799,-2317,2,1,-1,0;-12809,-2317,2,1,-1,0;-12819,-2317,2,1,-1,0
+    movers: >-
+      0,-2699,564,33,-1,-2600,564,-2800,564|1,-3101,564,33,-1,-3200,564,-3000,564
+  - type: green
+    location:
+      - -13000
+      - -2036
+    size:
+      - 200
+      - 400
+    recording: >-
+      -12829,-2317,2,1,-1,0;-12839,-2317,2,1,-1,0;-12849,-2317,2,1,-1,0;-12859,-2317,2,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,1;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,1;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,1;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,1;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,1;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,0,1,-1,0;-12859,-2317,3,1,-1,0;-12859,-2347,3,1,-1,0;-12869,-2375,3,1,-1,0;-12879,-2402,3,1,-1,0;-12889,-2428,3,1,-1,0;-12899,-2452,3,1,-1,0;-12909,-2474,3,1,-1,0;-12919,-2495,3,1,-1,0;-12929,-2515,3,1,-1,0;-12939,-2533,3,1,-1,0;-12949,-2549,3,1,-1,0;-12959,-2564,3,1,-1,0;-12969,-2578,3,1,-1,0;-12979,-2590,3,1,-1,0;-12989,-2600,3,1,-1,0;-12999,-2609,3,1,-1,0;-13009,-2617,3,1,-1,0;-13019,-2623,3,1,-1,0;-13029,-2627,3,1,-1,0;-13039,-2630,3,1,-1,0;-13049,-2632,3,1,-1,0;-13059,-2632,3,1,-1,0;-13069,-2630,3,1,-1,0;-13079,-2627,3,1,-1,0;-13089,-2623,3,1,-1,0;-13099,-2617,3,1,-1,0;-13109,-2609,3,1,-1,0;-13119,-2600,3,1,-1,0;-13129,-2590,3,1,-1,0;-13139,-2578,3,1,-1,0;-13149,-2564,3,1,-1,0;-13159,-2549,3,1,-1,0;-13159,-2533,3,1,-1,0;-13159,-2515,3,1,-1,0;-13159,-2495,3,1,-1,0;-13159,-2474,3,1,-1,0;-13159,-2452,3,1,-1,0;-13159,-2428,3,1,-1,0;-13159,-2402,3,1,-1,0;-13159,-2375,3,1,-1,0;-13159,-2347,3,1,-1,0;-13159,-2317,3,1,-1,0;-13159,-2317,3,1,-1,0;-13159,-2317,3,1,-1,0;-13159,-2347,3,1,-1,0;-13159,-2375,3,1,-1,0;-13169,-2402,3,1,-1,0;-13179,-2428,3,1,-1,0;-13189,-2452,3,1,-1,0;-13199,-2474,3,1,-1,0;-13209,-2495,3,1,-1,0;-13219,-2515,3,1,-1,0;-13229,-2533,3,1,-1,0;-13239,-2549,3,1,-1,0;-13249,-2564,3,1,-1,0;-13259,-2578,3,1,-1,0;-13269,-2590,3,1,-1,0;-13279,-2600,3,1,-1,0;-13289,-2609,3,1,-1,0;-13299,-2617,3,1,-1,0;-13309,-2623,3,1,-1,0;-13319,-2627,3,1,-1,0;-13329,-2630,3,1,-1,0;-13339,-2632,3,1,-1,0;-13349,-2632,3,1,-1,0;-13359,-2630,3,1,-1,0;-13369,-2627,3,1,-1,0;-13379,-2623,3,1,-1,0;-13389,-2617,3,1,-1,0;-13399,-2609,3,1,-1,0;-13399,-2600,3,1,-1,0;-13399,-2590,3,1,-1,0;-13399,-2578,3,1,-1,0;-13399,-2564,3,1,-1,0;-13399,-2549,3,1,-1,0;-13399,-2533,3,1,-1,0;-13399,-2515,3,1,-1,0;-13399,-2495,3,1,-1,0;-13399,-2474,3,1,-1,0;-13399,-2452,3,1,-1,0;-13399,-2428,3,1,-1,0;-13399,-2402,3,1,-1,0;-13409,-2375,3,1,-1,0;-13419,-2347,3,1,-1,0;-13429,-2317,3,1,-1,0;-13439,-2317,3,1,-1,0;-13449,-2317,3,1,-1,0;-13459,-2347,3,1,-1,0;-13469,-2375,3,1,-1,0;-13479,-2402,3,1,-1,0;-13489,-2428,3,1,-1,0;-13499,-2452,3,1,-1,0;-13509,-2474,3,1,-1,0;-13519,-2495,3,1,-1,0;-13529,-2515,3,1,-1,0;-13539,-2533,3,1,-1,0;-13549,-2549,3,1,-1,0;-13559,-2564,3,1,-1,0;-13569,-2578,3,1,-1,0;-13579,-2590,3,1,-1,0;-13589,-2600,3,1,-1,0;-13599,-2609,3,1,-1,0;-13609,-2617,3,1,-1,1;-13619,-2623,3,1,-1,0;-13629,-2627,3,1,-1,0;-13639,-2630,3,1,-1,0;-13649,-2632,3,1,-1,0;-13659,-2632,3,1,-1,0;-13669,-2630,3,1,-1,0;-13679,-2627,3,1,-1,0;-13689,-2623,3,1,-1,0;-13699,-2617,3,1,-1,0;-13709,-2609,3,1,-1,1;-13719,-2600,3,1,-1,0;-13729,-2590,3,1,-1,0;-13739,-2578,3,1,-1,0;-13749,-2564,3,1,-1,0;-13759,-2549,3,1,-1,0;-13769,-2533,3,1,-1,0;-13779,-2515,3,1,-1,0;-13789,-2495,3,1,-1,0;-13799,-2474,3,1,-1,0;-13809,-2452,3,1,-1,0;-13819,-2428,3,1,-1,0;-13829,-2402,3,1,-1,0;-13839,-2375,3,1,-1,0;-13849,-2347,3,1,-1,0;-13859,-2317,3,1,-1,0;-13869,-2317,3,1,-1,0;-13879,-2317,3,1,-1,0;-13889,-2347,3,1,-1,0;-13899,-2375,3,1,-1,0;-13899,-2402,3,1,-1,0;-13909,-2428,3,1,-1,0;-13919,-2452,3,1,-1,0;-13929,-2474,3,1,-1,0;-13939,-2495,3,1,-1,0;-13949,-2515,3,1,-1,0;-13959,-2533,3,1,-1,0;-13969,-2549,3,1,-1,0;-13979,-2564,3,1,-1,0;-13989,-2578,3,1,-1,0;-13999,-2590,3,1,-1,0;-14009,-2600,3,1,-1,0;-14019,-2609,3,1,-1,0;-14029,-2617,3,1,-1,0;-14039,-2623,3,1,-1,0;-14049,-2627,3,1,-1,0;-14059,-2630,3,1,-1,0;-14069,-2632,3,1,-1,0;-14079,-2632,3,1,-1,1;-14089,-2630,3,1,-1,0;-14099,-2627,3,1,-1,0;-14109,-2623,3,1,-1,0;-14109,-2617,3,1,-1,0;-14109,-2609,3,1,-1,0;-14109,-2600,3,1,-1,0;-14109,-2590,3,1,-1,0;-14109,-2578,3,1,-1,0;-14109,-2564,3,1,-1,0;-14109,-2549,3,1,-1,0;-14109,-2533,3,1,-1,0;-14109,-2515,3,1,-1,0;-14109,-2495,3,1,-1,0;-14109,-2474,3,1,-1,0;-14109,-2452,3,1,-1,0;-14109,-2428,3,1,-1,0;-14109,-2402,3,1,-1,0;-14099,-2375,3,1,1,0;-14089,-2347,3,1,1,0;-14081,-2317,3,1,1,0;-14081,-2317,3,1,1,0;-14081,-2317,3,1,1,0;-14081,-2347,3,1,1,0;-14081,-2375,3,1,1,0;-14081,-2402,3,1,1,0;-14071,-2428,3,1,1,0;-14061,-2452,3,1,1,0;-14051,-2474,3,1,1,0;-14041,-2495,3,1,1,0;-14031,-2515,3,1,1,0;-14021,-2533,3,1,1,0;-14011,-2549,3,1,1,0;-14001,-2564,3,1,1,0;-13991,-2578,3,1,1,0;-13981,-2590,3,1,1,0;-13971,-2600,3,1,1,1;-13961,-2609,3,1,1,0;-13951,-2617,3,1,1,0;-13941,-2623,3,1,1,0;-13931,-2627,3,1,1,0;-13921,-2630,3,1,1,0;-13911,-2632,3,1,1,0;-13901,-2632,3,1,1,0;-13891,-2630,3,1,1,0;-13881,-2627,3,1,1,0;-13871,-2623,3,1,1,0;-13861,-2617,3,1,1,0;-13851,-2609,3,1,1,0;-13841,-2600,3,1,1,0;-13831,-2590,3,1,1,0;-13821,-2578,3,1,1,0;-13811,-2564,3,1,1,0;-13801,-2549,3,1,1,0;-13791,-2533,3,1,1,0;-13781,-2515,3,1,1,0;-13771,-2495,3,1,1,0;-13761,-2474,3,1,1,0;-13751,-2452,3,1,1,0;-13741,-2428,3,1,1,0;-13731,-2402,3,1,1,0;-13721,-2375,3,1,1,0;-13711,-2347,3,1,1,0;-13701,-2317,3,1,1,0;-13691,-2317,3,1,1,0;-13681,-2317,3,1,1,0;-13681,-2347,3,1,1,0;-13681,-2375,3,1,1,0;-13681,-2402,3,1,1,0;-13671,-2428,3,1,1,0;-13661,-2452,3,1,1,0;-13651,-2474,3,1,1,0;-13641,-2495,3,1,1,0;-13631,-2515,3,1,1,0;-13621,-2533,3,1,1,0;-13611,-2549,3,1,1,0;-13601,-2564,3,1,1,0;-13591,-2578,3,1,1,0;-13581,-2590,3,1,1,0;-13571,-2600,3,1,1,0;-13561,-2609,3,1,1,0;-13551,-2617,3,1,1,0;-13541,-2623,3,1,1,0;-13531,-2627,3,1,1,0;-13521,-2630,3,1,1,0;-13511,-2632,3,1,1,0;-13501,-2632,3,1,1,0;-13491,-2630,3,1,1,0;-13481,-2627,3,1,1,0;-13471,-2623,3,1,1,0;-13461,-2617,3,1,1,0;-13451,-2609,3,1,1,0;-13441,-2600,3,1,1,0;-13431,-2590,3,1,1,0;-13421,-2578,3,1,1,0;-13411,-2564,3,1,1,0;-13401,-2549,3,1,1,0;-13391,-2533,3,1,1,0;-13381,-2515,3,1,1,0;-13371,-2495,3,1,1,0;-13361,-2474,3,1,1,0;-13351,-2452,3,1,1,0;-13341,-2428,3,1,1,0;-13331,-2417,3,1,1,0;-13321,-2417,3,1,1,0;-13311,-2447,3,1,1,0;-13301,-2475,3,1,1,1;-13291,-2502,3,1,1,0;-13281,-2528,3,1,1,0;-13271,-2552,3,1,1,0;-13261,-2574,3,1,1,0;-13251,-2595,3,1,1,0;-13241,-2615,3,1,1,0;-13231,-2633,3,1,1,0;-13221,-2649,3,1,1,0;-13211,-2664,3,1,1,0;-13201,-2678,3,1,1,0;-13191,-2690,3,1,1,0;-13181,-2700,3,1,1,1;-13171,-2709,3,1,1,0;-13161,-2717,3,1,1,0;-13151,-2723,3,1,1,0;-13141,-2727,3,1,1,0;-13131,-2730,3,1,1,0;-13121,-2732,3,1,1,0;-13111,-2732,3,1,1,0;-13101,-2730,3,1,1,0;-13091,-2727,3,1,1,0;-13081,-2723,3,1,1,0;-13071,-2717,3,1,1,0;-13061,-2709,3,1,1,0;-13051,-2700,3,1,1,0;-13041,-2690,3,1,1,0;-13031,-2678,3,1,1,0;-13021,-2664,3,1,1,0;-13011,-2649,3,1,1,0;-13001,-2633,3,1,1,0;-12991,-2615,3,1,1,0;-12991,-2595,3,1,1,0;-12991,-2574,3,1,1,0;-12991,-2552,3,1,1,0;-12991,-2528,3,1,1,0;-12991,-2502,3,1,1,0;-12991,-2475,3,1,1,0;-12991,-2447,3,1,1,0;-12991,-2417,3,1,1,0;-12991,-2417,3,1,1,0;-12991,-2417,3,1,1,0;-13001,-2447,3,1,-1,0;-13011,-2475,3,1,-1,0;-13021,-2502,3,1,-1,0;-13031,-2528,3,1,-1,0;-13041,-2552,3,1,-1,0;-13051,-2574,3,1,-1,0;-13061,-2595,3,1,-1,0;-13071,-2615,3,1,-1,0;-13081,-2633,3,1,-1,0;-13091,-2649,3,1,-1,0;-13101,-2664,3,1,-1,0;-13111,-2678,3,1,-1,0;-13121,-2690,3,1,-1,0;-13131,-2700,3,1,-1,0;-13141,-2709,3,1,-1,0;-13151,-2717,3,1,-1,0;-13161,-2723,3,1,-1,1;-13171,-2727,3,1,-1,0;-13181,-2730,3,1,-1,0;-13191,-2732,3,1,-1,0;-13201,-2732,3,1,-1,0;-13211,-2730,3,1,-1,0;-13221,-2727,3,1,-1,0;-13231,-2723,3,1,-1,0;-13241,-2717,3,1,-1,0;-13251,-2709,3,1,-1,0;-13261,-2700,3,1,-1,0;-13271,-2690,3,1,-1,0;-13281,-2678,3,1,-1,1;-13291,-2664,3,1,-1,0;-13301,-2649,3,1,-1,0;-13311,-2633,3,1,-1,0;-13321,-2615,3,1,-1,0;-13331,-2595,3,1,-1,0;-13341,-2574,3,1,-1,0;-13351,-2552,3,1,-1,0;-13361,-2528,3,1,-1,0;-13371,-2502,3,1,-1,0;-13381,-2475,3,1,-1,0;-13391,-2447,3,1,-1,0;-13401,-2417,3,1,-1,0;-13411,-2385,3,1,-1,0;-13421,-2352,3,1,-1,0;-13431,-2318,3,1,-1,0;-13421,-2317,3,1,-1,0;-13411,-2317,3,1,1,0;-13401,-2347,3,1,1,0;-13391,-2375,3,1,1,0;-13381,-2402,3,1,1,0;-13371,-2428,3,1,1,0;-13361,-2452,3,1,1,0;-13351,-2474,3,1,1,0;-13341,-2495,3,1,1,0;-13331,-2515,3,1,1,0;-13321,-2533,3,1,1,0;-13311,-2549,3,1,1,0;-13301,-2564,3,1,1,0;-13291,-2578,3,1,1,0;-13281,-2590,3,1,1,0;-13271,-2600,3,1,1,0;-13261,-2609,3,1,1,0;-13251,-2617,3,1,1,0;-13241,-2623,3,1,1,0;-13231,-2627,3,1,1,0;-13221,-2630,3,1,1,0;-13211,-2632,3,1,1,0;-13201,-2632,3,1,1,0;-13191,-2630,3,1,1,0;-13181,-2627,3,1,1,0;-13171,-2623,3,1,1,0;-13161,-2617,3,1,1,0;-13151,-2609,3,1,1,0;-13141,-2600,3,1,1,0;-13131,-2590,3,1,1,0;-13131,-2578,3,1,1,0;-13131,-2564,3,1,1,0;-13131,-2549,3,1,1,0;-13131,-2533,3,1,1,0;-13131,-2515,3,1,1,0;-13131,-2495,3,1,1,0;-13131,-2474,3,1,1,0;-13131,-2452,3,1,1,0;-13131,-2428,3,1,1,0;-13131,-2402,3,1,1,0;-13131,-2375,3,1,1,1;-13131,-2347,3,1,1,0;-13131,-2317,3,1,1,0;-13131,-2317,3,1,1,0;-13121,-2317,3,1,1,0;-13111,-2347,3,1,1,0;-13101,-2375,3,1,1,0;-13091,-2402,3,1,1,0;-13081,-2428,3,1,1,0;-13071,-2452,3,1,1,0;-13061,-2474,3,1,1,0;-13051,-2495,3,1,1,0;-13041,-2515,3,1,1,0;-13031,-2533,3,1,1,0;-13021,-2549,3,1,1,0;-13011,-2564,3,1,1,0;-13001,-2578,3,1,1,0;-12991,-2590,3,1,1,0;-12981,-2600,3,1,1,0;-12971,-2609,3,1,1,0;-12961,-2617,3,1,1,0;-12951,-2623,3,1,1,0;-12941,-2627,3,1,1,0;-12931,-2630,3,1,1,0;-12921,-2632,3,1,1,0;-12911,-2632,3,1,1,0;-12901,-2630,3,1,1,0;-12891,-2627,3,1,1,0;-12881,-2623,3,1,1,0;-12871,-2617,3,1,1,0;-12861,-2609,3,1,1,0;-12851,-2600,3,1,1,0;-12841,-2590,3,1,1,0;-12831,-2578,3,1,1,0;-12821,-2564,3,1,1,0;-12811,-2549,3,1,1,0;-12801,-2533,3,1,1,0;-12791,-2515,3,1,1,0;-12781,-2495,3,1,1,0;-12781,-2474,3,1,1,0;-12781,-2452,3,1,1,0;-12771,-2428,3,1,1,0;-12761,-2402,3,1,1,0;-12751,-2375,3,1,1,0;-12741,-2347,3,1,1,0;-12731,-2317,3,1,1,0;-12721,-2317,3,1,1,0;-12711,-2317,1,1,1,0;-12701,-2317,1,1,1,0;-12691,-2317,1,1,1,0;-12681,-2317,1,1,1,0;-12671,-2317,1,1,1,0;-12661,-2317,1,1,1,0;-12651,-2317,1,1,1,0;-12641,-2317,1,1,1,0;-12631,-2317,1,1,1,0;-12631,-2317,2,1,-1,0;-12631,-2317,2,1,-1,0;-12631,-2317,2,1,-1,0;-12631,-2317,2,1,-1,0;-12641,-2317,2,1,-1,0;-12651,-2317,2,1,-1,0;-12661,-2317,2,1,-1,0;-12671,-2317,2,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,1;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,1;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12671,-2317,0,1,-1,0;-12681,-2317,2,1,-1,0;-12691,-2317,2,1,-1,0;-12701,-2317,2,1,-1,0;-12711,-2317,2,1,-1,0;-12721,-2317,2,1,-1,0;-12731,-2317,2,1,-1,0;-12741,-2317,2,1,-1,0;-12751,-2317,2,1,-1,0;-12751,-2317,0,1,-1,0;-12751,-2317,0,1,-1,0;-12751,-2317,0,1,-1,0;-12751,-2317,0,1,-1,0;-12751,-2317,0,1,-1,0;-12751,-2317,0,1,-1,0;-12751,-2317,0,1,-1,0;-12751,-2317,0,1,-1,0;-12751,-2317,0,1,-1,0;-12751,-2317,0,1,-1,0;-12751,-2317,0,1,-1,0;-12751,-2317,0,1,-1,0;-12761,-2317,2,1,-1,0;-12771,-2317,2,1,-1,0;-12781,-2317,2,1,-1,0;-12791,-2317,2,1,-1,0;-12819,-2317,0,1,0,0
+    movers: >-
+      0,-2663,564,21,-1,-2600,564,-2800,564|1,-3137,564,21,-1,-3200,564,-3000,564

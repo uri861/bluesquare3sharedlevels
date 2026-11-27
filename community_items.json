@@ -27,6 +27,20 @@
     "jump": "https://raw.githubusercontent.com/uri861/bluesquare3sharedlevels/main/community/r1s2cnu5cqoz457qihdlggkq/jump.png",
     "die": "https://raw.githubusercontent.com/uri861/bluesquare3sharedlevels/main/community/r1s2cnu5cqoz457qihdlggkq/die.png"
    }
+  },
+  {
+   "id": "8rp9bpnheae51yytu6lgneon",
+   "kind": "hat",
+   "label": "pak paka",
+   "creator": "user1000000",
+   "price": 150,
+   "at": "2026-11-27T11:59:08.565Z",
+   "creatorTag": "2q3pkq37",
+   "images": {
+    "hat": "https://raw.githubusercontent.com/uri861/bluesquare3sharedlevels/main/community/8rp9bpnheae51yytu6lgneon/hat.png"
+   },
+   "w": 240,
+   "h": 163
   }
  ]
 }
